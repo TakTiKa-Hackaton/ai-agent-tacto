@@ -1,0 +1,5 @@
+do a completely new agent based on this one and then create a folder wheere youll store the project and replace curreent repo on github with this folder so its not starker kit anymore
+
+---
+
+please make it so so there is no code from this stupid hupka

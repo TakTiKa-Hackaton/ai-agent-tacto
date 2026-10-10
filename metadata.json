@@ -1,0 +1,35 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KB9JZ8BQJ6C5QWWPET5EDG",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "starter-kit/tactika-buyer-agent/README.md",
+    "starter-kit/tactika-buyer-agent/pyproject.toml",
+    "starter-kit/tactika-buyer-agent/tactika_agent/agent.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/client.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/cost_model.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/document_reader.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/play.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/research.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/runner.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/strategy.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 28501,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 1476673,
+    "output_tokens": 22988,
+    "api_call_count": 13
+  }
+}
