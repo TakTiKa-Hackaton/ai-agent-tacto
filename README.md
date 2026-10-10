@@ -5,8 +5,10 @@ published total-cost model, then adds its own case research, offer planning, and
 writer. Its decisions stay reproducible: Python chooses the supplier, benchmarks, complete term
 sheets, acceptance, and walk-away. An optional language model can only draft the email prose.
 
-The project uses the upstream `arena-kit` package for its maintained API client, attachment reader,
-and published contract-cost functions. The agent and runner in this repository are Taktika-specific.
+All arena-facing Python code lives in this repository: the HTTP client, attachment reader, cost
+calculator, session runner, research, and offer planner. Runtime dependencies are general-purpose
+HTTP, PDF, spreadsheet, and environment-variable libraries; no negotiation starter package is
+installed or imported.
 
 ## Install
 
@@ -61,8 +63,8 @@ The model does not choose terms or accept offers.
 
 ## Data and attribution
 
-The research files are provided by Tacto Technology GmbH under CC BY 4.0. The original attribution
-and upstream source licences are retained in [LICENSE-data](LICENSE-data) and
-[data/ATTRIBUTION.md](data/ATTRIBUTION.md). The agent code is MIT licensed; see [LICENSE](LICENSE).
+The research files are provided by Tacto Technology GmbH under CC BY 4.0. Their attribution and
+source licences are retained in [LICENSE-data](LICENSE-data) and [data/ATTRIBUTION.md](data/ATTRIBUTION.md).
+The agent code is MIT licensed; see [LICENSE](LICENSE).
 The research snapshot is synthetic company data with public market series, and should be refreshed
 from the arena before a new event when updated data is available.

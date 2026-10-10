@@ -6,11 +6,11 @@ import argparse
 import json
 import logging
 
-from arena_kit.client import ArenaClient
-from arena_kit.play import RemoteTable, hosted, play, play_all, play_waves
 from dotenv import load_dotenv
 
 from .agent import TaktikaAgent
+from .client import ArenaClient
+from .play import RemoteTable, hosted, play, play_all, play_waves
 
 
 def _client():

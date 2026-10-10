@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import math
 
-from arena_kit.cost import OPS, RELATIONSHIP_GOALS, complete_offer, must_haves_ok, total_cost
-from arena_kit.docs import standard_terms
-from arena_kit.play import latest, live_threads, moves_left, standing
+from .cost_model import OPS, RELATIONSHIP_GOALS, complete_offer, must_haves_ok, total_cost
+from .document_reader import supplier_standard_terms
+from .play import latest, live_threads, moves_left, standing
 
 
 class OfferPlanner:
@@ -59,7 +59,7 @@ class OfferPlanner:
             sheet_id, terms = standing(events)
             if not sheet_id or terms.get("unit_price") is None:
                 continue
-            standard = standard_terms(events)
+            standard = supplier_standard_terms(events)
             if must_haves_ok(case, terms, standard):
                 choices.append((self.cost(case, terms, standard, sid, research), f"live quote {sid}"))
         return choices
@@ -189,7 +189,7 @@ class OfferPlanner:
 
     def _state(self, case, sid, events, research):
         sheet_id, offered = standing(events)
-        standard = standard_terms(events)
+        standard = supplier_standard_terms(events)
         terms = complete_offer(case, offered) if offered.get("unit_price") is not None else {}
         valid = bool(terms) and must_haves_ok(case, terms, standard)
         cost = self.cost(case, terms, standard, sid, research) if valid else math.inf

@@ -2,6 +2,107 @@
 
 from __future__ import annotations
 
+import csv
+import json
+import sqlite3
+from functools import cached_property
+from pathlib import Path
+
+
+class ResearchStore:
+    """Read-only access to this project's local facts and SQLite research snapshot."""
+
+    def __init__(self, root, release=None):
+        self.root = Path(root).expanduser().resolve()
+        facts_file = self.root / "facts.json"
+        self.facts = json.loads(facts_file.read_text(encoding="utf-8")) if facts_file.is_file() else {}
+        release_path = Path(release).expanduser() if release else self.root / "release-sunday"
+        if (release_path / "facts.json").is_file():
+            self.facts.update(json.loads((release_path / "facts.json").read_text(encoding="utf-8")))
+            self.release = release_path.resolve()
+        else:
+            self.release = None
+        databases = sorted(self.root.rglob("*.sqlite")) + sorted(self.root.rglob("*.db"))
+        self.connection = None
+        if databases:
+            path = databases[0].as_posix()
+            self.connection = sqlite3.connect(f"file:{path}?mode=ro", uri=True, check_same_thread=False)
+            self.connection.row_factory = sqlite3.Row
+            self.connection.execute("PRAGMA query_only=ON")
+        if self.connection is None and not self.facts:
+            raise FileNotFoundError(f"No research database or fact index found beneath {self.root}")
+
+    def tables(self):
+        if not self.connection:
+            return {}
+        names = [row[0] for row in self.connection.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
+        )]
+        return {
+            name: {
+                "columns": [row[1] for row in self.connection.execute(f'PRAGMA table_info("{name}")')],
+                "rows": self.connection.execute(f'SELECT count(*) FROM "{name}"').fetchone()[0],
+            }
+            for name in names
+        }
+
+    def query(self, statement, params=(), limit=200):
+        if not self.connection:
+            return []
+        head = statement.lstrip().split(None, 1)[0].lower()
+        if head not in {"select", "with"}:
+            raise ValueError("ResearchStore accepts read-only SELECT queries")
+        cursor = self.connection.execute(statement, params)
+        return [dict(row) for row in cursor.fetchmany(limit)]
+
+    @cached_property
+    def _id_rows(self):
+        index = {}
+        for table, info in self.tables().items():
+            columns = info["columns"]
+            if not columns:
+                continue
+            key = "id" if "id" in columns else columns[0]
+            for row in self.connection.execute(f'SELECT * FROM "{table}"'):
+                value = row[key]
+                if isinstance(value, str) and ":" in value:
+                    index[value] = {"table": table, **dict(row)}
+        if self.release:
+            for file_path in sorted((self.release / "data").glob("*.csv")):
+                with file_path.open(encoding="utf-8", newline="") as stream:
+                    for row in csv.DictReader(stream):
+                        identifier = row.get("id")
+                        if identifier:
+                            index[identifier] = {"table": file_path.stem, **row, "root": str(self.release)}
+        return index
+
+    def lookup(self, identifier):
+        return self.facts.get(identifier) or self._id_rows.get(identifier)
+
+    def ids(self, prefix):
+        identifiers = set(self.facts)
+        if self.connection:
+            identifiers.update(self._id_rows)
+        return sorted(item for item in identifiers if item.startswith(prefix))
+
+    def document(self, identifier):
+        row = self.lookup(identifier)
+        if row:
+            for field in ("body", "text", "content"):
+                if row.get(field):
+                    return row[field]
+            base = Path(row.get("root", self.root))
+            relative = row.get("path") or row.get("file")
+            if not relative:
+                return json.dumps(row, ensure_ascii=False)
+        else:
+            base, relative = self.root, identifier
+        target = (base / relative).resolve()
+        if not target.is_relative_to(base) or not target.is_file():
+            raise FileNotFoundError(identifier)
+        return target.read_text(encoding="utf-8")
+
+
 class ProcurementResearch:
     def __init__(self, package):
         self.package = package
