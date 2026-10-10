@@ -26,6 +26,8 @@ class RemoteTable:
         self.done = None
 
     def open(self, case_id):
+        if self.session_id:
+            return self.resume(self.session_id)
         try:
             response = self.client.open_session(case_id)
         except ArenaError as error:

@@ -53,6 +53,12 @@ def _units_at_old_price(case, terms, years):
 def _supplier_value(case, terms, supplier):
     buyer = case["buyer"]
     standard = {**(supplier.get("standard") or {}), **case.get("fixed_terms", {})}
+    freight = buyer["freight_eur_per_unit"]
+    if standard.get("payment_days") is None:
+        standard["payment_days"] = buyer["reference_payment_days"]
+    if standard.get("incoterm") is None:
+        standard["incoterm"] = min(freight, key=freight.get)
+    standard.setdefault("tooling_eur", 0.0)
     closed = closing_terms(case, terms, standard)
     years = _years(case, closed)
     quantity = closed["volume_per_year"] * years
@@ -62,7 +68,6 @@ def _supplier_value(case, terms, supplier):
     finance_rate = supplier["interest_rate"]
     payment_factor = 1 - finance_rate * (closed["payment_days"] - standard["payment_days"]) / 360
     advance_cash_factor = 1 + (finance_rate - supplier.get("usual_rate", finance_rate)) * years / 2
-    freight = buyer["freight_eur_per_unit"]
     ppm = supplier.get("ppm", standard.get("ppm_commitment") or 0)
     return (
         closed["unit_price"] * (1 - at_old_rate) * payment_factor

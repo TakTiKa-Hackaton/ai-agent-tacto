@@ -140,13 +140,14 @@ class ProcurementResearch:
                 unit = units.get(part)
                 part_pos = self._query(
                     "po_lines",
-                    f"SELECT id, part_id, supplier_id, order_date AS date, price, price_unit, currency "
+                    f"SELECT id, part_id, supplier_id, order_date AS date, price, price_unit, currency, price_note "
                     f"FROM po_lines WHERE part_id = ? AND supplier_id IN ({marks}) ORDER BY order_date DESC LIMIT 30",
                     [part, *suppliers], 30,
                 )
                 po_rows += [
                     row for row in part_pos
                     if (unit is None or row.get("price_unit") == unit) and row.get("currency", "EUR") == "EUR"
+                    and row.get("price_note") != "stale_condition"
                 ]
                 part_quotes = self._query(
                     "quotes",

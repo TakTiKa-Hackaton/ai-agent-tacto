@@ -75,11 +75,20 @@ class OfferPlanner:
             alternative = buyer.get("alternative") or {}
             baseline = (alternative.get("terms") or {}).get("unit_price")
         if baseline is None:
-            history = [row for row in research["purchase_history"] if row.get("supplier_id") == supplier_id]
+            case_parts = case.get("parts", [])
+            history = [
+                row for row in research["purchase_history"]
+                if row.get("supplier_id") == supplier_id
+                and len(case_parts) == 1 and row.get("part_id") == case_parts[0]
+            ]
             history.sort(key=lambda row: row.get("date", ""), reverse=True)
             baseline = history[0].get("price") if history else None
         if baseline is None:
-            history = research["purchase_history"]
+            case_parts = case.get("parts", [])
+            history = [
+                row for row in research["purchase_history"]
+                if len(case_parts) == 1 and row.get("part_id") == case_parts[0]
+            ]
             history.sort(key=lambda row: row.get("date", ""), reverse=True)
             baseline = history[0].get("price") if history else None
         if baseline is None:
@@ -90,9 +99,11 @@ class OfferPlanner:
         target = fair * (1 - self.DISCOUNT.get(category, 0.04))
 
         # A current, same-part competitor quote is a stronger ceiling than a general index.
+        case_parts = case.get("parts", [])
         recent_quotes = [
             row for row in research["quotes"]
-            if row.get("supplier_id") != supplier_id and row.get("price") is not None
+            if len(case_parts) == 1 and row.get("part_id") == case_parts[0]
+            and row.get("supplier_id") != supplier_id and row.get("price") is not None
         ]
         recent_quotes.sort(key=lambda row: row.get("date", ""), reverse=True)
         if recent_quotes:
@@ -240,7 +251,9 @@ class OfferPlanner:
             planned_price = float(previous) + (state["target"] - float(previous)) / remaining
             planned_price = min(state["target"], planned_price)
         else:
-            planned_price = state["target"] * 0.92
+            # The target already includes the category discount. Keep the opening bid close
+            # enough to that evidence-based target to look credible to the supplier.
+            planned_price = state["target"] * 0.96
         template = state["terms"] or {}
         primary = self._optimize_terms(
             case, complete_offer(case, {**template, "unit_price": max(0.01, planned_price)}),
