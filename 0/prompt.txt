@@ -1,0 +1,7 @@
+<environment_context>
+  <cwd>/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit</cwd>
+  <shell>zsh</shell>
+  <current_date>2026-10-10</current_date>
+  <timezone>Europe/Berlin</timezone>
+  <filesystem><workspace_roots><root>/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit</root></workspace_roots><permission_profile type="managed"><file_system type="restricted"><entry access="read"><special>:root</special></entry><entry access="write"><path>/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit</path></entry><entry access="write"><special>:slash_tmp</special></entry><entry access="write"><special>:tmpdir</special></entry><entry access="read"><path>/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/.git</path></entry><entry access="read"><path>/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/.agents</path></entry><entry access="read"><path>/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/.codex</path></entry><entry access="read"><path>/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/.aws</path></entry></file_system></permission_profile></filesystem>
+</environment_context>
