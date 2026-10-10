@@ -1,0 +1,1 @@
+copy this code from starter kit to my github/entire repository https://github.com/TakTiKa-Hackaton/ai-agent-tacto and create there this ageent which will solve this problem
