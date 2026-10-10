@@ -1,0 +1,15 @@
+Please optimize `arena_kit/agents/llm.py` to increase our score on practice cases:
+
+1. ANALYST AGENT:
+   - Enhance SQLite index/contract queries so that index deltas (e.g., commodity price decreases) are computed relative to historical contract dates and returned with exact IDs.
+
+2. NEGOTIATOR AGENT:
+   - Start with a firmer initial counter-offer in Round 1 (aiming closer to target price).
+   - Require every email draft to include at least one data citation (idx:... or ctr:...) in the opening sentence as price justification.
+   - Never reveal urgency or budget thresholds.
+
+3. PYTHON STATE MACHINE:
+   - Enforce payment terms and must-haves dynamically in term_sheets.
+   - Walk away in Round 3 if the supplier's standing quote beats our BATNA cost C.
+
+Ensure py_compile succeeds and all terminal logs continue printing agent steps clearly.
