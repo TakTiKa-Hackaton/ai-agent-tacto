@@ -1,0 +1,20 @@
+I need to refactor our current single-file agent in `arena_kit/agents/llm.py` into a clear Multi-Agent System for the Tacto Negotiation Arena hackathon. 
+
+To ensure I can verify the changes are working and useful, please implement explicit VISIBLE LOGGING and a local debug file output. Specifically, do the following:
+
+1. SPLIT INTO THREE INTERNAL ROLES inside `arena_kit/agents/llm.py`:
+   - **Analyst Agent**: Queries SQLite contract history and `facts.json`, filtering for exact matching parts/suppliers, and outputs a structured data brief.
+   - **Negotiator Agent**: Takes the data brief and Python state-machine pricing rules to draft the strategic email using Chris Voss tactics.
+   - **Validator Agent**: Inspects the final payload, strips unknown source IDs, and ensures strict schema compliance.
+
+2. MANDATORY VISIBLE OUTPUTS & LOGGING (Crucial for verification):
+   - Print bright, distinct console logs using Python's `logging` or `print()` so I can see each agent executing in real-time when I run a match. Use clear headers like:
+     `print("🔍 [ANALYST AGENT] Found X historical rows and Y index deltas")`
+     `print("✍️ [NEGOTIATOR AGENT] Drafted email with target price: €...")`
+     `print("🛡️ [VALIDATOR AGENT] Checked citations. Cleaned payload.")`
+   - Save the intermediate thoughts, data briefs, and final JSON payload to a local debug file named `last_negotiation_state.json` in the workspace root on every turn so I can inspect it.
+
+3. PRESERVE COMPATIBILITY:
+   - Keep the existing HTTP client contract completely intact (`supplier_id`, `message`, etc.) so `uv run arena play` works without errors.
+
+Please modify `arena_kit/agents/llm.py` now with these visible logging and multi-agent steps.
