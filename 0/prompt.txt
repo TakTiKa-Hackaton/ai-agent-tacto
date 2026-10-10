@@ -1,0 +1,86 @@
+you have to add email with mcp
+
+---
+
+juri@M6 starter-kit % uv run taktika me
+uv run taktika cases --set practice
+uv run taktika play case:P01 --verbose
+uv run taktika run --set practice --parallel 8
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+juri@M6 starter-kit % 
+uv run taktika run --set final --parallel 10
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+juri@M6 starter-kit % uv run taktika me
+uv run taktika cases --set practice
+uv run taktika play case:P01 --verbose
+uv run taktika run --set practice --parallel 8
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+juri@M6 starter-kit % 
+juri@M6 starter-kit % 
+juri@M6 starter-kit % uv run taktika run --set final --parallel 10
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+juri@M6 starter-kit %
+
+---
+
+uv run taktika play case:P01 --verbose
+uv run taktika run --set practice --parallel 8
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+juri@M6 starter-kit % uv run taktika run --set final --parallel 10
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+juri@M6 starter-kit %
+
+---
+
+C  cause: No such file or directory (os error 2)
+juri@M6 starter-kit % uv run --env-file ../.env taktika play case:P01 --verbose
+uv run --env-file ../.env taktika run --set practice --parallel 8
+error: No environment file found at: ../.env
+error: No environment file found at: ../.env
+juri@M6 starter-kit %
+
+---
+
++ typing-inspection==0.4.4
+ + uvicorn==0.54.0
+usage: taktika [-h] [--verbose] {me,cases,play,run} ...
+taktika: error: unrecognized arguments: --verbose
+Traceback (most recent call last):
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/.venv/bin/taktika", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/tactika_agent/runner.py", line 59, in main
+    cases = client.cases(args.set)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/tactika_agent/client.py", line 81, in cases
+    return self._request("GET", "/cases", params={"set": set_name})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/tactika_agent/client.py", line 73, in _request
+    raise ArenaError(response.status_code, detail)
+tactika_agent.client.ArenaError: HTTP 401: missing or unknown X-API-Key
+juri@M6 starter-kit % 
+ never touch the website because its not what you should do it is doing my teammate
