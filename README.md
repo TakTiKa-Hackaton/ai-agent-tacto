@@ -68,3 +68,8 @@ source licences are retained in [LICENSE-data](LICENSE-data) and [data/ATTRIBUTI
 The agent code is MIT licensed; see [LICENSE](LICENSE).
 The research snapshot is synthetic company data with public market series, and should be refreshed
 from the arena before a new event when updated data is available.
+
+
+## Taktichek interface concept
+
+Open [taktichek.html](taktichek.html) in a browser to explore the supplier negotiation workspace. It is a standalone UI concept; portfolio and deal history figures are illustrative, and email actions are simulated locally.
