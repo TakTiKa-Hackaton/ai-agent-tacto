@@ -1,0 +1,109 @@
+id,rfq_id,supplier_id,part_id,quote_date,unit_price,price_unit,currency,lead_time_days,incoterm,payment_days,validity_days,tooling_eur,awarded,missing_fields,remarks
+quote:7100001,rfq:6000000100,sup:70110,part:310010,2025-01-22,142.5,1,EUR,49,FCA,30,30,0,true,,
+quote:7100002,rfq:6000000100,sup:70140,part:310010,2025-01-22,124.2,1,EUR,64,FCA,60,30,0,false,,
+quote:7100003,rfq:6000000101,sup:70130,part:310011,2024-08-18,203.8,1,EUR,48,FCA,30,30,0,true,,
+quote:7100004,rfq:6000000101,sup:70190,part:310011,2024-08-18,204.2,1,EUR,47,FCA,30,30,0,false,,
+quote:7100005,rfq:6000000102,sup:70130,part:310012,2025-08-11,390.2,1,EUR,45,FCA,30,30,0,true,,
+quote:7100006,rfq:6000000102,sup:70110,part:310012,2025-08-11,385.2,1,EUR,52,FCA,30,30,0,false,,
+quote:7100007,rfq:6000000103,sup:70140,part:310020,2025-09-20,49.2,1,EUR,64,FCA,60,30,0,true,,
+quote:7100008,rfq:6000000103,sup:70190,part:310020,2025-09-20,57.4,1,EUR,44,FCA,30,30,0,false,,
+quote:7100009,rfq:6000000104,sup:70120,part:310030,2025-09-23,37.9,1,EUR,55,FCA,45,30,0,true,,
+quote:7100010,rfq:6000000104,sup:70140,part:310030,2025-09-23,32.9,1,EUR,58,FCA,60,30,0,false,,
+quote:7100011,rfq:6000000104,sup:70190,part:310030,2025-09-23,36.8,1,EUR,52,FCA,30,30,0,false,,
+quote:7100012,rfq:6000000105,sup:70180,part:310050,2025-07-10,676.6,1,EUR,60,FCA,30,30,0,true,,
+quote:7100013,rfq:6000000105,sup:70170,part:310050,2025-07-10,598.1,1,EUR,54,FCA,45,30,0,false,,
+quote:7100014,rfq:6000000106,sup:70180,part:310051,2024-04-12,130.3,1,EUR,48,FCA,30,30,0,true,,
+quote:7100015,rfq:6000000106,sup:70160,part:310051,2024-04-12,91.4,1,EUR,112,FCA,90,30,0,false,,
+quote:7100016,rfq:6000000107,sup:70150,part:310060,2025-04-10,34.0,1,EUR,79,FCA,60,30,0,true,,
+quote:7100017,rfq:6000000107,sup:70190,part:310060,2025-04-10,45.7,1,EUR,50,FCA,30,30,0,false,,
+quote:7100018,rfq:6000000108,sup:70290,part:320010,2025-06-21,27,1,EUR,41,,,,0,true,validity_days;incoterm;payment_days,
+quote:7100019,rfq:6000000108,sup:70210,part:320010,2025-06-21,26,1,EUR,32,,,,0,false,validity_days;incoterm;payment_days,
+quote:7100020,rfq:6000000109,sup:70280,part:320011,2024-02-14,35,1,EUR,31,,,,0,true,validity_days;incoterm;payment_days,
+quote:7100021,rfq:6000000109,sup:70210,part:320011,2024-02-14,36,1,EUR,30,,,,0,false,validity_days;incoterm;payment_days,
+quote:7100022,rfq:6000000110,sup:70295,part:320020,2025-02-07,12.4,1,EUR,33,,,,0,true,validity_days;incoterm;payment_days,
+quote:7100023,rfq:6000000110,sup:70230,part:320020,2025-02-07,12.9,1,EUR,33,,,,0,false,validity_days;incoterm;payment_days,
+quote:7100024,rfq:6000000111,sup:70220,part:320030,2025-04-16,17.3,1,EUR,42,,,,0,true,validity_days;incoterm;payment_days,
+quote:7100025,rfq:6000000111,sup:70240,part:320030,2025-04-16,13.9,1,EUR,39,FCA,45,30,0,false,,
+quote:7100026,rfq:6000000112,sup:70240,part:320031,2024-08-23,22.0,1,EUR,42,FCA,45,30,0,true,,
+quote:7100027,rfq:6000000112,sup:70230,part:320031,2024-08-23,27,1,EUR,33,,,,0,false,validity_days;incoterm;payment_days,
+quote:7100028,rfq:6000000113,sup:70230,part:320060,2025-08-17,18.1,1,EUR,28,,,,0,true,validity_days;incoterm;payment_days,
+quote:7100029,rfq:6000000113,sup:70250,part:320060,2025-08-17,17.3,1,EUR,33,,,,0,false,validity_days;incoterm;payment_days,
+quote:7100030,rfq:6000000114,sup:70295,part:320090,2025-03-16,5.0,1,EUR,31,,,,0,true,validity_days;incoterm;payment_days,
+quote:7100031,rfq:6000000114,sup:70250,part:320090,2025-03-16,5.1,1,EUR,35,,,,0,false,validity_days;incoterm;payment_days,
+quote:7100032,rfq:6000000115,sup:70340,part:330020,2025-04-08,20,1,EUR,21,,,,0,true,validity_days;incoterm;payment_days,
+quote:7100033,rfq:6000000115,sup:70360,part:330020,2025-04-08,21,1,EUR,30,,,,0,false,validity_days;incoterm;payment_days,
+quote:7100034,rfq:6000000116,sup:70360,part:330030,2025-07-06,16.9,1,EUR,34,,,,0,true,validity_days;incoterm;payment_days,
+quote:7100035,rfq:6000000116,sup:70340,part:330030,2025-07-06,16.7,1,EUR,24,,,,0,false,validity_days;incoterm;payment_days,
+quote:7100036,rfq:6000000117,sup:70440,part:340011,2024-04-21,40.23,1,EUR,44,DAP,30,30,0,true,,
+quote:7100037,rfq:6000000117,sup:70410,part:340011,2024-04-21,41.55,1,EUR,45,DAP,30,30,0,false,,
+quote:7100038,rfq:6000000118,sup:70410,part:340030,2025-05-23,2.35,1,EUR,49,DAP,30,30,0,true,,
+quote:7100039,rfq:6000000118,sup:70430,part:340030,2025-05-23,1.97,1,EUR,8,DAP,30,14,0,false,,
+quote:7100040,rfq:6000000119,sup:70430,part:340040,2025-01-12,102.34,100,EUR,7,DAP,30,14,0,true,,
+quote:7100041,rfq:6000000119,sup:70440,part:340040,2025-01-12,121.27,100,EUR,36,DAP,30,30,0,false,,
+quote:7100042,rfq:6000000120,sup:70510,part:350010,2025-01-15,245.59,1,EUR,42,DAP,30,30,0,true,,
+quote:7100043,rfq:6000000120,sup:70520,part:350010,2025-01-15,216.83,1,EUR,38,FCA,45,30,0,false,,
+quote:7100044,rfq:6000000121,sup:70510,part:350011,2024-06-19,381.47,1,EUR,43,DAP,30,30,0,true,,
+quote:7100045,rfq:6000000121,sup:70580,part:350011,2024-06-19,419.31,1,EUR,43,DAP,30,30,0,false,,
+quote:7100046,rfq:6000000122,sup:70520,part:350012,2025-05-18,626.72,1,EUR,44,FCA,45,30,0,true,,
+quote:7100047,rfq:6000000122,sup:70510,part:350012,2025-05-18,709.85,1,EUR,41,DAP,30,30,0,false,,
+quote:7100048,rfq:6000000123,sup:70580,part:350013,2024-05-15,1671.86,1,EUR,50,DAP,30,30,0,true,,
+quote:7100049,rfq:6000000123,sup:70510,part:350013,2024-05-15,1495.59,1,EUR,38,DAP,30,30,0,false,,
+quote:7100050,rfq:6000000124,sup:70530,part:350020,2025-02-25,415.53,1,EUR,47,DAP,30,30,0,true,,
+quote:7100051,rfq:6000000124,sup:70540,part:350020,2025-02-25,429.18,1,EUR,81,DAP,30,30,0,false,,
+quote:7100052,rfq:6000000125,sup:70540,part:350021,2024-02-15,702.43,1,EUR,85,DAP,30,30,0,true,,
+quote:7100053,rfq:6000000125,sup:70530,part:350021,2024-02-15,672.0,1,EUR,56,DAP,30,30,0,false,,
+quote:7100054,rfq:6000000126,sup:70610,part:360010,2025-05-17,12.68,100,EUR,5,DAP,30,14,0,false,,
+quote:7100055,rfq:6000000126,sup:70650,part:360010,2025-05-17,14.92,100,EUR,8,DAP,30,14,0,true,,
+quote:7100056,rfq:6000000127,sup:70650,part:360012,2025-07-12,5.82,100,EUR,7,DAP,30,14,0,true,,
+quote:7100057,rfq:6000000127,sup:70610,part:360012,2025-07-12,4.96,100,EUR,5,DAP,30,14,0,false,,
+quote:7100058,rfq:6000000128,sup:70620,part:360020,2025-04-08,4.42,1,EUR,9,DAP,30,14,0,true,,
+quote:7100059,rfq:6000000128,sup:70640,part:360020,2025-04-08,4.29,1,EUR,10,DAP,30,14,0,false,,
+quote:7100060,rfq:6000000129,sup:70640,part:360021,2024-01-16,7.15,1,EUR,10,DAP,30,14,0,true,,
+quote:7100061,rfq:6000000129,sup:70620,part:360021,2024-01-16,7.42,1,EUR,6,DAP,30,14,0,false,,
+quote:7100062,rfq:6000000130,sup:70610,part:360030,2025-08-14,13.06,1000,EUR,6,DAP,30,14,0,true,,
+quote:7100063,rfq:6000000130,sup:70630,part:360030,2025-08-14,12.8,1000,EUR,8,DAP,30,14,0,false,,
+quote:7100064,rfq:6000000131,sup:70710,part:370010,2025-05-18,5.34,1,EUR,12,DAP,30,14,0,true,,
+quote:7100065,rfq:6000000131,sup:70740,part:370010,2025-05-18,5.41,1,EUR,14,DAP,30,14,0,false,,
+quote:7100066,rfq:6000000132,sup:70740,part:370012,2025-05-20,131.74,100,EUR,15,DAP,30,14,0,true,,
+quote:7100067,rfq:6000000132,sup:70720,part:370012,2025-05-20,129.78,100,EUR,11,DAP,30,14,0,false,,
+quote:7100068,rfq:6000000133,sup:70730,part:370021,2024-07-11,4.29,1,EUR,17,DAP,30,14,0,true,,
+quote:7100069,rfq:6000000133,sup:70710,part:370021,2024-07-11,4.29,1,EUR,11,DAP,30,14,0,false,,
+quote:7300001,,sup:70110,part:310010,2026-09-03,126.53,1,EUR,42,,30,,0,false,validity_days;incoterm,
+quote:7200001,rfq:6000000201,sup:70140,part:310010,2026-09-02,143.22,1,EUR,56,FCA,60,90,0,false,,
+quote:7200002,rfq:6000000202,sup:70580,part:350011,2026-09-03,421.06,1,EUR,42,DAP,30,90,0,false,,
+quote:7300003,,sup:70530,part:350020,2026-09-05,412.74,1,EUR,49,DAP,30,30,0,false,,Prices as per current list; discounts not possible this year (head-office directive).
+quote:7200003,rfq:6000000203,sup:70540,part:350020,2026-09-04,466.99,1,EUR,84,DAP,30,90,0,false,,
+quote:7300004,,sup:70620,part:360020,2026-09-06,4.39,1,EUR,7,DAP,30,7,0,false,,List conditions; supply from stock only.
+quote:7200004,rfq:6000000204,sup:70640,part:360020,2026-09-05,5.04,1,EUR,10,DAP,30,90,0,false,,
+quote:7300008,,sup:70710,part:370010,2026-09-10,5.45,1,EUR,10,DAP,30,90,0,false,,Material covered until March 2027; price valid accordingly.
+quote:7200008,rfq:6000000208,sup:70740,part:370010,2026-09-09,6.06,1,EUR,14,DAP,30,90,0,false,,
+quote:7200009,rfq:6000000209,sup:70240,part:320030,2026-09-10,16.33,1,EUR,42,FCA,45,90,0,false,,
+quote:7300011,,sup:70140,part:310020,2026-09-13,45.15,1,EUR,56,FCA,10,14,0,false,,Payment within 10 days requested.
+quote:7200011,rfq:6000000211,sup:70190,part:310020,2026-09-12,53.56,1,EUR,42,FCA,30,90,0,false,,
+quote:7300013,,sup:70230,part:320060,2026-09-15,16.3,1,EUR,28,,30,,0,false,validity_days;incoterm,
+quote:7200013,rfq:6000000213,sup:70250,part:320060,2026-09-14,17.87,1,EUR,28,EXW,30,90,0,false,,
+quote:7300014,,sup:70560,part:350040,2026-09-16,316.35,100,EUR,14,DAP,30,90,0,false,,Material covered until March 2027; price valid accordingly.
+quote:7200016,rfq:6000000216,sup:70740,part:370020,2026-09-17,96.37,100,EUR,14,DAP,30,90,0,false,,
+quote:7200018,rfq:6000000218,sup:70710,part:370010,2026-09-19,6.31,1,EUR,10,DAP,30,90,0,false,,
+quote:7200019,rfq:6000000219,sup:70620,part:360020,2026-09-20,4.63,1,EUR,7,DAP,30,90,0,false,,
+quote:7300051,,sup:70130,part:310011,2026-09-03,180.52,1,EUR,45,FCA,10,14,0,false,,Payment within 10 days requested.
+quote:7300052,,sup:70630,part:360013,2026-09-04,29.23,100,EUR,7,DAP,30,30,0,false,,Prices as per current list; discounts not possible this year (head-office directive).
+quote:7300054,,sup:70520,part:350012,2026-09-06,601.27,1,EUR,42,FCA,45,90,0,false,,Material covered until March 2027; price valid accordingly.
+quote:7300055,,sup:70420,part:340012,2026-09-07,319.11,1,EUR,56,DAP,30,30,0,false,,Prices as per current list; discounts not possible this year (head-office directive).
+quote:7300056,,sup:70280,part:320011,2026-09-08,33.06,1,EUR,28,EXW,10,14,0,false,,Payment within 10 days requested.
+quote:7300057,,sup:70580,part:350013,2026-09-09,1608.32,1,EUR,42,DAP,30,7,0,false,,List conditions; supply from stock only.
+quote:7300062,,sup:70295,part:320020,2026-09-14,30.03,1,EUR,28,,30,,0,false,validity_days;incoterm,
+quote:7300063,,sup:70730,part:370021,2026-09-15,4.05,1,EUR,14,DAP,30,90,0,false,,Material covered until January 2027; price valid accordingly.
+quote:7300064,,sup:70190,part:310040,2026-09-16,33.94,1,EUR,42,FCA,30,90,0,false,,Material covered until December 2028; price valid accordingly.
+quote:7300067,,sup:70540,part:350021,2026-09-19,684.92,1,EUR,84,DAP,30,30,0,false,,Prices as per current list; discounts not possible this year (head-office directive).
+quote:7300068,,sup:70150,part:310060,2026-09-20,32.24,1,EUR,70,FCA,10,14,0,false,,Payment within 10 days requested.
+quote:7300070,,sup:70350,part:330060,2026-09-22,9.99,1,EUR,14,DAP,10,14,0,false,,Payment within 10 days requested.
+quote:7300072,,sup:70650,part:360012,2026-09-24,5.6,100,EUR,7,DAP,30,7,0,false,,List conditions; supply from stock only.
+quote:7300074,,sup:70340,part:330020,2026-09-26,18.16,1,EUR,21,,30,,0,false,validity_days;incoterm,
+quote:7300075,,sup:70570,part:350050,2026-09-02,23.13,1,EUR,28,DAP,30,30,0,false,,Prices as per current list; discounts not possible this year (head-office directive).
+quote:7300077,,sup:70520,part:350010,2026-09-04,225.61,1,EUR,42,FCA,45,90,0,false,,Material covered until March 2027; price valid accordingly.
+quote:7300078,,sup:70130,part:310012,2026-09-05,359.17,1,EUR,45,FCA,10,14,0,false,,Payment within 10 days requested.
+quote:7300079,,sup:70110,part:310012,2026-09-06,383.06,1,EUR,42,,30,,0,false,validity_days;incoterm,
+quote:7300080,,sup:70295,part:320090,2026-09-07,4.6,1,EUR,28,,30,,0,false,validity_days;incoterm,
+quote:7300085,,sup:70650,part:360010,2026-09-12,14.52,100,EUR,7,DAP,30,7,0,false,,List conditions; supply from stock only.
+quote:7300087,,sup:70620,part:360022,2026-09-14,22.8,1,EUR,7,DAP,30,7,0,false,,List conditions; supply from stock only.

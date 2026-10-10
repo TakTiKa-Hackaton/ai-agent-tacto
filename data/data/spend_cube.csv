@@ -1,0 +1,1138 @@
+fiscal_year,supplier_id,category,spend_eur,invoice_count
+FY2024,sup:71001,MRO and tools,9335.83,27
+FY2025,sup:71001,MRO and tools,11063.33,37
+FY2026,sup:71001,MRO and tools,10526.16,40
+FY2025,sup:71002,electrical,6992.95,40
+FY2026,sup:71002,electrical,6984.04,25
+FY2024,sup:71003,machined parts,135093.41,30
+FY2025,sup:71003,machined parts,230092.38,1
+FY2026,sup:71003,machined parts,229504.34,38
+FY2024,sup:71004,logistics and freight,21340.48,15
+FY2025,sup:71004,logistics and freight,27347.99,1
+FY2026,sup:71004,logistics and freight,23429.56,32
+FY2024,sup:71005,sheet metal,646.24,11
+FY2025,sup:71005,sheet metal,849.23,36
+FY2024,sup:71006,electrical,13702.78,31
+FY2025,sup:71006,electrical,10674.92,28
+FY2026,sup:71006,electrical,8889.8,17
+FY2024,sup:71007,electrical,14058.19,18
+FY2025,sup:71007,electrical,15522.62,31
+FY2026,sup:71007,electrical,18206.49,10
+FY2024,sup:71008,MRO and tools,6507.34,4
+FY2025,sup:71008,MRO and tools,4489.64,8
+FY2024,sup:71009,seals,88588.32,36
+FY2025,sup:71009,seals,116776.24,11
+FY2026,sup:71009,seals,95956.93,24
+FY2024,sup:71010,logistics and freight,10884.26,8
+FY2025,sup:71010,logistics and freight,12007.31,28
+FY2026,sup:71010,logistics and freight,14959.03,20
+FY2024,sup:71011,packaging,29846.27,34
+FY2025,sup:71011,packaging,30464.93,38
+FY2026,sup:71011,packaging,34350.27,8
+FY2024,sup:71012,IT and office,3237.0,25
+FY2026,sup:71012,IT and office,4632.03,19
+FY2024,sup:71013,electrical,29397.55,7
+FY2025,sup:71013,electrical,30369.81,36
+FY2026,sup:71013,electrical,31866.43,24
+FY2024,sup:71014,MRO and tools,19299.82,2
+FY2025,sup:71014,MRO and tools,23483.47,18
+FY2025,sup:71015,logistics and freight,25399.0,25
+FY2026,sup:71015,logistics and freight,29664.09,26
+FY2024,sup:71016,MRO and tools,25717.45,12
+FY2025,sup:71016,MRO and tools,29630.02,29
+FY2026,sup:71016,MRO and tools,40620.89,22
+FY2024,sup:71017,C-parts,13512.48,22
+FY2025,sup:71017,C-parts,15201.65,4
+FY2026,sup:71017,C-parts,14405.71,25
+FY2024,sup:71018,packaging,2124.36,38
+FY2025,sup:71018,packaging,1981.73,8
+FY2026,sup:71018,packaging,2092.7,18
+FY2024,sup:71019,C-parts,37653.19,17
+FY2025,sup:71019,C-parts,39880.24,15
+FY2026,sup:71019,C-parts,55544.95,28
+FY2025,sup:71020,MRO and tools,6201.28,29
+FY2026,sup:71020,MRO and tools,7359.77,11
+FY2024,sup:71021,C-parts,1679.2,5
+FY2025,sup:71021,C-parts,1361.94,8
+FY2026,sup:71021,C-parts,1664.35,32
+FY2024,sup:71022,packaging,7609.4,3
+FY2024,sup:71023,services and maintenance,6484.06,37
+FY2025,sup:71023,services and maintenance,5322.66,34
+FY2026,sup:71023,services and maintenance,6763.3,37
+FY2024,sup:71024,electrical,3733.81,16
+FY2025,sup:71024,electrical,3602.58,39
+FY2026,sup:71024,electrical,3311.68,36
+FY2024,sup:71025,sheet metal,2488.19,24
+FY2025,sup:71025,sheet metal,3064.65,36
+FY2026,sup:71025,sheet metal,3864.96,7
+FY2024,sup:71026,MRO and tools,32726.94,30
+FY2025,sup:71026,MRO and tools,22283.09,2
+FY2026,sup:71026,MRO and tools,27605.18,37
+FY2024,sup:71027,C-parts,16322.73,24
+FY2025,sup:71027,C-parts,12349.82,37
+FY2026,sup:71027,C-parts,21363.26,24
+FY2024,sup:71028,machined parts,26464.58,15
+FY2025,sup:71028,machined parts,24720.44,11
+FY2024,sup:71029,electrical,31405.42,4
+FY2024,sup:71030,services and maintenance,8455.6,39
+FY2025,sup:71030,services and maintenance,8858.23,40
+FY2026,sup:71030,services and maintenance,11049.75,13
+FY2025,sup:71031,electrical,36460.25,34
+FY2026,sup:71031,electrical,41188.72,32
+FY2024,sup:71032,services and maintenance,9461.18,5
+FY2025,sup:71032,services and maintenance,7559.06,32
+FY2026,sup:71032,services and maintenance,9650.97,7
+FY2024,sup:71033,electrical,31215.63,23
+FY2024,sup:71034,electrical,47275.69,2
+FY2025,sup:71034,electrical,33622.47,17
+FY2026,sup:71034,electrical,34072.58,20
+FY2025,sup:71035,electrical,20471.56,28
+FY2026,sup:71035,electrical,29724.03,15
+FY2024,sup:71036,sheet metal,1547.91,18
+FY2025,sup:71036,sheet metal,1481.65,16
+FY2026,sup:71036,sheet metal,1565.89,28
+FY2024,sup:71037,machined parts,21450.75,9
+FY2025,sup:71037,machined parts,28822.44,36
+FY2024,sup:71038,services and maintenance,26727.53,30
+FY2025,sup:71038,services and maintenance,24951.73,23
+FY2026,sup:71038,services and maintenance,24358.2,3
+FY2024,sup:71039,sheet metal,4791.23,1
+FY2025,sup:71039,sheet metal,3783.59,15
+FY2026,sup:71039,sheet metal,4217.48,3
+FY2024,sup:71040,MRO and tools,32665.47,3
+FY2026,sup:71040,MRO and tools,26320.99,10
+FY2025,sup:71041,machined parts,7184.77,11
+FY2024,sup:71042,logistics and freight,4928.43,31
+FY2025,sup:71042,logistics and freight,4739.46,2
+FY2026,sup:71042,logistics and freight,4186.8,6
+FY2024,sup:71043,services and maintenance,2881.47,27
+FY2025,sup:71043,services and maintenance,2934.66,10
+FY2024,sup:71044,logistics and freight,27911.34,15
+FY2025,sup:71044,logistics and freight,29488.82,34
+FY2026,sup:71044,logistics and freight,22114.77,26
+FY2024,sup:71045,sheet metal,116314.64,40
+FY2025,sup:71045,sheet metal,106301.81,28
+FY2026,sup:71045,sheet metal,78871.29,36
+FY2025,sup:71046,sheet metal,3965.15,36
+FY2026,sup:71046,sheet metal,4805.45,18
+FY2024,sup:71047,C-parts,21513.75,15
+FY2025,sup:71047,C-parts,24140.46,6
+FY2026,sup:71047,C-parts,20802.58,4
+FY2024,sup:71048,castings,8837.52,27
+FY2025,sup:71048,castings,13299.51,12
+FY2025,sup:71049,machined parts,10362.16,15
+FY2026,sup:71049,machined parts,10549.79,8
+FY2024,sup:71050,electrical,1108.65,16
+FY2025,sup:71050,electrical,903.61,27
+FY2026,sup:71050,electrical,862.38,17
+FY2024,sup:71051,services and maintenance,5466.4,15
+FY2025,sup:71051,services and maintenance,3812.23,8
+FY2026,sup:71051,services and maintenance,5919.17,27
+FY2024,sup:71052,services and maintenance,2666.83,40
+FY2025,sup:71052,services and maintenance,2315.48,2
+FY2026,sup:71052,services and maintenance,3153.39,15
+FY2024,sup:71053,MRO and tools,45925.53,27
+FY2025,sup:71053,MRO and tools,61566.81,27
+FY2024,sup:71054,services and maintenance,16466.48,24
+FY2026,sup:71054,services and maintenance,14181.54,11
+FY2024,sup:71055,MRO and tools,2169.98,2
+FY2026,sup:71055,MRO and tools,2431.65,21
+FY2024,sup:71056,MRO and tools,2840.97,31
+FY2025,sup:71056,MRO and tools,3927.85,9
+FY2026,sup:71056,MRO and tools,3749.99,10
+FY2024,sup:71057,C-parts,14245.34,15
+FY2025,sup:71057,C-parts,12612.7,26
+FY2026,sup:71057,C-parts,9115.84,36
+FY2024,sup:71058,electrical,17772.81,22
+FY2025,sup:71058,electrical,15651.46,5
+FY2024,sup:71059,logistics and freight,2228.9,18
+FY2025,sup:71059,logistics and freight,3984.72,31
+FY2026,sup:71059,logistics and freight,2552.42,28
+FY2024,sup:71060,packaging,4750.94,3
+FY2025,sup:71060,packaging,3853.46,31
+FY2026,sup:71060,packaging,5129.38,9
+FY2024,sup:71061,logistics and freight,6812.47,37
+FY2025,sup:71061,logistics and freight,8283.29,12
+FY2024,sup:71062,MRO and tools,1447.56,15
+FY2025,sup:71062,MRO and tools,1979.05,3
+FY2026,sup:71062,MRO and tools,1743.78,38
+FY2024,sup:71063,services and maintenance,10518.59,18
+FY2025,sup:71063,services and maintenance,16103.97,9
+FY2026,sup:71063,services and maintenance,17188.84,21
+FY2024,sup:71064,MRO and tools,12182.79,36
+FY2024,sup:71065,MRO and tools,8921.21,13
+FY2025,sup:71065,MRO and tools,9009.49,29
+FY2026,sup:71065,MRO and tools,8509.43,34
+FY2024,sup:71066,MRO and tools,3332.96,20
+FY2025,sup:71066,MRO and tools,4554.51,4
+FY2026,sup:71066,MRO and tools,5134.72,9
+FY2025,sup:71067,electrical,2274.12,26
+FY2026,sup:71067,electrical,1884.42,5
+FY2024,sup:71068,MRO and tools,1983.02,5
+FY2025,sup:71068,MRO and tools,1827.36,13
+FY2026,sup:71068,MRO and tools,1848.41,28
+FY2024,sup:71069,MRO and tools,9867.08,25
+FY2025,sup:71069,MRO and tools,10681.19,26
+FY2026,sup:71069,MRO and tools,12577.19,37
+FY2025,sup:71070,logistics and freight,1658.08,4
+FY2026,sup:71070,logistics and freight,1551.27,28
+FY2024,sup:71071,logistics and freight,8339.25,33
+FY2025,sup:71071,logistics and freight,10912.59,5
+FY2026,sup:71071,logistics and freight,10529.38,23
+FY2024,sup:71072,services and maintenance,2561.37,11
+FY2024,sup:71073,logistics and freight,7041.48,18
+FY2025,sup:71073,logistics and freight,6277.85,4
+FY2026,sup:71073,logistics and freight,8414.46,40
+FY2024,sup:71074,services and maintenance,2655.19,34
+FY2025,sup:71074,services and maintenance,3210.68,20
+FY2024,sup:71075,C-parts,1023.8,19
+FY2025,sup:71075,C-parts,1616.98,21
+FY2026,sup:71075,C-parts,1538.41,26
+FY2024,sup:71076,electrical,16730.18,24
+FY2025,sup:71076,electrical,14022.84,2
+FY2026,sup:71076,electrical,19021.06,33
+FY2024,sup:71077,machined parts,2670.6,15
+FY2025,sup:71077,machined parts,1936.42,14
+FY2024,sup:71078,MRO and tools,34295.4,5
+FY2025,sup:71078,MRO and tools,40520.48,19
+FY2026,sup:71078,MRO and tools,35828.41,26
+FY2024,sup:71079,MRO and tools,36389.28,30
+FY2025,sup:71079,MRO and tools,21025.5,29
+FY2026,sup:71079,MRO and tools,36381.09,21
+FY2024,sup:71080,electrical,40123.6,4
+FY2025,sup:71080,electrical,22336.56,17
+FY2026,sup:71080,electrical,40223.93,4
+FY2025,sup:71081,logistics and freight,4373.14,2
+FY2026,sup:71081,logistics and freight,4784.27,30
+FY2024,sup:71082,logistics and freight,14882.73,20
+FY2024,sup:71083,MRO and tools,35498.01,15
+FY2025,sup:71083,MRO and tools,44049.14,1
+FY2024,sup:71084,logistics and freight,19360.62,25
+FY2025,sup:71084,logistics and freight,30829.89,35
+FY2026,sup:71084,logistics and freight,22787.33,30
+FY2024,sup:71085,electrical,5999.51,18
+FY2025,sup:71085,electrical,4631.99,40
+FY2026,sup:71085,electrical,4029.9,27
+FY2024,sup:71086,C-parts,34704.15,18
+FY2025,sup:71086,C-parts,22659.11,12
+FY2026,sup:71086,C-parts,32841.95,5
+FY2024,sup:71087,castings,22530.95,9
+FY2025,sup:71087,castings,29778.28,27
+FY2026,sup:71087,castings,21568.68,35
+FY2024,sup:71088,electrical,10152.39,1
+FY2026,sup:71088,electrical,9789.52,23
+FY2024,sup:71089,machined parts,2465.1,29
+FY2025,sup:71089,machined parts,3395.59,37
+FY2026,sup:71089,machined parts,2914.16,7
+FY2024,sup:71090,electrical,5090.68,1
+FY2025,sup:71090,electrical,4565.56,30
+FY2026,sup:71090,electrical,4585.38,19
+FY2024,sup:71091,logistics and freight,3977.91,28
+FY2025,sup:71091,logistics and freight,4490.66,31
+FY2026,sup:71091,logistics and freight,3518.15,19
+FY2024,sup:71092,MRO and tools,16246.06,3
+FY2025,sup:71092,MRO and tools,17059.01,7
+FY2024,sup:71093,seals,5063.51,27
+FY2025,sup:71093,seals,3610.32,15
+FY2026,sup:71093,seals,4139.7,9
+FY2024,sup:71094,electrical,6195.62,31
+FY2025,sup:71094,electrical,7434.37,31
+FY2026,sup:71094,electrical,7453.25,11
+FY2024,sup:71095,machined parts,1787.09,8
+FY2025,sup:71095,machined parts,1698.99,20
+FY2026,sup:71095,machined parts,1872.65,24
+FY2024,sup:71096,electrical,2515.83,39
+FY2025,sup:71096,electrical,4370.79,36
+FY2026,sup:71096,electrical,3265.09,21
+FY2024,sup:71097,C-parts,6575.61,33
+FY2026,sup:71097,C-parts,6391.53,6
+FY2024,sup:71098,electrical,962.39,39
+FY2025,sup:71098,electrical,908.73,24
+FY2026,sup:71098,electrical,1234.07,27
+FY2025,sup:71099,MRO and tools,1877.98,37
+FY2026,sup:71099,MRO and tools,1874.8,29
+FY2024,sup:71100,machined parts,16556.45,2
+FY2025,sup:71100,machined parts,14506.38,3
+FY2026,sup:71100,machined parts,14662.72,4
+FY2024,sup:71101,sheet metal,125701.9,29
+FY2025,sup:71101,sheet metal,111966.15,4
+FY2026,sup:71101,sheet metal,103429.45,4
+FY2024,sup:71102,packaging,1431.65,29
+FY2025,sup:71102,packaging,1329.88,15
+FY2026,sup:71102,packaging,1346.62,5
+FY2024,sup:71103,MRO and tools,6393.62,11
+FY2025,sup:71103,MRO and tools,7192.12,3
+FY2026,sup:71103,MRO and tools,6750.08,18
+FY2024,sup:71104,seals,47928.56,12
+FY2025,sup:71104,seals,26958.23,28
+FY2026,sup:71104,seals,39307.87,10
+FY2024,sup:71105,machined parts,50692.31,22
+FY2025,sup:71105,machined parts,58903.61,30
+FY2026,sup:71105,machined parts,46715.4,30
+FY2024,sup:71106,MRO and tools,18494.72,33
+FY2025,sup:71106,MRO and tools,17842.75,10
+FY2026,sup:71106,MRO and tools,13634.13,36
+FY2025,sup:71107,MRO and tools,8514.13,8
+FY2026,sup:71107,MRO and tools,8462.06,19
+FY2024,sup:71108,logistics and freight,6579.41,22
+FY2025,sup:71108,logistics and freight,6125.63,4
+FY2024,sup:71109,machined parts,17401.55,19
+FY2025,sup:71109,machined parts,16518.76,24
+FY2026,sup:71109,machined parts,18471.46,26
+FY2025,sup:71110,C-parts,1552.31,39
+FY2026,sup:71110,C-parts,2204.86,1
+FY2024,sup:71111,packaging,12412.35,20
+FY2025,sup:71111,packaging,11253.6,40
+FY2026,sup:71111,packaging,13856.45,36
+FY2024,sup:71112,machined parts,4493.41,19
+FY2025,sup:71112,machined parts,4653.34,39
+FY2026,sup:71112,machined parts,3812.57,14
+FY2024,sup:71113,MRO and tools,15169.66,29
+FY2025,sup:71113,MRO and tools,17290.42,38
+FY2026,sup:71113,MRO and tools,21839.79,24
+FY2024,sup:71114,MRO and tools,5778.31,17
+FY2026,sup:71114,MRO and tools,4834.18,33
+FY2024,sup:71115,packaging,29509.83,20
+FY2025,sup:71115,packaging,21895.25,1
+FY2026,sup:71115,packaging,23731.17,28
+FY2025,sup:71116,C-parts,51170.89,12
+FY2026,sup:71116,C-parts,47193.46,10
+FY2024,sup:71117,electrical,7745.24,39
+FY2025,sup:71117,electrical,7306.87,16
+FY2026,sup:71117,electrical,9303.55,22
+FY2024,sup:71118,logistics and freight,11063.52,36
+FY2026,sup:71118,logistics and freight,14083.93,6
+FY2024,sup:71119,machined parts,20636.77,33
+FY2025,sup:71119,machined parts,19995.51,28
+FY2026,sup:71119,machined parts,13204.74,24
+FY2024,sup:71120,logistics and freight,6709.94,33
+FY2025,sup:71120,logistics and freight,8256.78,34
+FY2026,sup:71120,logistics and freight,10329.89,16
+FY2024,sup:71121,logistics and freight,6476.63,3
+FY2025,sup:71121,logistics and freight,5923.57,40
+FY2026,sup:71121,logistics and freight,4269.66,40
+FY2024,sup:71122,machined parts,11486.02,30
+FY2025,sup:71122,machined parts,13340.82,7
+FY2026,sup:71122,machined parts,12023.11,35
+FY2024,sup:71123,C-parts,6275.21,12
+FY2025,sup:71123,C-parts,4918.72,31
+FY2026,sup:71123,C-parts,4241.15,38
+FY2024,sup:71124,MRO and tools,16119.88,15
+FY2025,sup:71124,MRO and tools,21848.73,2
+FY2026,sup:71124,MRO and tools,24086.8,12
+FY2024,sup:71125,packaging,6603.3,17
+FY2025,sup:71125,packaging,6982.2,40
+FY2026,sup:71125,packaging,9551.07,21
+FY2024,sup:71126,packaging,11260.73,32
+FY2025,sup:71126,packaging,9125.48,26
+FY2026,sup:71126,packaging,6873.39,23
+FY2024,sup:71127,machined parts,1762.88,39
+FY2025,sup:71127,machined parts,1923.16,9
+FY2026,sup:71127,machined parts,1750.27,39
+FY2024,sup:71128,castings,74783.26,26
+FY2025,sup:71128,castings,56881.82,23
+FY2026,sup:71128,castings,60325.08,5
+FY2024,sup:71129,services and maintenance,22638.97,6
+FY2025,sup:71129,services and maintenance,33970.99,13
+FY2024,sup:71130,sheet metal,5903.55,24
+FY2025,sup:71130,sheet metal,3982.31,6
+FY2026,sup:71130,sheet metal,4080.76,22
+FY2024,sup:71131,machined parts,32125.1,27
+FY2026,sup:71131,machined parts,25786.27,19
+FY2025,sup:71132,machined parts,36027.93,36
+FY2026,sup:71132,machined parts,37773.87,13
+FY2026,sup:71133,electrical,2981.41,25
+FY2024,sup:71134,C-parts,10721.69,10
+FY2025,sup:71134,C-parts,11625.77,28
+FY2026,sup:71134,C-parts,9177.94,33
+FY2024,sup:71135,MRO and tools,4258.57,35
+FY2025,sup:71135,MRO and tools,3474.39,11
+FY2026,sup:71135,MRO and tools,4262.34,37
+FY2025,sup:71136,services and maintenance,8522.32,22
+FY2026,sup:71136,services and maintenance,13309.22,14
+FY2024,sup:71137,sheet metal,7188.71,38
+FY2025,sup:71137,sheet metal,6921.82,28
+FY2025,sup:71138,IT and office,5341.89,38
+FY2024,sup:71139,logistics and freight,8590.18,10
+FY2025,sup:71139,logistics and freight,12848.65,25
+FY2024,sup:71140,logistics and freight,28304.23,28
+FY2025,sup:71140,logistics and freight,27737.02,11
+FY2026,sup:71140,logistics and freight,32043.19,17
+FY2024,sup:71141,logistics and freight,13052.04,2
+FY2025,sup:71141,logistics and freight,17703.5,20
+FY2024,sup:71142,electrical,3442.58,14
+FY2025,sup:71142,electrical,3885.88,13
+FY2026,sup:71142,electrical,4789.75,27
+FY2024,sup:71143,seals,4482.33,10
+FY2025,sup:71143,seals,3813.88,8
+FY2026,sup:71143,seals,3315.08,10
+FY2024,sup:71144,MRO and tools,199543.71,13
+FY2025,sup:71144,MRO and tools,138900.94,3
+FY2026,sup:71144,MRO and tools,166085.41,9
+FY2024,sup:71145,castings,10180.99,20
+FY2025,sup:71145,castings,12000.26,7
+FY2026,sup:71145,castings,14648.43,12
+FY2024,sup:71146,logistics and freight,13094.57,37
+FY2025,sup:71146,logistics and freight,9968.97,15
+FY2026,sup:71146,logistics and freight,11715.95,7
+FY2024,sup:71147,electrical,17642.06,26
+FY2025,sup:71147,electrical,20422.22,31
+FY2026,sup:71147,electrical,17619.27,23
+FY2024,sup:71148,machined parts,6307.38,31
+FY2025,sup:71148,machined parts,10019.2,16
+FY2026,sup:71148,machined parts,6395.95,31
+FY2024,sup:71149,MRO and tools,22078.67,1
+FY2025,sup:71149,MRO and tools,25347.97,19
+FY2026,sup:71149,MRO and tools,21655.33,10
+FY2024,sup:71150,C-parts,155591.61,28
+FY2025,sup:71150,C-parts,114505.51,26
+FY2026,sup:71150,C-parts,107861.33,26
+FY2024,sup:71151,services and maintenance,6538.11,9
+FY2025,sup:71151,services and maintenance,6393.8,36
+FY2026,sup:71151,services and maintenance,6238.26,33
+FY2025,sup:71152,sheet metal,30525.28,11
+FY2026,sup:71152,sheet metal,28645.13,6
+FY2024,sup:71153,sheet metal,6931.56,4
+FY2025,sup:71153,sheet metal,9089.47,16
+FY2026,sup:71153,sheet metal,6979.26,38
+FY2024,sup:71154,services and maintenance,11145.38,20
+FY2025,sup:71154,services and maintenance,8178.55,21
+FY2026,sup:71154,services and maintenance,11091.34,16
+FY2024,sup:71155,seals,5890.98,8
+FY2025,sup:71155,seals,8031.25,18
+FY2024,sup:71156,packaging,91905.2,40
+FY2025,sup:71156,packaging,103209.07,34
+FY2026,sup:71156,packaging,104726.86,2
+FY2024,sup:71157,sheet metal,4202.52,7
+FY2025,sup:71157,sheet metal,3260.3,19
+FY2024,sup:71158,machined parts,20645.98,1
+FY2025,sup:71158,machined parts,20960.16,5
+FY2026,sup:71158,machined parts,13329.6,15
+FY2024,sup:71159,C-parts,9697.83,33
+FY2025,sup:71159,C-parts,6558.99,19
+FY2026,sup:71159,C-parts,5943.1,39
+FY2024,sup:71160,MRO and tools,16363.03,17
+FY2025,sup:71160,MRO and tools,15652.93,16
+FY2026,sup:71160,MRO and tools,17404.67,35
+FY2024,sup:71161,logistics and freight,26903.23,28
+FY2025,sup:71161,logistics and freight,44650.39,25
+FY2025,sup:71162,packaging,3279.5,14
+FY2024,sup:71163,services and maintenance,23247.49,29
+FY2025,sup:71163,services and maintenance,31046.22,10
+FY2026,sup:71163,services and maintenance,21460.5,25
+FY2025,sup:71164,electrical,2628.25,40
+FY2026,sup:71164,electrical,3360.7,10
+FY2024,sup:71165,C-parts,6093.04,29
+FY2025,sup:71165,C-parts,6993.89,40
+FY2026,sup:71165,C-parts,4530.06,19
+FY2024,sup:71166,machined parts,20490.21,23
+FY2025,sup:71166,machined parts,29344.34,7
+FY2026,sup:71166,machined parts,33220.26,16
+FY2024,sup:71167,C-parts,10101.47,33
+FY2025,sup:71167,C-parts,11922.69,6
+FY2026,sup:71167,C-parts,6783.33,40
+FY2025,sup:71168,packaging,8662.76,18
+FY2024,sup:71169,logistics and freight,18973.79,29
+FY2025,sup:71169,logistics and freight,16858.32,11
+FY2026,sup:71169,logistics and freight,17741.11,39
+FY2024,sup:71170,castings,3598.58,26
+FY2025,sup:71170,castings,2972.99,1
+FY2026,sup:71170,castings,2877.44,35
+FY2024,sup:71171,MRO and tools,37377.92,29
+FY2025,sup:71171,MRO and tools,50553.66,34
+FY2026,sup:71171,MRO and tools,57511.12,35
+FY2024,sup:71172,packaging,7800.76,27
+FY2025,sup:71172,packaging,7960.07,29
+FY2026,sup:71172,packaging,6707.12,30
+FY2024,sup:71173,C-parts,39474.2,37
+FY2025,sup:71173,C-parts,50276.47,30
+FY2024,sup:71174,machined parts,86676.3,5
+FY2025,sup:71174,machined parts,84767.69,37
+FY2024,sup:71175,MRO and tools,16839.62,24
+FY2025,sup:71175,MRO and tools,13563.72,30
+FY2026,sup:71175,MRO and tools,13459.92,39
+FY2024,sup:71176,logistics and freight,3099.12,18
+FY2025,sup:71176,logistics and freight,4091.75,2
+FY2026,sup:71176,logistics and freight,2760.55,4
+FY2024,sup:71177,services and maintenance,8102.86,36
+FY2025,sup:71177,services and maintenance,7860.95,36
+FY2026,sup:71177,services and maintenance,9789.43,7
+FY2024,sup:71178,logistics and freight,122468.96,38
+FY2025,sup:71178,logistics and freight,92151.8,19
+FY2026,sup:71178,logistics and freight,131754.5,32
+FY2025,sup:71179,castings,8109.3,17
+FY2026,sup:71179,castings,11788.13,29
+FY2025,sup:71180,MRO and tools,1023262.96,3
+FY2026,sup:71180,MRO and tools,1421128.54,28
+FY2024,sup:71181,C-parts,6223.73,31
+FY2025,sup:71181,C-parts,8549.59,35
+FY2026,sup:71181,C-parts,9432.01,26
+FY2024,sup:71182,MRO and tools,20186.81,15
+FY2025,sup:71182,MRO and tools,31271.15,13
+FY2026,sup:71182,MRO and tools,32415.71,2
+FY2024,sup:71183,machined parts,95182.44,18
+FY2025,sup:71183,machined parts,98428.44,2
+FY2026,sup:71183,machined parts,98577.59,36
+FY2025,sup:71184,electrical,3501.42,38
+FY2026,sup:71184,electrical,3865.74,9
+FY2025,sup:71185,electrical,15448.06,12
+FY2026,sup:71185,electrical,13688.08,14
+FY2025,sup:71186,services and maintenance,26225.36,23
+FY2026,sup:71186,services and maintenance,34843.82,40
+FY2024,sup:71187,electrical,4844.25,34
+FY2025,sup:71187,electrical,4675.72,33
+FY2026,sup:71187,electrical,3696.12,39
+FY2025,sup:71188,services and maintenance,46066.35,33
+FY2026,sup:71188,services and maintenance,44182.97,32
+FY2024,sup:71189,electrical,6805.33,17
+FY2026,sup:71189,electrical,5536.67,24
+FY2024,sup:71190,services and maintenance,46360.26,10
+FY2025,sup:71190,services and maintenance,60795.08,9
+FY2026,sup:71190,services and maintenance,47050.27,3
+FY2024,sup:71191,sheet metal,1745.78,25
+FY2025,sup:71191,sheet metal,1307.82,37
+FY2026,sup:71191,sheet metal,1398.34,21
+FY2024,sup:71192,services and maintenance,4389.73,11
+FY2025,sup:71192,services and maintenance,3116.16,31
+FY2026,sup:71192,services and maintenance,3027.25,32
+FY2025,sup:71193,packaging,16079.22,24
+FY2026,sup:71193,packaging,20801.23,24
+FY2026,sup:71194,seals,163878.79,7
+FY2024,sup:71195,seals,2383.28,22
+FY2025,sup:71195,seals,1829.94,8
+FY2026,sup:71195,seals,1736.2,40
+FY2024,sup:71196,machined parts,105665.1,24
+FY2026,sup:71196,machined parts,115066.77,30
+FY2026,sup:71197,C-parts,64194.93,25
+FY2024,sup:71198,electrical,95568.96,24
+FY2025,sup:71198,electrical,80184.5,4
+FY2026,sup:71198,electrical,73267.96,22
+FY2024,sup:71199,MRO and tools,2498.31,2
+FY2025,sup:71199,MRO and tools,2220.13,15
+FY2026,sup:71199,MRO and tools,1792.16,36
+FY2024,sup:71200,seals,9295.35,28
+FY2025,sup:71200,seals,13065.21,30
+FY2026,sup:71200,seals,8675.93,24
+FY2024,sup:71201,seals,8400.43,2
+FY2026,sup:71201,seals,11625.35,33
+FY2024,sup:71202,MRO and tools,26371.77,8
+FY2025,sup:71202,MRO and tools,27114.04,12
+FY2026,sup:71202,MRO and tools,22699.87,39
+FY2025,sup:71203,services and maintenance,10262.3,32
+FY2024,sup:71204,logistics and freight,12287.62,2
+FY2025,sup:71204,logistics and freight,8502.4,37
+FY2026,sup:71204,logistics and freight,13806.42,25
+FY2024,sup:71205,logistics and freight,48302.71,15
+FY2025,sup:71205,logistics and freight,30502.09,32
+FY2026,sup:71205,logistics and freight,33573.35,2
+FY2026,sup:71206,IT and office,41767.13,35
+FY2024,sup:71207,C-parts,36750.69,18
+FY2025,sup:71207,C-parts,26794.27,29
+FY2026,sup:71207,C-parts,32984.69,22
+FY2024,sup:71208,electrical,14486.89,1
+FY2025,sup:71208,electrical,15232.84,14
+FY2026,sup:71208,electrical,20720.78,8
+FY2024,sup:71209,IT and office,3753.56,25
+FY2025,sup:71209,IT and office,2783.28,31
+FY2025,sup:71210,MRO and tools,31494.0,3
+FY2026,sup:71210,MRO and tools,32192.22,15
+FY2024,sup:71211,electrical,1980.14,10
+FY2026,sup:71211,electrical,1881.52,23
+FY2024,sup:71212,IT and office,7320.86,38
+FY2025,sup:71212,IT and office,6727.39,16
+FY2026,sup:71212,IT and office,7250.24,4
+FY2024,sup:71213,C-parts,2072.23,31
+FY2025,sup:71213,C-parts,1797.92,17
+FY2026,sup:71213,C-parts,1362.85,1
+FY2024,sup:71214,logistics and freight,17470.93,5
+FY2025,sup:71214,logistics and freight,18393.21,8
+FY2026,sup:71214,logistics and freight,11882.54,35
+FY2024,sup:71215,IT and office,9875.84,18
+FY2025,sup:71215,IT and office,7793.46,27
+FY2026,sup:71215,IT and office,7157.55,20
+FY2024,sup:71216,MRO and tools,20963.34,27
+FY2025,sup:71216,MRO and tools,13905.09,28
+FY2026,sup:71216,MRO and tools,14454.23,3
+FY2024,sup:71217,IT and office,20575.55,38
+FY2025,sup:71217,IT and office,21938.4,15
+FY2026,sup:71217,IT and office,25075.76,10
+FY2024,sup:71218,services and maintenance,158356.78,4
+FY2025,sup:71218,services and maintenance,189855.72,9
+FY2026,sup:71218,services and maintenance,168607.7,7
+FY2024,sup:71219,machined parts,17490.69,4
+FY2025,sup:71219,machined parts,14283.16,32
+FY2026,sup:71219,machined parts,13771.48,37
+FY2024,sup:71220,machined parts,19428.33,24
+FY2025,sup:71220,machined parts,33673.73,34
+FY2026,sup:71220,machined parts,28553.52,24
+FY2024,sup:71221,castings,1276.14,11
+FY2026,sup:71221,castings,1854.7,31
+FY2024,sup:71222,MRO and tools,10486.44,7
+FY2025,sup:71222,MRO and tools,7422.06,31
+FY2026,sup:71222,MRO and tools,9965.98,19
+FY2024,sup:71223,machined parts,8495.05,12
+FY2025,sup:71223,machined parts,6136.66,31
+FY2026,sup:71223,machined parts,7459.03,5
+FY2025,sup:71224,MRO and tools,9794.22,8
+FY2026,sup:71224,MRO and tools,10536.28,33
+FY2025,sup:71225,MRO and tools,27660.62,16
+FY2026,sup:71225,MRO and tools,31961.74,3
+FY2024,sup:71226,C-parts,3158.77,9
+FY2026,sup:71226,C-parts,2987.9,21
+FY2026,sup:71227,seals,23136.51,10
+FY2024,sup:71228,sheet metal,760.97,36
+FY2026,sup:71228,sheet metal,908.4,7
+FY2024,sup:71229,electrical,27284.86,18
+FY2025,sup:71229,electrical,28412.69,19
+FY2026,sup:71229,electrical,30686.97,19
+FY2024,sup:71230,packaging,407.08,23
+FY2025,sup:71230,packaging,723.04,16
+FY2026,sup:71230,packaging,477.08,26
+FY2025,sup:71231,MRO and tools,3590.7,11
+FY2026,sup:71231,MRO and tools,3306.57,8
+FY2024,sup:71232,machined parts,6744.73,21
+FY2025,sup:71232,machined parts,4485.03,12
+FY2026,sup:71232,machined parts,4062.46,1
+FY2024,sup:71233,MRO and tools,32583.24,38
+FY2025,sup:71233,MRO and tools,28084.99,34
+FY2026,sup:71233,MRO and tools,27552.74,28
+FY2024,sup:71234,machined parts,13540.68,11
+FY2025,sup:71234,machined parts,10973.36,30
+FY2024,sup:71235,seals,23297.08,25
+FY2025,sup:71235,seals,19732.04,2
+FY2026,sup:71235,seals,27235.76,1
+FY2024,sup:71236,C-parts,4643.72,40
+FY2026,sup:71236,C-parts,3485.29,7
+FY2024,sup:71237,MRO and tools,26375.72,34
+FY2025,sup:71237,MRO and tools,24300.32,35
+FY2026,sup:71237,MRO and tools,17223.59,35
+FY2024,sup:71238,logistics and freight,10133.4,22
+FY2025,sup:71238,logistics and freight,6443.67,22
+FY2026,sup:71238,logistics and freight,9681.84,25
+FY2024,sup:71239,logistics and freight,4240.34,5
+FY2025,sup:71239,logistics and freight,3445.91,16
+FY2026,sup:71239,logistics and freight,5952.74,2
+FY2024,sup:71240,packaging,68172.3,37
+FY2024,sup:71241,logistics and freight,130308.17,37
+FY2025,sup:71241,logistics and freight,129640.84,1
+FY2026,sup:71241,logistics and freight,138863.07,16
+FY2024,sup:71242,MRO and tools,34325.43,21
+FY2026,sup:71242,MRO and tools,40050.37,17
+FY2024,sup:71243,MRO and tools,5165.43,19
+FY2025,sup:71244,castings,20654.79,14
+FY2026,sup:71244,castings,30830.69,4
+FY2025,sup:71245,sheet metal,9809.62,13
+FY2026,sup:71245,sheet metal,10186.54,36
+FY2025,sup:71246,seals,47947.04,3
+FY2026,sup:71246,seals,51700.93,6
+FY2024,sup:71247,C-parts,2917.48,34
+FY2025,sup:71247,C-parts,4717.24,35
+FY2026,sup:71247,C-parts,2864.79,32
+FY2024,sup:71248,logistics and freight,12097.67,27
+FY2025,sup:71248,logistics and freight,18668.26,14
+FY2026,sup:71248,logistics and freight,13404.29,30
+FY2024,sup:71249,electrical,4022.47,33
+FY2025,sup:71249,electrical,5208.22,25
+FY2026,sup:71249,electrical,3481.36,15
+FY2024,sup:71250,packaging,7173.74,9
+FY2025,sup:71250,packaging,8433.13,18
+FY2026,sup:71250,packaging,10309.49,40
+FY2024,sup:71251,castings,22715.24,7
+FY2026,sup:71251,castings,37507.49,6
+FY2024,sup:71252,seals,6633.94,27
+FY2025,sup:71252,seals,6430.42,18
+FY2026,sup:71252,seals,7074.32,6
+FY2025,sup:71253,electrical,534.95,28
+FY2026,sup:71253,electrical,549.01,36
+FY2024,sup:71254,MRO and tools,18768.68,5
+FY2025,sup:71254,MRO and tools,18470.67,10
+FY2026,sup:71254,MRO and tools,19723.63,21
+FY2024,sup:71255,C-parts,11934.63,27
+FY2025,sup:71255,C-parts,9137.3,33
+FY2024,sup:71256,C-parts,80268.77,39
+FY2025,sup:71256,C-parts,90117.93,18
+FY2026,sup:71256,C-parts,119289.87,38
+FY2024,sup:71257,services and maintenance,3501.8,17
+FY2025,sup:71257,services and maintenance,3565.41,39
+FY2024,sup:71258,services and maintenance,70581.96,16
+FY2025,sup:71258,services and maintenance,67189.35,28
+FY2026,sup:71258,services and maintenance,82231.79,33
+FY2024,sup:71259,electrical,3658.84,8
+FY2026,sup:71259,electrical,4519.69,30
+FY2024,sup:71260,C-parts,3526.19,2
+FY2025,sup:71260,C-parts,3271.75,22
+FY2026,sup:71260,C-parts,4557.46,30
+FY2024,sup:71261,packaging,7485.85,16
+FY2026,sup:71261,packaging,5044.36,11
+FY2024,sup:71262,MRO and tools,920.36,12
+FY2025,sup:71262,MRO and tools,1206.96,6
+FY2026,sup:71262,MRO and tools,1242.88,35
+FY2024,sup:71263,electrical,10450.17,5
+FY2025,sup:71263,electrical,9211.98,13
+FY2026,sup:71263,electrical,9324.35,30
+FY2024,sup:71264,logistics and freight,4332.02,10
+FY2025,sup:71264,logistics and freight,2504.37,16
+FY2026,sup:71264,logistics and freight,3965.44,37
+FY2024,sup:71265,castings,710.22,35
+FY2024,sup:71266,electrical,69260.18,37
+FY2026,sup:71266,electrical,63263.5,35
+FY2024,sup:71267,MRO and tools,2822.05,28
+FY2025,sup:71267,MRO and tools,3045.11,11
+FY2024,sup:71268,MRO and tools,2046.28,27
+FY2025,sup:71268,MRO and tools,1945.69,20
+FY2026,sup:71268,MRO and tools,1225.49,10
+FY2025,sup:71269,IT and office,4471.21,17
+FY2026,sup:71269,IT and office,2818.85,23
+FY2024,sup:71270,electrical,16706.8,10
+FY2026,sup:71270,electrical,13442.21,8
+FY2024,sup:71271,electrical,21941.37,15
+FY2025,sup:71271,electrical,21598.78,2
+FY2026,sup:71271,electrical,27847.03,7
+FY2024,sup:71272,C-parts,503.3,16
+FY2025,sup:71272,C-parts,576.53,35
+FY2026,sup:71272,C-parts,406.58,12
+FY2024,sup:71273,electrical,3680.06,26
+FY2026,sup:71273,electrical,6104.57,16
+FY2024,sup:71274,MRO and tools,11743.58,37
+FY2025,sup:71274,MRO and tools,9172.47,22
+FY2024,sup:71275,logistics and freight,14926.28,30
+FY2026,sup:71275,logistics and freight,17173.86,10
+FY2024,sup:71276,sheet metal,102649.03,12
+FY2026,sup:71276,sheet metal,109754.43,40
+FY2024,sup:71277,castings,6889.86,33
+FY2025,sup:71277,castings,6981.71,15
+FY2026,sup:71277,castings,6723.76,8
+FY2024,sup:71278,packaging,2013.07,17
+FY2025,sup:71278,packaging,2715.87,11
+FY2026,sup:71278,packaging,2834.25,34
+FY2025,sup:71279,C-parts,6510.93,34
+FY2026,sup:71279,C-parts,7933.72,21
+FY2024,sup:71280,castings,3884.57,11
+FY2025,sup:71280,castings,4032.25,14
+FY2024,sup:71281,sheet metal,285.81,1
+FY2025,sup:71281,sheet metal,266.49,8
+FY2026,sup:71281,sheet metal,324.07,24
+FY2025,sup:71282,MRO and tools,1682.43,33
+FY2026,sup:71282,MRO and tools,1499.55,15
+FY2024,sup:71283,C-parts,15636.45,25
+FY2025,sup:71283,C-parts,21269.49,32
+FY2026,sup:71283,C-parts,13955.77,29
+FY2024,sup:71284,seals,23551.54,24
+FY2025,sup:71284,seals,24311.56,17
+FY2026,sup:71284,seals,19726.17,25
+FY2024,sup:71285,electrical,7906.68,30
+FY2025,sup:71285,electrical,10842.7,9
+FY2026,sup:71285,electrical,7179.71,38
+FY2024,sup:71286,services and maintenance,22316.2,16
+FY2026,sup:71286,services and maintenance,20672.5,8
+FY2024,sup:71287,electrical,39099.07,18
+FY2025,sup:71287,electrical,30868.5,24
+FY2026,sup:71287,electrical,37009.85,38
+FY2024,sup:71288,sheet metal,12534.74,16
+FY2025,sup:71288,sheet metal,17171.83,17
+FY2024,sup:71289,MRO and tools,9292.29,4
+FY2025,sup:71289,MRO and tools,12551.25,40
+FY2026,sup:71289,MRO and tools,10608.83,24
+FY2024,sup:71290,castings,34801.01,4
+FY2025,sup:71290,castings,38337.95,10
+FY2026,sup:71290,castings,49362.83,13
+FY2024,sup:71291,electrical,2693.27,26
+FY2025,sup:71292,services and maintenance,369.73,10
+FY2026,sup:71292,services and maintenance,253.07,5
+FY2024,sup:71293,services and maintenance,9769.82,9
+FY2025,sup:71293,services and maintenance,9262.1,26
+FY2024,sup:71294,MRO and tools,2609.51,5
+FY2025,sup:71294,MRO and tools,3262.94,35
+FY2026,sup:71294,MRO and tools,2816.35,36
+FY2024,sup:71295,logistics and freight,12034.58,30
+FY2025,sup:71295,logistics and freight,11098.24,22
+FY2024,sup:71296,sheet metal,8089.71,4
+FY2025,sup:71296,sheet metal,8269.79,25
+FY2026,sup:71296,sheet metal,6477.95,6
+FY2024,sup:71297,electrical,7339.99,15
+FY2025,sup:71297,electrical,6111.65,34
+FY2024,sup:71298,machined parts,464.43,33
+FY2025,sup:71298,machined parts,747.19,14
+FY2026,sup:71298,machined parts,474.95,28
+FY2024,sup:71299,logistics and freight,2590.4,33
+FY2025,sup:71299,logistics and freight,2338.63,6
+FY2026,sup:71299,logistics and freight,2691.07,17
+FY2024,sup:71300,machined parts,1928.39,13
+FY2024,sup:71301,MRO and tools,8757.52,31
+FY2026,sup:71301,MRO and tools,11603.85,3
+FY2024,sup:71302,logistics and freight,3906.24,23
+FY2025,sup:71302,logistics and freight,5204.36,18
+FY2025,sup:71303,MRO and tools,85847.02,35
+FY2026,sup:71303,MRO and tools,99283.95,12
+FY2024,sup:71304,sheet metal,6559.09,32
+FY2025,sup:71304,sheet metal,9628.2,40
+FY2026,sup:71304,sheet metal,9007.08,24
+FY2024,sup:71305,machined parts,87176.76,5
+FY2025,sup:71305,machined parts,78256.31,32
+FY2026,sup:71305,machined parts,69512.15,36
+FY2024,sup:71306,logistics and freight,8007.71,2
+FY2024,sup:71307,services and maintenance,36482.22,22
+FY2025,sup:71307,services and maintenance,26875.94,17
+FY2026,sup:71307,services and maintenance,31062.68,19
+FY2024,sup:71308,C-parts,7956.42,30
+FY2025,sup:71308,C-parts,6847.79,33
+FY2026,sup:71308,C-parts,6666.49,27
+FY2024,sup:71309,electrical,5170.01,35
+FY2025,sup:71309,electrical,3838.47,20
+FY2026,sup:71309,electrical,6514.52,30
+FY2024,sup:71310,MRO and tools,9167.4,7
+FY2026,sup:71310,MRO and tools,8358.17,34
+FY2024,sup:71311,castings,3545.16,34
+FY2025,sup:71311,castings,3148.81,4
+FY2026,sup:71311,castings,2941.03,16
+FY2024,sup:71312,logistics and freight,6837.65,30
+FY2025,sup:71312,logistics and freight,11241.91,17
+FY2026,sup:71312,logistics and freight,11670.61,26
+FY2024,sup:71313,packaging,31318.16,32
+FY2025,sup:71313,packaging,27285.53,36
+FY2026,sup:71313,packaging,24885.34,11
+FY2024,sup:71314,packaging,20307.15,12
+FY2025,sup:71314,packaging,19057.29,34
+FY2026,sup:71314,packaging,15811.36,16
+FY2024,sup:71315,seals,26911.47,20
+FY2025,sup:71315,seals,21823.46,4
+FY2026,sup:71315,seals,29303.93,35
+FY2025,sup:71316,MRO and tools,2875.98,36
+FY2026,sup:71316,MRO and tools,2481.69,36
+FY2024,sup:71317,seals,8076.66,37
+FY2025,sup:71317,seals,7117.4,4
+FY2026,sup:71317,seals,5997.91,19
+FY2024,sup:71318,logistics and freight,1579.27,35
+FY2026,sup:71318,logistics and freight,1760.0,11
+FY2024,sup:71319,C-parts,6474.25,14
+FY2025,sup:71319,C-parts,5451.37,17
+FY2024,sup:71320,C-parts,7025.06,36
+FY2025,sup:71320,C-parts,6717.18,1
+FY2026,sup:71320,C-parts,7175.39,12
+FY2024,sup:71321,logistics and freight,4825.54,12
+FY2025,sup:71321,logistics and freight,4901.66,25
+FY2026,sup:71321,logistics and freight,4462.98,13
+FY2024,sup:71322,logistics and freight,65058.34,25
+FY2025,sup:71322,logistics and freight,57295.52,10
+FY2025,sup:71323,electrical,58809.39,10
+FY2026,sup:71323,electrical,43744.13,5
+FY2026,sup:71324,castings,4234.06,20
+FY2024,sup:71325,sheet metal,18580.17,35
+FY2026,sup:71325,sheet metal,14717.44,35
+FY2024,sup:71326,C-parts,5377.36,26
+FY2025,sup:71326,C-parts,3752.92,37
+FY2026,sup:71326,C-parts,3932.07,39
+FY2024,sup:71327,C-parts,46187.6,24
+FY2025,sup:71327,C-parts,38149.43,40
+FY2026,sup:71327,C-parts,46668.94,37
+FY2024,sup:71328,electrical,8038.21,2
+FY2025,sup:71328,electrical,7483.46,19
+FY2026,sup:71328,electrical,9595.88,34
+FY2024,sup:71329,MRO and tools,22991.87,9
+FY2025,sup:71329,MRO and tools,19039.15,23
+FY2024,sup:71330,logistics and freight,60376.56,32
+FY2026,sup:71330,logistics and freight,68952.78,18
+FY2024,sup:71331,machined parts,12367.27,32
+FY2025,sup:71331,machined parts,11618.75,8
+FY2026,sup:71331,machined parts,12471.91,13
+FY2025,sup:71332,castings,33103.34,17
+FY2026,sup:71332,castings,38368.95,1
+FY2024,sup:71333,services and maintenance,33844.06,16
+FY2025,sup:71333,services and maintenance,35071.18,26
+FY2026,sup:71333,services and maintenance,35317.17,27
+FY2024,sup:71334,sheet metal,71665.46,26
+FY2025,sup:71334,sheet metal,74801.53,3
+FY2026,sup:71334,sheet metal,84174.13,16
+FY2024,sup:71335,electrical,10161.28,3
+FY2026,sup:71335,electrical,8919.27,35
+FY2024,sup:71336,C-parts,55614.16,28
+FY2025,sup:71336,C-parts,68170.27,24
+FY2026,sup:71336,C-parts,67760.49,30
+FY2024,sup:71337,MRO and tools,940.3,25
+FY2025,sup:71337,MRO and tools,597.66,24
+FY2024,sup:71338,electrical,8088.41,13
+FY2025,sup:71338,electrical,6953.91,31
+FY2026,sup:71338,electrical,6834.84,5
+FY2024,sup:71339,MRO and tools,28353.74,14
+FY2025,sup:71339,MRO and tools,43109.85,27
+FY2026,sup:71339,MRO and tools,48665.73,31
+FY2024,sup:71340,MRO and tools,54201.33,35
+FY2026,sup:71340,MRO and tools,51433.7,16
+FY2024,sup:71341,machined parts,49795.91,39
+FY2025,sup:71341,machined parts,50608.39,32
+FY2025,sup:71342,C-parts,43163.33,29
+FY2026,sup:71342,C-parts,46614.36,39
+FY2024,sup:71343,seals,14930.3,13
+FY2025,sup:71343,seals,14466.68,14
+FY2026,sup:71343,seals,15846.24,20
+FY2024,sup:71344,MRO and tools,2154.94,4
+FY2025,sup:71344,MRO and tools,1627.67,33
+FY2026,sup:71344,MRO and tools,1975.18,6
+FY2025,sup:71345,packaging,4800.51,4
+FY2026,sup:71345,packaging,3922.43,6
+FY2024,sup:71346,seals,1579.24,29
+FY2025,sup:71346,seals,2062.19,21
+FY2024,sup:71347,services and maintenance,18468.05,5
+FY2025,sup:71347,services and maintenance,16851.73,17
+FY2026,sup:71347,services and maintenance,16217.17,16
+FY2024,sup:71348,services and maintenance,3149.89,12
+FY2024,sup:71349,electrical,341307.96,14
+FY2025,sup:71349,electrical,314531.24,1
+FY2026,sup:71349,electrical,371527.38,15
+FY2025,sup:71350,sheet metal,3751.52,33
+FY2026,sup:71350,sheet metal,4378.76,30
+FY2024,sup:71351,services and maintenance,10680.15,34
+FY2025,sup:71351,services and maintenance,7357.31,35
+FY2025,sup:71352,electrical,38076.57,23
+FY2024,sup:71353,services and maintenance,2423.6,7
+FY2025,sup:71353,services and maintenance,2520.84,18
+FY2024,sup:71354,castings,50717.65,28
+FY2025,sup:71354,castings,44468.78,40
+FY2026,sup:71354,castings,44303.67,31
+FY2024,sup:71355,MRO and tools,961.69,26
+FY2025,sup:71355,MRO and tools,1473.21,16
+FY2026,sup:71355,MRO and tools,1576.45,22
+FY2024,sup:71356,MRO and tools,10647.58,13
+FY2025,sup:71356,MRO and tools,10228.16,14
+FY2026,sup:71356,MRO and tools,9323.64,26
+FY2024,sup:71357,services and maintenance,15378.49,6
+FY2024,sup:71358,sheet metal,3368.25,6
+FY2024,sup:71359,castings,20624.33,6
+FY2025,sup:71359,castings,12179.53,1
+FY2026,sup:71359,castings,17049.77,7
+FY2024,sup:71360,C-parts,6043.5,19
+FY2025,sup:71360,C-parts,7839.15,7
+FY2024,sup:71361,packaging,8062.8,21
+FY2025,sup:71361,packaging,8169.16,3
+FY2026,sup:71361,packaging,9482.23,16
+FY2024,sup:71362,packaging,100.05,35
+FY2025,sup:71362,packaging,78.54,39
+FY2026,sup:71362,packaging,102.46,14
+FY2026,sup:71363,MRO and tools,2546.21,35
+FY2026,sup:71364,seals,20166.28,4
+FY2024,sup:71365,sheet metal,1134.56,9
+FY2025,sup:71365,sheet metal,1041.42,12
+FY2026,sup:71365,sheet metal,965.07,36
+FY2024,sup:71366,packaging,10529.92,8
+FY2025,sup:71366,packaging,11172.24,21
+FY2024,sup:71367,castings,6417.88,29
+FY2025,sup:71367,castings,5266.97,9
+FY2025,sup:71368,MRO and tools,18040.24,39
+FY2024,sup:71369,machined parts,4254.83,32
+FY2025,sup:71369,machined parts,3553.82,2
+FY2024,sup:71370,castings,875.55,34
+FY2025,sup:71370,castings,549.69,32
+FY2026,sup:71370,castings,730.08,6
+FY2025,sup:71371,machined parts,34645.52,7
+FY2026,sup:71371,machined parts,35478.11,8
+FY2024,sup:71372,MRO and tools,48947.6,14
+FY2025,sup:71372,MRO and tools,70512.36,39
+FY2026,sup:71372,MRO and tools,51236.79,10
+FY2024,sup:71373,C-parts,51388.41,7
+FY2025,sup:71373,C-parts,34780.96,28
+FY2026,sup:71373,C-parts,38370.1,4
+FY2024,sup:71374,electrical,6838.81,26
+FY2025,sup:71374,electrical,10411.41,24
+FY2026,sup:71374,electrical,5908.0,38
+FY2026,sup:71375,MRO and tools,1691.25,33
+FY2024,sup:71376,sheet metal,6664.15,23
+FY2024,sup:71377,C-parts,1170.06,11
+FY2025,sup:71377,C-parts,957.8,16
+FY2026,sup:71377,C-parts,1032.82,12
+FY2024,sup:71378,C-parts,46736.08,3
+FY2025,sup:71378,C-parts,32045.54,34
+FY2026,sup:71378,C-parts,49792.46,38
+FY2025,sup:71379,MRO and tools,5926.55,17
+FY2026,sup:71379,MRO and tools,5868.66,14
+FY2024,sup:71380,logistics and freight,4745.86,17
+FY2025,sup:71380,logistics and freight,4602.35,22
+FY2026,sup:71380,logistics and freight,3391.61,40
+FY2024,sup:71381,seals,1452.19,6
+FY2025,sup:71381,seals,1264.46,9
+FY2026,sup:71381,seals,1524.4,9
+FY2024,sup:71382,logistics and freight,23456.98,34
+FY2025,sup:71382,logistics and freight,19417.18,21
+FY2024,sup:71383,electrical,16742.33,16
+FY2025,sup:71383,electrical,21480.24,30
+FY2026,sup:71383,electrical,15610.14,9
+FY2025,sup:71384,MRO and tools,14319.09,39
+FY2026,sup:71384,MRO and tools,21138.1,2
+FY2024,sup:71385,sheet metal,8011.75,12
+FY2026,sup:71385,sheet metal,4869.57,27
+FY2026,sup:71386,logistics and freight,12755.27,38
+FY2024,sup:71387,services and maintenance,3039.89,32
+FY2026,sup:71387,services and maintenance,3454.79,24
+FY2025,sup:71388,castings,3952.86,34
+FY2026,sup:71388,castings,2970.74,17
+FY2024,sup:71389,services and maintenance,4587.81,35
+FY2025,sup:71389,services and maintenance,5440.45,9
+FY2026,sup:71389,services and maintenance,4862.16,37
+FY2024,sup:71390,electrical,20711.41,30
+FY2025,sup:71390,electrical,21968.01,2
+FY2026,sup:71390,electrical,31965.91,7
+FY2024,sup:71391,machined parts,4794.28,13
+FY2025,sup:71391,machined parts,6618.9,34
+FY2026,sup:71391,machined parts,5172.63,1
+FY2024,sup:71392,logistics and freight,182640.57,38
+FY2025,sup:71392,logistics and freight,115363.98,15
+FY2026,sup:71392,logistics and freight,150037.47,26
+FY2024,sup:71393,C-parts,7854.55,31
+FY2025,sup:71393,C-parts,7127.56,26
+FY2026,sup:71393,C-parts,5485.53,4
+FY2024,sup:71394,electrical,14747.11,18
+FY2025,sup:71394,electrical,11358.25,20
+FY2026,sup:71394,electrical,15500.72,12
+FY2024,sup:71395,electrical,24158.55,36
+FY2026,sup:71395,electrical,18688.7,14
+FY2024,sup:71396,IT and office,9863.97,24
+FY2025,sup:71396,IT and office,10701.71,36
+FY2026,sup:71396,IT and office,16747.22,29
+FY2024,sup:71397,services and maintenance,25209.24,19
+FY2025,sup:71397,services and maintenance,26321.71,31
+FY2026,sup:71397,services and maintenance,23541.64,22
+FY2024,sup:71398,C-parts,10438.59,18
+FY2025,sup:71398,C-parts,14300.71,18
+FY2026,sup:71398,C-parts,11088.36,26
+FY2024,sup:71399,logistics and freight,8932.61,2
+FY2025,sup:71399,logistics and freight,7135.0,34
+FY2026,sup:71399,logistics and freight,6671.83,39
+FY2026,sup:71400,MRO and tools,1737.91,20
+FY2024,sup:71999,machined parts,61240.0,9
+FY2024,sup:70110,castings,1014074.06,43
+FY2025,sup:70110,castings,1212229.85,52
+FY2026,sup:70110,castings,1256302.57,54
+FY2024,sup:70120,castings,375510.3,42
+FY2025,sup:70120,castings,433061.73,48
+FY2026,sup:70120,castings,488308.4,55
+FY2024,sup:70130,castings,1193486.02,46
+FY2025,sup:70130,castings,1301472.25,50
+FY2026,sup:70130,castings,1289395.92,50
+FY2024,sup:70140,castings,544678.04,43
+FY2025,sup:70140,castings,648182.46,52
+FY2026,sup:70140,castings,682716.14,53
+FY2024,sup:70150,castings,455143.0,21
+FY2025,sup:70150,castings,503568.4,24
+FY2026,sup:70150,castings,503212.1,25
+FY2024,sup:70160,castings,27095.52,16
+FY2025,sup:70160,castings,46641.7,27
+FY2026,sup:70160,castings,45236.18,25
+FY2024,sup:70170,castings,152200.92,21
+FY2025,sup:70170,castings,186763.2,24
+FY2026,sup:70170,castings,198529.54,24
+FY2024,sup:70180,castings,583593.96,43
+FY2025,sup:70180,castings,751199.3,50
+FY2026,sup:70180,castings,798959.9,52
+FY2024,sup:70190,castings,1060689.05,44
+FY2025,sup:70190,castings,1111179.2,52
+FY2026,sup:70190,castings,1048065.72,47
+FY2024,sup:70210,machined parts,292286.04,47
+FY2025,sup:70210,machined parts,330858.58,49
+FY2026,sup:70210,machined parts,316635.38,52
+FY2024,sup:70220,machined parts,137182.29,22
+FY2025,sup:70220,machined parts,151389.0,25
+FY2026,sup:70220,machined parts,153471.6,25
+FY2024,sup:70230,machined parts,347544.68,68
+FY2025,sup:70230,machined parts,371169.7,80
+FY2026,sup:70230,machined parts,369165.99,78
+FY2024,sup:70240,machined parts,55225.7,21
+FY2025,sup:70240,machined parts,62472.79,25
+FY2026,sup:70240,machined parts,61647.22,24
+FY2024,sup:70250,machined parts,54221.2,22
+FY2025,sup:70250,machined parts,59017.74,24
+FY2026,sup:70250,machined parts,58768.08,25
+FY2024,sup:70260,machined parts,120309.17,22
+FY2025,sup:70260,machined parts,137414.46,24
+FY2026,sup:70260,machined parts,143952.93,26
+FY2024,sup:70270,machined parts,75757.6,21
+FY2025,sup:70270,machined parts,88948.4,25
+FY2026,sup:70270,machined parts,93374.4,26
+FY2024,sup:70280,machined parts,213714.56,24
+FY2025,sup:70280,machined parts,229540.68,25
+FY2026,sup:70280,machined parts,233337.48,27
+FY2024,sup:70290,machined parts,191949.36,21
+FY2025,sup:70290,machined parts,215910.37,26
+FY2026,sup:70290,machined parts,218807.7,29
+FY2024,sup:70295,machined parts,479819.16,74
+FY2025,sup:70295,machined parts,555105.0,75
+FY2026,sup:70295,machined parts,568802.66,78
+FY2024,sup:70310,sheet metal,828502.55,24
+FY2025,sup:70310,sheet metal,856497.42,29
+FY2026,sup:70310,sheet metal,851190.0,27
+FY2024,sup:70320,sheet metal,364153.84,24
+FY2025,sup:70320,sheet metal,379969.04,26
+FY2026,sup:70320,sheet metal,384464.78,25
+FY2024,sup:70330,sheet metal,264651.52,23
+FY2025,sup:70330,sheet metal,308281.36,26
+FY2026,sup:70330,sheet metal,320260.47,24
+FY2024,sup:70340,sheet metal,373266.25,47
+FY2025,sup:70340,sheet metal,386708.42,49
+FY2026,sup:70340,sheet metal,386527.7,52
+FY2024,sup:70350,sheet metal,227094.5,23
+FY2025,sup:70350,sheet metal,217642.14,27
+FY2026,sup:70350,sheet metal,217582.2,26
+FY2024,sup:70360,sheet metal,157405.8,25
+FY2025,sup:70360,sheet metal,146595.0,26
+FY2026,sup:70360,sheet metal,148083.12,25
+FY2024,sup:70410,seals,700404.93,64
+FY2025,sup:70410,seals,808344.4,76
+FY2026,sup:70410,seals,816440.74,78
+FY2024,sup:70420,seals,317195.34,20
+FY2025,sup:70420,seals,423778.08,25
+FY2026,sup:70420,seals,425692.74,24
+FY2024,sup:70430,seals,43900.33,51
+FY2025,sup:70430,seals,45915.42,51
+FY2026,sup:70430,seals,46358.68,49
+FY2024,sup:70440,seals,220409.19,44
+FY2025,sup:70440,seals,264102.37,51
+FY2026,sup:70440,seals,287769.44,53
+FY2024,sup:70510,electrical,2684551.52,46
+FY2025,sup:70510,electrical,3173290.66,51
+FY2026,sup:70510,electrical,3213572.9,52
+FY2024,sup:70520,electrical,1831249.24,45
+FY2025,sup:70520,electrical,2061237.05,50
+FY2026,sup:70520,electrical,2208543.41,53
+FY2024,sup:70530,electrical,1417966.2,21
+FY2025,sup:70530,electrical,1694081.41,25
+FY2026,sup:70530,electrical,1693939.96,26
+FY2024,sup:70540,electrical,993134.0,22
+FY2025,sup:70540,electrical,1255458.36,26
+FY2026,sup:70540,electrical,1267102.0,27
+FY2024,sup:70550,electrical,602032.8,22
+FY2025,sup:70550,electrical,674638.9,25
+FY2026,sup:70550,electrical,635796.2,28
+FY2024,sup:70560,electrical,740130.12,23
+FY2025,sup:70560,electrical,812884.01,26
+FY2026,sup:70560,electrical,833606.85,26
+FY2024,sup:70570,electrical,434249.43,23
+FY2025,sup:70570,electrical,425972.83,25
+FY2026,sup:70570,electrical,422827.52,25
+FY2024,sup:70580,electrical,897362.5,25
+FY2025,sup:70580,electrical,1154509.6,26
+FY2026,sup:70580,electrical,1151451.52,24
+FY2024,sup:70610,C-parts,39550.56,75
+FY2025,sup:70610,C-parts,40086.87,81
+FY2026,sup:70610,C-parts,39959.28,79
+FY2024,sup:70620,C-parts,180530.04,72
+FY2025,sup:70620,C-parts,192795.53,72
+FY2026,sup:70620,C-parts,216968.64,81
+FY2024,sup:70630,C-parts,84963.09,49
+FY2025,sup:70630,C-parts,85923.1,49
+FY2026,sup:70630,C-parts,81301.6,49
+FY2024,sup:70640,C-parts,89212.58,51
+FY2025,sup:70640,C-parts,98866.6,51
+FY2026,sup:70640,C-parts,98435.4,52
+FY2024,sup:70650,C-parts,139032.03,77
+FY2025,sup:70650,C-parts,142353.25,77
+FY2026,sup:70650,C-parts,140219.93,82
+FY2024,sup:70710,raw material,507987.0,27
+FY2025,sup:70710,raw material,493091.0,25
+FY2026,sup:70710,raw material,493832.0,25
+FY2024,sup:70720,raw material,486291.55,47
+FY2025,sup:70720,raw material,481846.92,52
+FY2026,sup:70720,raw material,440941.1,51
+FY2024,sup:70730,raw material,288137.79,24
+FY2025,sup:70730,raw material,278282.0,24
+FY2026,sup:70730,raw material,267004.25,25
+FY2024,sup:70740,raw material,453954.51,73
+FY2025,sup:70740,raw material,419914.66,80
+FY2026,sup:70740,raw material,428119.02,79

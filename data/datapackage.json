@@ -1,0 +1,1791 @@
+{
+ "name": "hollerau-procurement-data",
+ "title": "Hollerau Pumpenwerke - procurement data package",
+ "version": "1.0.0",
+ "description": "Synthetic ERP extract of a fictional pump maker plus real open market series. Data as of 2026-09-30.",
+ "sources": [
+  {
+   "title": "Producer prices DE: casting of iron",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2451&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: casting of steel",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2452&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: machining",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2562&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: metal structures",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2511&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: fasteners and screw machine products",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2594&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: electric motors, generators, transformers",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2711&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: electronic and electric wires and cables",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2732&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: electronic components",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2611&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: loaded electronic boards",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2612&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: bearings, gears, gearing and driving elements",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2815&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: basic iron and steel, ferro-alloys",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C241&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: cold drawing of bars",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2431&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: other rubber products",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2219&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: other pumps and compressors",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=C2813&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: electric power generation, transmission and distribution",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=D351&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Producer prices DE: electricity, gas, steam and air conditioning supply",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpp_m?geo=DE&nace_r2=D35&unit=I21&s_adj=NSA&indic_bt=PRC_PRR&sinceTimePeriod=2020-10"
+  },
+  {
+   "title": "Labour cost index DE, manufacturing, seasonally and calendar adjusted (quarterly, carried to its three months)",
+   "path": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lc_lci_r2_q?geo=DE&nace_r2=C&unit=I20&s_adj=SCA&lcstruct=D1_D4_MD5&sinceTimePeriod=2020-Q4"
+  },
+  {
+   "title": "Copper, monthly average (World Bank Pink Sheet)",
+   "path": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx"
+  },
+  {
+   "title": "Nickel, monthly average (World Bank Pink Sheet)",
+   "path": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx"
+  },
+  {
+   "title": "Aluminium, monthly average (World Bank Pink Sheet)",
+   "path": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx"
+  },
+  {
+   "title": "Natural gas Europe, monthly average (World Bank Pink Sheet)",
+   "path": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx"
+  },
+  {
+   "title": "Iron ore, monthly average (World Bank Pink Sheet)",
+   "path": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx"
+  },
+  {
+   "title": "ECB reference rate, monthly average",
+   "path": "https://data-api.ecb.europa.eu/service/data/EXR/M.USD.EUR.SP00.A?format=csvdata&startPeriod=2020-10"
+  },
+  {
+   "title": "ECB reference rate, monthly average",
+   "path": "https://data-api.ecb.europa.eu/service/data/EXR/M.PLN.EUR.SP00.A?format=csvdata&startPeriod=2020-10"
+  },
+  {
+   "title": "ECB reference rate, monthly average",
+   "path": "https://data-api.ecb.europa.eu/service/data/EXR/M.CZK.EUR.SP00.A?format=csvdata&startPeriod=2020-10"
+  },
+  {
+   "title": "ECB reference rate, monthly average",
+   "path": "https://data-api.ecb.europa.eu/service/data/EXR/M.HUF.EUR.SP00.A?format=csvdata&startPeriod=2020-10"
+  },
+  {
+   "title": "ECB reference rate, monthly average",
+   "path": "https://data-api.ecb.europa.eu/service/data/EXR/M.TRY.EUR.SP00.A?format=csvdata&startPeriod=2020-10"
+  },
+  {
+   "title": "ECB reference rate, monthly average",
+   "path": "https://data-api.ecb.europa.eu/service/data/EXR/M.CNY.EUR.SP00.A?format=csvdata&startPeriod=2020-10"
+  },
+  {
+   "title": "ECB reference rate, monthly average",
+   "path": "https://data-api.ecb.europa.eu/service/data/EXR/M.CHF.EUR.SP00.A?format=csvdata&startPeriod=2020-10"
+  },
+  {
+   "title": "Day-ahead power price DE-LU, monthly average (Bundesnetzagentur | SMARD.de)",
+   "path": "https://www.smard.de/app/chart_data/4169/DE-LU/index_month.json"
+  }
+ ],
+ "resources": [
+  {
+   "name": "suppliers",
+   "path": "data/suppliers.csv",
+   "description": "Vendor master: the detailed suppliers (`detail = full`) and the long tail (`spend only`).",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "name",
+      "type": "string"
+     },
+     {
+      "name": "country",
+      "type": "string"
+     },
+     {
+      "name": "currency",
+      "type": "string"
+     },
+     {
+      "name": "payment_days",
+      "type": "integer"
+     },
+     {
+      "name": "skonto_days",
+      "type": "integer"
+     },
+     {
+      "name": "skonto_pct",
+      "type": "integer"
+     },
+     {
+      "name": "incoterm",
+      "type": "string"
+     },
+     {
+      "name": "created",
+      "type": "date"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "detail",
+      "type": "string"
+     },
+     {
+      "name": "blocked",
+      "type": "boolean"
+     },
+     {
+      "name": "contract_id",
+      "type": "string"
+     },
+     {
+      "name": "standard_lead_time_days",
+      "type": "integer"
+     },
+     {
+      "name": "abc_class",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "contract_id"
+      ],
+      "reference": {
+       "resource": "contracts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "supplier_intel",
+   "path": "data/supplier_intel.csv",
+   "description": "Public face of each detailed supplier: register facts, filed turnover, credit index, audit.",
+   "schema": {
+    "fields": [
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "legal_form",
+      "type": "string"
+     },
+     {
+      "name": "founded",
+      "type": "integer"
+     },
+     {
+      "name": "owner_type",
+      "type": "string"
+     },
+     {
+      "name": "group_parent",
+      "type": "string"
+     },
+     {
+      "name": "staff",
+      "type": "integer"
+     },
+     {
+      "name": "filed_fy",
+      "type": "integer"
+     },
+     {
+      "name": "turnover_eur",
+      "type": "integer"
+     },
+     {
+      "name": "turnover_band",
+      "type": "string"
+     },
+     {
+      "name": "equity_ratio_pct",
+      "type": "number"
+     },
+     {
+      "name": "credit_index",
+      "type": "integer"
+     },
+     {
+      "name": "credit_index_12m_ago",
+      "type": "integer"
+     },
+     {
+      "name": "vda63_grade",
+      "type": "string"
+     },
+     {
+      "name": "certifications",
+      "type": "string"
+     }
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "parts",
+   "path": "data/parts.csv",
+   "description": "Material master of the detailed parts.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "description",
+      "type": "string"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "material_group",
+      "type": "string"
+     },
+     {
+      "name": "grade",
+      "type": "string"
+     },
+     {
+      "name": "net_weight_kg",
+      "type": "number"
+     },
+     {
+      "name": "uom",
+      "type": "string"
+     },
+     {
+      "name": "price_unit",
+      "type": "integer"
+     },
+     {
+      "name": "planned_lead_time_days",
+      "type": "integer"
+     },
+     {
+      "name": "pump_series",
+      "type": "string"
+     },
+     {
+      "name": "standard_price",
+      "type": "number"
+     },
+     {
+      "name": "status",
+      "type": "string"
+     },
+     {
+      "name": "abc_class",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ]
+   }
+  },
+  {
+   "name": "sourcing",
+   "path": "data/sourcing.csv",
+   "description": "Source list: approved suppliers per part, quota, tooling owner.",
+   "schema": {
+    "fields": [
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "status",
+      "type": "string"
+     },
+     {
+      "name": "quota_pct",
+      "type": "integer"
+     },
+     {
+      "name": "approved_since",
+      "type": "date"
+     },
+     {
+      "name": "tooling_owner",
+      "type": "string"
+     }
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "price_conditions",
+   "path": "data/price_conditions.csv",
+   "description": "Price history per part and supplier (price per `price_unit`), with the event behind it.",
+   "schema": {
+    "fields": [
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "valid_from",
+      "type": "date"
+     },
+     {
+      "name": "price",
+      "type": "number"
+     },
+     {
+      "name": "basis",
+      "type": "string"
+     },
+     {
+      "name": "event_id",
+      "type": "string"
+     },
+     {
+      "name": "valid_to",
+      "type": "date"
+     },
+     {
+      "name": "price_unit",
+      "type": "integer"
+     },
+     {
+      "name": "currency",
+      "type": "string"
+     }
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "negotiation_history",
+   "path": "data/negotiation_history.csv",
+   "description": "Past price events: renewals with asked and settled change.",
+   "schema": {
+    "fields": [
+     {
+      "name": "event_id",
+      "type": "string"
+     },
+     {
+      "name": "date",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "type",
+      "type": "string"
+     },
+     {
+      "name": "asked_pct",
+      "type": "number"
+     },
+     {
+      "name": "settled_pct",
+      "type": "number"
+     },
+     {
+      "name": "note",
+      "type": "string"
+     }
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "contracts",
+   "path": "data/contracts.csv",
+   "description": "Framework agreements (text in `contracts/`).",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "type",
+      "type": "string"
+     },
+     {
+      "name": "valid_from",
+      "type": "date"
+     },
+     {
+      "name": "valid_to",
+      "type": "date"
+     },
+     {
+      "name": "payment_days",
+      "type": "integer"
+     },
+     {
+      "name": "incoterm",
+      "type": "string"
+     },
+     {
+      "name": "notice_days",
+      "type": "integer"
+     },
+     {
+      "name": "price_basis",
+      "type": "string"
+     },
+     {
+      "name": "file",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "contract_clauses",
+   "path": "data/contract_clauses.csv",
+   "description": "Clauses of the framework agreements, incl. index clauses (`ctr:<no>#<clause>`).",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "contract_id",
+      "type": "string"
+     },
+     {
+      "name": "clause",
+      "type": "string"
+     },
+     {
+      "name": "type",
+      "type": "string"
+     },
+     {
+      "name": "text",
+      "type": "string"
+     },
+     {
+      "name": "series",
+      "type": "string"
+     },
+     {
+      "name": "material_share",
+      "type": "number"
+     },
+     {
+      "name": "deadband_pct",
+      "type": "integer"
+     },
+     {
+      "name": "days",
+      "type": "integer"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "contract_id"
+      ],
+      "reference": {
+       "resource": "contracts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "po_lines",
+   "path": "data/po_lines.csv",
+   "description": "Purchase order lines: requested and first confirmed date, price per `price_unit`.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "po_number",
+      "type": "string"
+     },
+     {
+      "name": "line",
+      "type": "integer"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "contract_id",
+      "type": "string"
+     },
+     {
+      "name": "order_date",
+      "type": "date"
+     },
+     {
+      "name": "qty",
+      "type": "integer"
+     },
+     {
+      "name": "uom",
+      "type": "string"
+     },
+     {
+      "name": "price",
+      "type": "number"
+     },
+     {
+      "name": "price_unit",
+      "type": "integer"
+     },
+     {
+      "name": "currency",
+      "type": "string"
+     },
+     {
+      "name": "requested_date",
+      "type": "date"
+     },
+     {
+      "name": "first_confirmed_date",
+      "type": "date"
+     },
+     {
+      "name": "change_type",
+      "type": "string"
+     },
+     {
+      "name": "price_note",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "contract_id"
+      ],
+      "reference": {
+       "resource": "contracts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "goods_receipts",
+   "path": "data/goods_receipts.csv",
+   "description": "Goods receipts per PO line (posting date, quantity).",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "po_line_id",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "posting_date",
+      "type": "date"
+     },
+     {
+      "name": "qty",
+      "type": "integer"
+     },
+     {
+      "name": "movement",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "po_line_id"
+      ],
+      "reference": {
+       "resource": "po_lines",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "invoices",
+   "path": "data/invoices.csv",
+   "description": "Supplier invoices with due and payment dates, cash discount taken.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "po_line_id",
+      "type": "string"
+     },
+     {
+      "name": "gr_id",
+      "type": "string"
+     },
+     {
+      "name": "invoice_date",
+      "type": "date"
+     },
+     {
+      "name": "qty",
+      "type": "integer"
+     },
+     {
+      "name": "amount_eur",
+      "type": "number"
+     },
+     {
+      "name": "due_date",
+      "type": "date"
+     },
+     {
+      "name": "paid_date",
+      "type": "date"
+     },
+     {
+      "name": "paid_amount_eur",
+      "type": "number"
+     },
+     {
+      "name": "discount_taken",
+      "type": "boolean"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "po_line_id"
+      ],
+      "reference": {
+       "resource": "po_lines",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "gr_id"
+      ],
+      "reference": {
+       "resource": "goods_receipts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "quality_notifications",
+   "path": "data/quality_notifications.csv",
+   "description": "Complaints against suppliers (QN), with 8D dates and recharged fees.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "gr_id",
+      "type": "string"
+     },
+     {
+      "name": "qn_date",
+      "type": "date"
+     },
+     {
+      "name": "defect",
+      "type": "string"
+     },
+     {
+      "name": "complaint_qty",
+      "type": "integer"
+     },
+     {
+      "name": "returned_qty",
+      "type": "integer"
+     },
+     {
+      "name": "supplier_caused",
+      "type": "boolean"
+     },
+     {
+      "name": "cost_recharged_eur",
+      "type": "integer"
+     },
+     {
+      "name": "d3_date",
+      "type": "date"
+     },
+     {
+      "name": "d8_date",
+      "type": "date"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "gr_id"
+      ],
+      "reference": {
+       "resource": "goods_receipts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "scorecards",
+   "path": "data/scorecards.csv",
+   "description": "Rolling 12-month supplier scorecards per quarter (method: `SCORECARD.md`).",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "quarter",
+      "type": "string"
+     },
+     {
+      "name": "period_start",
+      "type": "date"
+     },
+     {
+      "name": "period_end",
+      "type": "date"
+     },
+     {
+      "name": "gr_lines",
+      "type": "integer"
+     },
+     {
+      "name": "otd_pct",
+      "type": "number"
+     },
+     {
+      "name": "otd_confirmed_pct",
+      "type": "number"
+     },
+     {
+      "name": "received_qty",
+      "type": "integer"
+     },
+     {
+      "name": "complaint_qty",
+      "type": "integer"
+     },
+     {
+      "name": "ppm",
+      "type": "integer"
+     },
+     {
+      "name": "qn_count",
+      "type": "integer"
+     },
+     {
+      "name": "open_8d_overdue",
+      "type": "integer"
+     },
+     {
+      "name": "score",
+      "type": "number"
+     },
+     {
+      "name": "class",
+      "type": "string"
+     },
+     {
+      "name": "colour",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "forecasts",
+   "path": "data/forecasts.csv",
+   "description": "Quarterly demand forecast snapshots per part, shared with suppliers.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "snapshot_month",
+      "type": "string"
+     },
+     {
+      "name": "horizon_months",
+      "type": "integer"
+     },
+     {
+      "name": "qty_next_12m",
+      "type": "integer"
+     },
+     {
+      "name": "uom",
+      "type": "string"
+     },
+     {
+      "name": "shared_with_suppliers",
+      "type": "boolean"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "forecast_lines",
+   "path": "data/forecast_lines.csv",
+   "description": "Monthly quantities of each forecast snapshot.",
+   "schema": {
+    "fields": [
+     {
+      "name": "fc_id",
+      "type": "string"
+     },
+     {
+      "name": "target_month",
+      "type": "string"
+     },
+     {
+      "name": "qty",
+      "type": "integer"
+     }
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "fc_id"
+      ],
+      "reference": {
+       "resource": "forecasts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "rfqs",
+   "path": "data/rfqs.csv",
+   "description": "Requests for quotation: past benchmarks, second-source quotes, open RFQs for new parts.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "rfq_date",
+      "type": "date"
+     },
+     {
+      "name": "qty_per_year",
+      "type": "integer"
+     },
+     {
+      "name": "purpose",
+      "type": "string"
+     },
+     {
+      "name": "status",
+      "type": "string"
+     },
+     {
+      "name": "awarded_supplier_id",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "awarded_supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "quotes",
+   "path": "data/quotes.csv",
+   "description": "Supplier quotes (price per `price_unit`); missing fields as the supplier sent them.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "rfq_id",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "quote_date",
+      "type": "date"
+     },
+     {
+      "name": "unit_price",
+      "type": "number"
+     },
+     {
+      "name": "price_unit",
+      "type": "integer"
+     },
+     {
+      "name": "currency",
+      "type": "string"
+     },
+     {
+      "name": "lead_time_days",
+      "type": "integer"
+     },
+     {
+      "name": "incoterm",
+      "type": "string"
+     },
+     {
+      "name": "payment_days",
+      "type": "integer"
+     },
+     {
+      "name": "validity_days",
+      "type": "integer"
+     },
+     {
+      "name": "tooling_eur",
+      "type": "integer"
+     },
+     {
+      "name": "awarded",
+      "type": "boolean"
+     },
+     {
+      "name": "missing_fields",
+      "type": "string"
+     },
+     {
+      "name": "remarks",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "rfq_id"
+      ],
+      "reference": {
+       "resource": "rfqs",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "spend_cube",
+   "path": "data/spend_cube.csv",
+   "description": "Spend per fiscal year and supplier, incl. the long tail.",
+   "schema": {
+    "fields": [
+     {
+      "name": "fiscal_year",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "spend_eur",
+      "type": "number"
+     },
+     {
+      "name": "invoice_count",
+      "type": "integer"
+     }
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "index_series",
+   "path": "data/index_series.csv",
+   "description": "Market series: source, licence, unit; derived series with their formula.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "name",
+      "type": "string"
+     },
+     {
+      "name": "unit",
+      "type": "string"
+     },
+     {
+      "name": "source",
+      "type": "string"
+     },
+     {
+      "name": "frequency",
+      "type": "string"
+     },
+     {
+      "name": "licence",
+      "type": "string"
+     },
+     {
+      "name": "url",
+      "type": "string"
+     },
+     {
+      "name": "first_month",
+      "type": "string"
+     },
+     {
+      "name": "last_month",
+      "type": "string"
+     },
+     {
+      "name": "formula",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ]
+   }
+  },
+  {
+   "name": "index_values",
+   "path": "data/index_values.csv",
+   "description": "Monthly values of the market series (`idx:<series>@<YYYY-MM>`).",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "series_id",
+      "type": "string"
+     },
+     {
+      "name": "month",
+      "type": "string"
+     },
+     {
+      "name": "value",
+      "type": "number"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "series_id"
+      ],
+      "reference": {
+       "resource": "index_series",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "cost_drivers",
+   "path": "data/cost_drivers.csv",
+   "description": "The category team's estimate of each part's cost drivers (index series and weight).",
+   "schema": {
+    "fields": [
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "series_id",
+      "type": "string"
+     },
+     {
+      "name": "weight",
+      "type": "number"
+     },
+     {
+      "name": "source",
+      "type": "string"
+     }
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "series_id"
+      ],
+      "reference": {
+       "resource": "index_series",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "should_cost",
+   "path": "data/should_cost.csv",
+   "description": "Bottom-up should-cost estimates for selected parts (`cost:<part>`).",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "part_id",
+      "type": "string"
+     },
+     {
+      "name": "estimate_date",
+      "type": "date"
+     },
+     {
+      "name": "cost_base",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "unit_cost",
+      "type": "number"
+     },
+     {
+      "name": "price_unit",
+      "type": "integer"
+     },
+     {
+      "name": "material_eur",
+      "type": "number"
+     },
+     {
+      "name": "conversion_eur",
+      "type": "number"
+     },
+     {
+      "name": "overhead_eur",
+      "type": "number"
+     },
+     {
+      "name": "confidence_pct",
+      "type": "integer"
+     },
+     {
+      "name": "method",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "part_id"
+      ],
+      "reference": {
+       "resource": "parts",
+       "fields": [
+        "id"
+       ]
+      }
+     },
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "news",
+   "path": "data/news.csv",
+   "description": "Press items about suppliers and markets.",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "date",
+      "type": "date"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "topic",
+      "type": "string"
+     },
+     {
+      "name": "headline",
+      "type": "string"
+     },
+     {
+      "name": "body",
+      "type": "string"
+     },
+     {
+      "name": "source",
+      "type": "string"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "documents",
+   "path": "data/documents.csv",
+   "description": "Letters, e-mails, meeting and call notes (text in `correspondence/`).",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "date",
+      "type": "date"
+     },
+     {
+      "name": "kind",
+      "type": "string"
+     },
+     {
+      "name": "supplier_id",
+      "type": "string"
+     },
+     {
+      "name": "part_ids",
+      "type": "string"
+     },
+     {
+      "name": "subject",
+      "type": "string"
+     },
+     {
+      "name": "author",
+      "type": "string"
+     },
+     {
+      "name": "file",
+      "type": "string"
+     },
+     {
+      "name": "asked_pct",
+      "type": "number"
+     },
+     {
+      "name": "asked_price",
+      "type": "number"
+     },
+     {
+      "name": "effective_date",
+      "type": "date"
+     },
+     {
+      "name": "notice_days",
+      "type": "integer"
+     }
+    ],
+    "primaryKey": [
+     "id"
+    ],
+    "foreignKeys": [
+     {
+      "fields": [
+       "supplier_id"
+      ],
+      "reference": {
+       "resource": "suppliers",
+       "fields": [
+        "id"
+       ]
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

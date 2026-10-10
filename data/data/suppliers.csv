@@ -1,0 +1,448 @@
+id,name,country,currency,payment_days,skonto_days,skonto_pct,incoterm,created,category,detail,blocked,contract_id,standard_lead_time_days,abc_class
+sup:70110,Gießerei Brandlhuber GmbH & Co. KG,DE,EUR,30,,,FCA,1996-01-01,castings,full,false,ctr:4600070110,42,A
+sup:70120,Eisengießerei Velkenreith GmbH,DE,EUR,45,,,FCA,1996-01-01,castings,full,false,ctr:4600070120,49,A
+sup:70130,Gießerei Wimbacher GmbH,DE,EUR,30,,,FCA,1996-01-01,castings,full,false,ctr:4600070130,45,A
+sup:70140,Odlewnia Kalwisz Sp. z o.o.,PL,EUR,60,,,FCA,1996-01-01,castings,full,false,ctr:4600070140,56,A
+sup:70150,Tarsevi Döküm Sanayi A.Ş.,TR,EUR,60,,,FCA,1996-01-01,castings,full,false,ctr:4600070150,70,A
+sup:70160,"Meridune Precision Castings Co., Ltd.",CN,EUR,90,,,FCA,2006-01-01,castings,full,false,ctr:4600070160,105,B
+sup:70170,Slévárna Vrbenský s.r.o.,CZ,EUR,45,,,FCA,2000-01-01,castings,full,false,ctr:4600070170,56,B
+sup:70180,Feinguss Allgäu-Reiter GmbH,DE,EUR,30,,,FCA,1996-01-01,castings,full,false,ctr:4600070180,49,A
+sup:70190,Gießerei Pfaffenreuth GmbH,DE,EUR,30,,,FCA,1996-01-01,castings,full,false,ctr:4600070190,42,A
+sup:70210,Zerspanung Dralveck GmbH,DE,EUR,30,10,2,EXW,1996-01-01,machined parts,full,false,ctr:4600070210,28,B
+sup:70220,CNC-Technik Obermaier & Huber GmbH,DE,EUR,30,,,EXW,2007-01-01,machined parts,full,false,ctr:4600070220,35,B
+sup:70230,Präzisionsteile Lindlbauer KG,DE,EUR,30,14,2,EXW,1996-01-01,machined parts,full,false,ctr:4600070230,28,B
+sup:70240,Strojírna Hrvelec s.r.o.,CZ,EUR,45,,,FCA,2002-01-01,machined parts,full,false,ctr:4600070240,42,B
+sup:70250,Drehteile Fuchsreiter GmbH,DE,EUR,30,,,EXW,1999-01-01,machined parts,full,false,ctr:4600070250,28,B
+sup:70260,Mechanik Tauvelt GmbH,AT,EUR,30,,,FCA,1996-01-01,machined parts,full,false,ctr:4600070260,35,B
+sup:70270,Obrábění Kraslin s.r.o.,CZ,EUR,45,,,EXW,2011-01-01,machined parts,full,false,ctr:4600070270,42,B
+sup:70280,Wälzhammer Präzision GmbH,DE,EUR,30,10,3,EXW,1996-01-01,machined parts,full,false,ctr:4600070280,28,B
+sup:70290,Feinmechanik Rottaler GmbH,DE,EUR,30,,,EXW,1996-01-01,machined parts,full,false,ctr:4600070290,35,B
+sup:70295,Drehzentrum Ilzauer GmbH,DE,EUR,30,,,EXW,2004-01-01,machined parts,full,false,ctr:4600070295,28,A
+sup:70310,Blechtechnik Aichbauer GmbH,DE,EUR,45,,,DAP,1996-01-01,sheet metal,full,false,ctr:4600070310,21,A
+sup:70320,Stahlbau Ganghofer-Lenz GmbH,DE,EUR,30,,,DAP,1996-01-01,sheet metal,full,false,ctr:4600070320,28,A
+sup:70330,Lasertechnik Varnoszeg Kft.,HU,EUR,60,,,FCA,2009-01-01,sheet metal,full,false,ctr:4600070330,35,B
+sup:70340,Metallbau Steinfelder KG,DE,EUR,30,,,DAP,1996-01-01,sheet metal,full,false,ctr:4600070340,21,A
+sup:70350,Oberflächentechnik Weißacher GmbH,DE,EUR,30,10,2,DAP,1996-01-01,sheet metal,full,false,ctr:4600070350,14,B
+sup:70360,Kantteile Strasser GmbH,AT,EUR,30,,,DAP,2002-01-01,sheet metal,full,false,ctr:4600070360,28,B
+sup:70410,Dichtungswerk Ravensteiner GmbH,DE,EUR,30,,,DAP,1996-01-01,seals,full,false,ctr:4600070410,42,A
+sup:70420,Gleitring-Systeme Kaltenbrunn AG,CH,EUR,30,,,DAP,1996-01-01,seals,full,false,ctr:4600070420,56,A
+sup:70430,Elasto-Dicht Hermannsdorfer GmbH,DE,EUR,30,,,DAP,1996-01-01,seals,full,false,ctr:4600070430,7,B
+sup:70440,Kohlering-Technik Pirkheim GmbH,DE,EUR,30,,,DAP,1996-01-01,seals,full,false,ctr:4600070440,35,B
+sup:70510,Antriebstechnik Nordmark AG,DE,EUR,30,,,DAP,1996-01-01,electrical,full,false,ctr:4600070510,35,A
+sup:70520,Vesmo Elektromotory a.s.,CZ,EUR,45,,,FCA,1996-01-01,electrical,full,false,ctr:4600070520,42,A
+sup:70530,Selvbrunn Drive Systems GmbH,DE,EUR,30,,,DAP,1996-01-01,electrical,full,false,ctr:4600070530,49,A
+sup:70540,Konvertek Antriebselektronik GmbH,AT,EUR,30,,,DAP,1996-01-01,electrical,full,false,ctr:4600070540,84,A
+sup:70550,Platinenwerk Lausitz GmbH,DE,EUR,45,,,DAP,1996-01-01,electrical,full,false,ctr:4600070550,56,A
+sup:70560,Kabelwerk Rhönsberg GmbH,DE,EUR,30,,,DAP,1996-01-01,electrical,full,false,ctr:4600070560,14,A
+sup:70570,Sensorik Ammertal GmbH,DE,EUR,30,,,DAP,2001-01-01,electrical,full,false,ctr:4600070570,28,A
+sup:70580,Motorenwerk Saalach GmbH,DE,EUR,30,,,DAP,1996-01-01,electrical,full,false,ctr:4600070580,42,A
+sup:70610,Schraubenhandel Leitner & Sohn GmbH,DE,EUR,30,,,DAP,1996-01-01,C-parts,full,false,ctr:4600070610,5,C
+sup:70620,Wälzlager-Zentrum Süd GmbH,DE,EUR,30,,,DAP,1996-01-01,C-parts,full,false,ctr:4600070620,7,B
+sup:70630,Normteile Brucker KG,DE,EUR,30,,,DAP,1996-01-01,C-parts,full,false,ctr:4600070630,7,B
+sup:70640,Kugellager-Vertrieb Inntal GmbH,AT,EUR,30,,,DAP,1996-01-01,C-parts,full,false,ctr:4600070640,10,B
+sup:70650,Verbindungstechnik Mairhofer GmbH,DE,EUR,30,,,DAP,1996-01-01,C-parts,full,false,ctr:4600070650,7,B
+sup:70710,Edelstahl-Service Donautal GmbH,DE,EUR,30,,,DAP,1996-01-01,raw material,full,false,ctr:4600070710,10,A
+sup:70720,Stahlhandel Rupprecht-Kessel GmbH,DE,EUR,30,,,DAP,1996-01-01,raw material,full,false,ctr:4600070720,10,A
+sup:70730,Inox Center Ostalpen GmbH,AT,EUR,30,,,DAP,1996-01-01,raw material,full,false,ctr:4600070730,14,B
+sup:70740,Blankstahl Werdenfels GmbH,DE,EUR,30,,,DAP,1996-01-01,raw material,full,false,ctr:4600070740,14,A
+sup:71001,Birkeder Werkzeughandel GmbH,DE,EUR,30,,,DAP,2007-09-01,MRO and tools,spend only,false,,,C
+sup:71002,Kellstein Elektrotechnik GmbH,DE,EUR,30,,,DAP,2013-03-01,electrical,spend only,false,,,C
+sup:71003,Mettstein Drehteile GmbH,DE,EUR,30,,,DAP,2003-06-01,machined parts,spend only,false,,,B
+sup:71004,Ottlner Transporte GmbH,AT,EUR,30,,,DAP,2006-03-01,logistics and freight,spend only,false,,,C
+sup:71005,Eltzhof Blechbearbeitung s.r.o.,CZ,EUR,30,,,DAP,2010-01-01,sheet metal,spend only,false,,,C
+sup:71006,Tremling Elektrotechnik GmbH,DE,EUR,30,,,DAP,2015-01-01,electrical,spend only,false,,,C
+sup:71007,Gravstein Kabelkonfektion Sp. z o.o.,PL,EUR,30,,,DAP,2024-05-01,electrical,spend only,false,,,C
+sup:71008,Tremlbach Industriebedarf GmbH,DE,EUR,30,,,DAP,2004-08-01,MRO and tools,spend only,false,,,C
+sup:71009,Sappwang Gummitechnik GmbH,AT,EUR,30,,,DAP,2015-04-01,seals,spend only,false,,,B
+sup:71010,Wieslmann Spedition GmbH,DE,EUR,30,,,DAP,2019-12-01,logistics and freight,spend only,false,,,C
+sup:71011,Wieslbach Verpackung GmbH,DE,EUR,30,,,DAP,2023-02-01,packaging,spend only,false,,,C
+sup:71012,Tremling Bürobedarf GmbH,DE,EUR,30,,,DAP,2015-07-01,IT and office,spend only,false,,,C
+sup:71013,Daxing Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2023-11-01,electrical,spend only,false,,,C
+sup:71014,Dolmmann Industriebedarf GmbH,DE,EUR,30,,,DAP,2006-08-01,MRO and tools,spend only,false,,,C
+sup:71015,Abelberg Spedition GmbH,DE,EUR,30,,,DAP,2001-10-01,logistics and freight,spend only,false,,,C
+sup:71016,Eltzreuth Industriebedarf GmbH,DE,EUR,30,,,DAP,2018-10-01,MRO and tools,spend only,false,,,C
+sup:71017,Zeilmann Normteile GmbH,DE,EUR,30,,,DAP,2008-09-01,C-parts,spend only,false,,,C
+sup:71018,Niesau Kartonagen GmbH,DE,EUR,30,,,DAP,2008-08-01,packaging,spend only,false,,,C
+sup:71019,Ottller Befestigungen GmbH,DE,EUR,30,,,DAP,2025-01-01,C-parts,spend only,false,,,B
+sup:71020,Tremlberg Industriebedarf GmbH,DE,EUR,30,,,DAP,2018-07-01,MRO and tools,spend only,false,,,C
+sup:71021,Sappstein Befestigungen GmbH,AT,EUR,30,,,DAP,1999-02-01,C-parts,spend only,false,,,C
+sup:71022,Quelltal Verpackung GmbH,DE,EUR,30,,,DAP,2019-10-01,packaging,spend only,false,,,C
+sup:71023,Sapptal Industrieservice GmbH,DE,EUR,30,,,DAP,2001-11-01,services and maintenance,spend only,false,,,C
+sup:71024,Josthof Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2011-05-01,electrical,spend only,false,,,C
+sup:71025,Niesfeld Lasertechnik GmbH,DE,EUR,30,,,DAP,2002-10-01,sheet metal,spend only,false,,,C
+sup:71026,Jostberg Werkzeughandel GmbH,DE,EUR,30,,,DAP,2013-08-01,MRO and tools,spend only,false,,,C
+sup:71027,Lormberg Normteile GmbH,DE,EUR,30,,,DAP,2013-08-01,C-parts,spend only,false,,,C
+sup:71028,Eltztal Drehteile GmbH,DE,EUR,30,,,DAP,2023-12-01,machined parts,spend only,false,,,C
+sup:71029,Uskbach Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2017-09-01,electrical,spend only,false,,,C
+sup:71030,Zeiling Industrieservice GmbH,AT,EUR,30,,,DAP,2018-11-01,services and maintenance,spend only,false,,,C
+sup:71031,Zeileder Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2020-10-01,electrical,spend only,false,,,C
+sup:71032,Eltzstein Industrieservice GmbH,DE,EUR,30,,,DAP,2023-03-01,services and maintenance,spend only,false,,,C
+sup:71033,Daxstein Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2014-05-01,electrical,spend only,false,,,C
+sup:71034,Dolmreuth Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2016-03-01,electrical,spend only,false,,,C
+sup:71035,Sappwang Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2024-05-01,electrical,spend only,false,,,C
+sup:71036,Joststein Lasertechnik GmbH,AT,EUR,30,,,DAP,1999-06-01,sheet metal,spend only,false,,,C
+sup:71037,Daxeder CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2000-08-01,machined parts,spend only,false,,,C
+sup:71038,Niestal Industrieservice GmbH,DE,EUR,30,,,DAP,2003-10-01,services and maintenance,spend only,false,,,C
+sup:71039,Sappfeld Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2004-05-01,sheet metal,spend only,false,,,C
+sup:71040,Abeller Werkzeughandel GmbH,DE,EUR,30,,,DAP,2012-09-01,MRO and tools,spend only,false,,,C
+sup:71041,Volkberg CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2018-08-01,machined parts,spend only,false,,,C
+sup:71042,Kellhof Transporte GmbH,AT,EUR,30,,,DAP,2005-04-01,logistics and freight,spend only,false,,,C
+sup:71043,Eltzing Anlagenwartung GmbH,DE,EUR,30,,,DAP,2022-05-01,services and maintenance,spend only,false,,,C
+sup:71044,Lorming Spedition GmbH,AT,EUR,30,,,DAP,2012-04-01,logistics and freight,spend only,false,,,C
+sup:71045,Eltzing Lasertechnik GmbH,DE,EUR,30,,,DAP,2003-08-01,sheet metal,spend only,false,,,B
+sup:71046,Immstein Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2002-09-01,sheet metal,spend only,false,,,C
+sup:71047,Uskbach Befestigungen GmbH,DE,EUR,30,,,DAP,2008-08-01,C-parts,spend only,false,,,C
+sup:71048,Lormstein Gusstechnik GmbH,DE,EUR,30,,,DAP,2016-12-01,castings,spend only,false,,,C
+sup:71049,Gravfeld Drehteile GmbH,DE,EUR,30,,,DAP,2003-05-01,machined parts,spend only,false,,,C
+sup:71050,Tremlmann Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2007-04-01,electrical,spend only,false,,,C
+sup:71051,Wiesleder Anlagenwartung GmbH,DE,EUR,30,,,DAP,2023-07-01,services and maintenance,spend only,false,,,C
+sup:71052,Brixler Industrieservice GmbH,DE,EUR,30,,,DAP,2009-01-01,services and maintenance,spend only,false,,,C
+sup:71053,Rullstein Industriebedarf GmbH,DE,EUR,30,,,DAP,2000-02-01,MRO and tools,spend only,false,,,C
+sup:71054,Immhof Industrieservice GmbH,DE,EUR,30,,,DAP,2016-05-01,services and maintenance,spend only,false,,,C
+sup:71055,Zeilbach Werkzeughandel GmbH,AT,EUR,30,,,DAP,2008-08-01,MRO and tools,spend only,false,,,C
+sup:71056,Rullbach Werkzeughandel GmbH,DE,EUR,30,,,DAP,2023-03-01,MRO and tools,spend only,false,,,C
+sup:71057,Wieslwang Normteile GmbH,DE,EUR,30,,,DAP,2000-09-01,C-parts,spend only,false,,,C
+sup:71058,Gravhof Elektrotechnik GmbH,DE,EUR,30,,,DAP,2014-12-01,electrical,spend only,false,,,C
+sup:71059,Eltzeder Spedition GmbH,DE,EUR,30,,,DAP,2024-04-01,logistics and freight,spend only,false,,,C
+sup:71060,Hulming Kartonagen GmbH,AT,EUR,30,,,DAP,1998-02-01,packaging,spend only,false,,,C
+sup:71061,Arnner Transporte GmbH,DE,EUR,30,,,DAP,2025-06-01,logistics and freight,spend only,false,,,C
+sup:71062,Volkreuth Industriebedarf Sp. z o.o.,PL,EUR,30,,,DAP,2007-06-01,MRO and tools,spend only,false,,,C
+sup:71063,Dolmberg Industrieservice GmbH,DE,EUR,30,,,DAP,2023-12-01,services and maintenance,spend only,false,,,C
+sup:71064,Volkler Werkzeughandel GmbH,DE,EUR,30,,,DAP,2020-03-01,MRO and tools,spend only,false,,,C
+sup:71065,Dolmhof Werkzeughandel GmbH,DE,EUR,30,,,DAP,2014-10-01,MRO and tools,spend only,false,,,C
+sup:71066,Joststein Werkzeughandel GmbH,DE,EUR,30,,,DAP,2014-11-01,MRO and tools,spend only,false,,,C
+sup:71067,Eltzreuth Elektrotechnik GmbH,DE,EUR,30,,,DAP,2003-04-01,electrical,spend only,false,,,C
+sup:71068,Brixfeld Werkzeughandel GmbH,DE,EUR,30,,,DAP,2018-08-01,MRO and tools,spend only,false,,,C
+sup:71069,Quellreuth Werkzeughandel GmbH,AT,EUR,30,,,DAP,2008-05-01,MRO and tools,spend only,false,,,C
+sup:71070,Kellwang Transporte GmbH,DE,EUR,30,,,DAP,2001-05-01,logistics and freight,spend only,false,,,C
+sup:71071,Jostler Spedition GmbH,DE,EUR,30,,,DAP,2001-02-01,logistics and freight,spend only,false,,,C
+sup:71072,Quellfeld Anlagenwartung GmbH,DE,EUR,30,,,DAP,2003-11-01,services and maintenance,spend only,false,,,C
+sup:71073,Arnhof Spedition GmbH,DE,EUR,30,,,DAP,1999-11-01,logistics and freight,spend only,false,,,C
+sup:71074,Ottleder Anlagenwartung Sp. z o.o.,PL,EUR,30,,,DAP,2020-02-01,services and maintenance,spend only,false,,,C
+sup:71075,Prankhof Befestigungen GmbH,DE,EUR,30,,,DAP,2020-11-01,C-parts,spend only,false,,,C
+sup:71076,Abelstein Elektrotechnik GmbH,DE,EUR,30,,,DAP,2025-09-01,electrical,spend only,false,,,C
+sup:71077,Wieslberg Drehteile GmbH,DE,EUR,30,,,DAP,2024-01-01,machined parts,spend only,false,,,C
+sup:71078,Lormhof Werkzeughandel GmbH,DE,EUR,30,,,DAP,2020-02-01,MRO and tools,spend only,false,,,C
+sup:71079,Rulling Werkzeughandel GmbH,DE,EUR,30,,,DAP,2007-02-01,MRO and tools,spend only,false,,,C
+sup:71080,Abeleder Elektrotechnik GmbH,DE,EUR,30,,,DAP,1999-11-01,electrical,spend only,false,,,C
+sup:71081,Fenntal Transporte GmbH,DE,EUR,30,,,DAP,2022-03-01,logistics and freight,spend only,false,,,C
+sup:71082,Rullwang Transporte GmbH,DE,EUR,30,,,DAP,2012-02-01,logistics and freight,spend only,false,,,C
+sup:71083,Volktal Werkzeughandel s.r.o.,CZ,EUR,30,,,DAP,2021-11-01,MRO and tools,spend only,false,,,C
+sup:71084,Tremlwang Spedition GmbH,DE,EUR,30,,,DAP,2019-08-01,logistics and freight,spend only,false,,,C
+sup:71085,Ottlreuth Elektrotechnik GmbH,DE,EUR,30,,,DAP,1998-02-01,electrical,spend only,false,,,C
+sup:71086,Brixbach Normteile GmbH,DE,EUR,30,,,DAP,2001-10-01,C-parts,spend only,false,,,C
+sup:71087,Arnmann Gusstechnik GmbH,DE,EUR,30,,,DAP,2024-05-01,castings,spend only,false,,,C
+sup:71088,Niesberg Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2019-12-01,electrical,spend only,false,,,C
+sup:71089,Prankmann CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2014-08-01,machined parts,spend only,false,,,C
+sup:71090,Hulmbach Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2013-02-01,electrical,spend only,false,,,C
+sup:71091,Fennreuth Transporte GmbH,DE,EUR,30,,,DAP,2009-09-01,logistics and freight,spend only,false,,,C
+sup:71092,Uskfeld Industriebedarf GmbH,DE,EUR,30,,,DAP,2000-05-01,MRO and tools,spend only,false,,,C
+sup:71093,Daxler Dichtungen GmbH,DE,EUR,30,,,DAP,2019-04-01,seals,spend only,false,,,C
+sup:71094,Tremlreuth Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2010-06-01,electrical,spend only,false,,,C
+sup:71095,Quellreuth Drehteile GmbH,DE,EUR,30,,,DAP,2022-12-01,machined parts,spend only,false,,,C
+sup:71096,Hulming Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2023-08-01,electrical,spend only,false,,,C
+sup:71097,Sappau Befestigungen GmbH,DE,EUR,30,,,DAP,2018-12-01,C-parts,spend only,false,,,C
+sup:71098,Dolmwang Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2023-01-01,electrical,spend only,false,,,C
+sup:71099,Quellberg Industriebedarf GmbH,DE,EUR,30,,,DAP,2022-03-01,MRO and tools,spend only,false,,,C
+sup:71100,Kelltal Drehteile GmbH,DE,EUR,30,,,DAP,1999-11-01,machined parts,spend only,false,,,C
+sup:71101,Abelhof Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2019-06-01,sheet metal,spend only,false,,,B
+sup:71102,Sappwang Verpackung GmbH,AT,EUR,30,,,DAP,2008-12-01,packaging,spend only,false,,,C
+sup:71103,Niesberg Industriebedarf GmbH,DE,EUR,30,,,DAP,2006-02-01,MRO and tools,spend only,false,,,C
+sup:71104,Quelleder Gummitechnik GmbH,DE,EUR,30,,,DAP,2020-05-01,seals,spend only,false,,,C
+sup:71105,Uskhof CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2021-07-01,machined parts,spend only,false,,,B
+sup:71106,Zeilstein Werkzeughandel GmbH,DE,EUR,30,,,DAP,2002-06-01,MRO and tools,spend only,false,,,C
+sup:71107,Uskreuth Industriebedarf GmbH,DE,EUR,30,,,DAP,1999-05-01,MRO and tools,spend only,false,,,C
+sup:71108,Volkler Transporte GmbH,DE,EUR,30,,,DAP,2003-04-01,logistics and freight,spend only,false,,,C
+sup:71109,Gravreuth CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2006-05-01,machined parts,spend only,false,,,C
+sup:71110,Dolmhof Befestigungen GmbH,DE,EUR,30,,,DAP,2015-04-01,C-parts,spend only,false,,,C
+sup:71111,Eltzner Kartonagen GmbH,DE,EUR,30,,,DAP,2024-09-01,packaging,spend only,false,,,C
+sup:71112,Abelbach Drehteile GmbH,DE,EUR,30,,,DAP,2004-02-01,machined parts,spend only,false,,,C
+sup:71113,Dolmau Werkzeughandel GmbH,DE,EUR,30,,,DAP,2011-07-01,MRO and tools,spend only,false,,,C
+sup:71114,Tremller Werkzeughandel GmbH,DE,EUR,30,,,DAP,2024-12-01,MRO and tools,spend only,false,,,C
+sup:71115,Uskstein Kartonagen GmbH,DE,EUR,30,,,DAP,2015-09-01,packaging,spend only,false,,,C
+sup:71116,Ottlmann Befestigungen GmbH,DE,EUR,30,,,DAP,1998-10-01,C-parts,spend only,false,,,B
+sup:71117,Lormmann Elektrotechnik Sp. z o.o.,PL,EUR,30,,,DAP,2004-11-01,electrical,spend only,false,,,C
+sup:71118,Eltzhof Transporte GmbH,DE,EUR,30,,,DAP,2023-05-01,logistics and freight,spend only,false,,,C
+sup:71119,Rulleder CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2023-10-01,machined parts,spend only,false,,,C
+sup:71120,Brixmann Spedition GmbH,DE,EUR,30,,,DAP,2015-12-01,logistics and freight,spend only,false,,,C
+sup:71121,Immstein Spedition GmbH,DE,EUR,30,,,DAP,2020-12-01,logistics and freight,spend only,false,,,C
+sup:71122,Hulming Drehteile GmbH,DE,EUR,30,,,DAP,2021-12-01,machined parts,spend only,false,,,C
+sup:71123,Eltzreuth Normteile GmbH,DE,EUR,30,,,DAP,2024-09-01,C-parts,spend only,false,,,C
+sup:71124,Abelstein Werkzeughandel GmbH,DE,EUR,30,,,DAP,2021-06-01,MRO and tools,spend only,false,,,C
+sup:71125,Fennau Verpackung GmbH,DE,EUR,30,,,DAP,2017-04-01,packaging,spend only,false,,,C
+sup:71126,Brixler Kartonagen GmbH,AT,EUR,30,,,DAP,2025-09-01,packaging,spend only,false,,,C
+sup:71127,Tremlreuth Drehteile GmbH,DE,EUR,30,,,DAP,1999-02-01,machined parts,spend only,false,,,C
+sup:71128,Volkau Gusstechnik GmbH,DE,EUR,30,,,DAP,2018-01-01,castings,spend only,false,,,B
+sup:71129,Uskau Anlagenwartung GmbH,DE,EUR,30,,,DAP,2003-04-01,services and maintenance,spend only,false,,,C
+sup:71130,Fennler Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2025-04-01,sheet metal,spend only,false,,,C
+sup:71131,Ottlstein Drehteile GmbH,DE,EUR,30,,,DAP,2021-09-01,machined parts,spend only,false,,,C
+sup:71132,Dolmbach Drehteile GmbH,DE,EUR,30,,,DAP,2024-07-01,machined parts,spend only,false,,,C
+sup:71133,Volkbach Elektrotechnik GmbH,DE,EUR,30,,,DAP,2007-11-01,electrical,spend only,false,,,C
+sup:71134,Rullwang Befestigungen GmbH,DE,EUR,30,,,DAP,2004-09-01,C-parts,spend only,false,,,C
+sup:71135,Eltzstein Industriebedarf GmbH,AT,EUR,30,,,DAP,2011-11-01,MRO and tools,spend only,false,,,C
+sup:71136,Abelhof Anlagenwartung GmbH,DE,EUR,30,,,DAP,2012-03-01,services and maintenance,spend only,false,,,C
+sup:71137,Zeilner Blechbearbeitung s.r.o.,CZ,EUR,30,,,DAP,2000-12-01,sheet metal,spend only,false,,,C
+sup:71138,Volkberg Bürobedarf GmbH,DE,EUR,30,,,DAP,2004-05-01,IT and office,spend only,false,,,C
+sup:71139,Lormmann Spedition GmbH,DE,EUR,30,,,DAP,2017-09-01,logistics and freight,spend only,false,,,C
+sup:71140,Gravstein Transporte GmbH,DE,EUR,30,,,DAP,2004-12-01,logistics and freight,spend only,false,,,C
+sup:71141,Josttal Transporte GmbH,AT,EUR,30,,,DAP,2006-06-01,logistics and freight,spend only,false,,,C
+sup:71142,Dolmtal Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2005-11-01,electrical,spend only,false,,,C
+sup:71143,Eltzau Dichtungen Sp. z o.o.,PL,EUR,30,,,DAP,2016-11-01,seals,spend only,false,,,C
+sup:71144,Wieslstein Industriebedarf GmbH,DE,EUR,30,,,DAP,2006-08-01,MRO and tools,spend only,false,,,B
+sup:71145,Niesbach Gusstechnik GmbH,DE,EUR,30,,,DAP,2015-06-01,castings,spend only,false,,,C
+sup:71146,Ottlstein Transporte GmbH,DE,EUR,30,,,DAP,2005-08-01,logistics and freight,spend only,false,,,C
+sup:71147,Immhof Elektrotechnik GmbH,DE,EUR,30,,,DAP,2012-06-01,electrical,spend only,false,,,C
+sup:71148,Josttal CNC-Fertigung s.r.o.,CZ,EUR,30,,,DAP,2003-03-01,machined parts,spend only,false,,,C
+sup:71149,Arnner Werkzeughandel GmbH,DE,EUR,30,,,DAP,2022-08-01,MRO and tools,spend only,false,,,C
+sup:71150,Fennberg Normteile GmbH,DE,EUR,30,,,DAP,2019-12-01,C-parts,spend only,false,,,B
+sup:71151,Eltzfeld Industrieservice GmbH,DE,EUR,30,,,DAP,2010-04-01,services and maintenance,spend only,false,,,C
+sup:71152,Wieslmann Lasertechnik GmbH,DE,EUR,30,,,DAP,2000-01-01,sheet metal,spend only,false,,,C
+sup:71153,Tremlfeld Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2010-08-01,sheet metal,spend only,false,,,C
+sup:71154,Kelleder Industrieservice GmbH,DE,EUR,30,,,DAP,2012-09-01,services and maintenance,spend only,false,,,C
+sup:71155,Daxeder Dichtungen GmbH,DE,EUR,30,,,DAP,2025-11-01,seals,spend only,false,,,C
+sup:71156,Ottller Verpackung GmbH,DE,EUR,30,,,DAP,2001-12-01,packaging,spend only,false,,,B
+sup:71157,Jostreuth Lasertechnik GmbH,AT,EUR,30,,,DAP,2025-05-01,sheet metal,spend only,false,,,C
+sup:71158,Abeleder CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2000-09-01,machined parts,spend only,false,,,C
+sup:71159,Abelfeld Befestigungen GmbH,AT,EUR,30,,,DAP,2009-04-01,C-parts,spend only,false,,,C
+sup:71160,Abeller Industriebedarf GmbH,DE,EUR,30,,,DAP,2017-02-01,MRO and tools,spend only,false,,,C
+sup:71161,Rulltal Transporte GmbH,DE,EUR,30,,,DAP,2020-11-01,logistics and freight,spend only,false,,,C
+sup:71162,Eltzstein Kartonagen GmbH,DE,EUR,30,,,DAP,2001-09-01,packaging,spend only,false,,,C
+sup:71163,Eltzreuth Industrieservice GmbH,DE,EUR,30,,,DAP,2021-01-01,services and maintenance,spend only,false,,,C
+sup:71164,Fennreuth Elektrotechnik GmbH,DE,EUR,30,,,DAP,2009-10-01,electrical,spend only,false,,,C
+sup:71165,Birkreuth Normteile GmbH,DE,EUR,30,,,DAP,2015-10-01,C-parts,spend only,false,,,C
+sup:71166,Hulmstein Drehteile GmbH,DE,EUR,30,,,DAP,2006-01-01,machined parts,spend only,false,,,C
+sup:71167,Immhof Normteile GmbH,DE,EUR,30,,,DAP,2023-02-01,C-parts,spend only,false,,,C
+sup:71168,Ottller Kartonagen GmbH,DE,EUR,30,,,DAP,2000-01-01,packaging,spend only,false,,,C
+sup:71169,Arnwang Transporte GmbH,DE,EUR,30,,,DAP,2013-09-01,logistics and freight,spend only,false,,,C
+sup:71170,Prankreuth Gusstechnik GmbH,DE,EUR,30,,,DAP,2009-09-01,castings,spend only,false,,,C
+sup:71171,Lormreuth Industriebedarf GmbH,DE,EUR,30,,,DAP,2018-12-01,MRO and tools,spend only,false,,,B
+sup:71172,Birktal Kartonagen GmbH,AT,EUR,30,,,DAP,2014-11-01,packaging,spend only,false,,,C
+sup:71173,Kellhof Befestigungen GmbH,DE,EUR,30,,,DAP,2021-12-01,C-parts,spend only,false,,,C
+sup:71174,Uskberg Drehteile GmbH,DE,EUR,30,,,DAP,2009-11-01,machined parts,spend only,false,,,C
+sup:71175,Tremleder Industriebedarf GmbH,DE,EUR,30,,,DAP,2023-02-01,MRO and tools,spend only,false,,,C
+sup:71176,Uskbach Transporte GmbH,DE,EUR,30,,,DAP,2016-09-01,logistics and freight,spend only,false,,,C
+sup:71177,Usktal Anlagenwartung GmbH,DE,EUR,30,,,DAP,2010-09-01,services and maintenance,spend only,false,,,C
+sup:71178,Dolmhof Transporte GmbH,DE,EUR,30,,,DAP,2019-08-01,logistics and freight,spend only,false,,,B
+sup:71179,Quellner Modellbau GmbH,DE,EUR,30,,,DAP,2025-10-01,castings,spend only,false,,,C
+sup:71180,Quellwang Werkzeughandel GmbH,DE,EUR,30,,,DAP,2008-04-01,MRO and tools,spend only,false,,,A
+sup:71181,Eltzberg Normteile GmbH,DE,EUR,30,,,DAP,2009-07-01,C-parts,spend only,false,,,C
+sup:71182,Hulmau Industriebedarf GmbH,DE,EUR,30,,,DAP,2019-07-01,MRO and tools,spend only,false,,,C
+sup:71183,Rullbach Drehteile GmbH,AT,EUR,30,,,DAP,2000-06-01,machined parts,spend only,false,,,B
+sup:71184,Wieslhof Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2024-05-01,electrical,spend only,false,,,C
+sup:71185,Daxstein Elektrotechnik GmbH,DE,EUR,30,,,DAP,2020-09-01,electrical,spend only,false,,,C
+sup:71186,Pranktal Anlagenwartung GmbH,DE,EUR,30,,,DAP,2015-11-01,services and maintenance,spend only,false,,,C
+sup:71187,Hulmberg Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2007-06-01,electrical,spend only,false,,,C
+sup:71188,Birkler Industrieservice GmbH,DE,EUR,30,,,DAP,2003-06-01,services and maintenance,spend only,false,,,B
+sup:71189,Gravmann Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2021-11-01,electrical,spend only,false,,,C
+sup:71190,Birkler Anlagenwartung GmbH,DE,EUR,30,,,DAP,2022-08-01,services and maintenance,spend only,false,,,B
+sup:71191,Prankeder Lasertechnik GmbH,DE,EUR,30,,,DAP,2007-05-01,sheet metal,spend only,false,,,C
+sup:71192,Uskberg Anlagenwartung GmbH,DE,EUR,30,,,DAP,2003-06-01,services and maintenance,spend only,false,,,C
+sup:71193,Eltzbach Verpackung GmbH,DE,EUR,30,,,DAP,2018-02-01,packaging,spend only,false,,,C
+sup:71194,Brixstein Gummitechnik Sp. z o.o.,PL,EUR,30,,,DAP,2008-07-01,seals,spend only,false,,,B
+sup:71195,Daxreuth Gummitechnik GmbH,DE,EUR,30,,,DAP,2003-04-01,seals,spend only,false,,,C
+sup:71196,Gravtal CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2009-02-01,machined parts,spend only,false,,,B
+sup:71197,Josthof Normteile GmbH,DE,EUR,30,,,DAP,2017-03-01,C-parts,spend only,false,,,B
+sup:71198,Birkler Kabelkonfektion s.r.o.,CZ,EUR,30,,,DAP,2004-10-01,electrical,spend only,false,,,B
+sup:71199,Dolmau Industriebedarf GmbH,DE,EUR,30,,,DAP,1998-08-01,MRO and tools,spend only,false,,,C
+sup:71200,Lormler Gummitechnik GmbH,DE,EUR,30,,,DAP,2014-04-01,seals,spend only,false,,,C
+sup:71201,Hulmau Dichtungen GmbH,DE,EUR,30,,,DAP,2005-11-01,seals,spend only,false,,,C
+sup:71202,Sappner Werkzeughandel GmbH,DE,EUR,30,,,DAP,2002-04-01,MRO and tools,spend only,false,,,C
+sup:71203,Dolmmann Anlagenwartung GmbH,DE,EUR,30,,,DAP,2013-03-01,services and maintenance,spend only,false,,,C
+sup:71204,Fennberg Transporte GmbH,DE,EUR,30,,,DAP,2001-07-01,logistics and freight,spend only,false,,,C
+sup:71205,Wiesller Spedition GmbH,DE,EUR,30,,,DAP,1998-12-01,logistics and freight,spend only,false,,,C
+sup:71206,Abelberg IT-Systeme GmbH,DE,EUR,30,,,DAP,2018-05-01,IT and office,spend only,false,,,C
+sup:71207,Brixmann Normteile GmbH,DE,EUR,30,,,DAP,2006-07-01,C-parts,spend only,false,,,C
+sup:71208,Ottlfeld Kabelkonfektion Sp. z o.o.,PL,EUR,30,,,DAP,2016-05-01,electrical,spend only,false,,,C
+sup:71209,Rulleder Bürobedarf GmbH,DE,EUR,30,,,DAP,2004-08-01,IT and office,spend only,false,,,C
+sup:71210,Tremlmann Werkzeughandel GmbH,DE,EUR,30,,,DAP,2009-11-01,MRO and tools,spend only,false,,,C
+sup:71211,Rullbach Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2000-08-01,electrical,spend only,false,,,C
+sup:71212,Daxhof IT-Systeme GmbH,DE,EUR,30,,,DAP,2007-12-01,IT and office,spend only,false,,,C
+sup:71213,Quellau Befestigungen GmbH,DE,EUR,30,,,DAP,2014-04-01,C-parts,spend only,false,,,C
+sup:71214,Brixeder Transporte GmbH,DE,EUR,30,,,DAP,2023-06-01,logistics and freight,spend only,false,,,C
+sup:71215,Eltzmann Bürobedarf GmbH,DE,EUR,30,,,DAP,2003-08-01,IT and office,spend only,false,,,C
+sup:71216,Wiesling Werkzeughandel GmbH,DE,EUR,30,,,DAP,2019-01-01,MRO and tools,spend only,false,,,C
+sup:71217,Ottlmann Bürobedarf GmbH,DE,EUR,30,,,DAP,2015-08-01,IT and office,spend only,false,,,C
+sup:71218,Pranking Anlagenwartung GmbH,DE,EUR,30,,,DAP,2003-11-01,services and maintenance,spend only,false,,,B
+sup:71219,Fennau CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2025-08-01,machined parts,spend only,false,,,C
+sup:71220,Sapptal Drehteile GmbH,DE,EUR,30,,,DAP,2018-01-01,machined parts,spend only,false,,,C
+sup:71221,Quellstein Gusstechnik GmbH,DE,EUR,30,,,DAP,2014-10-01,castings,spend only,false,,,C
+sup:71222,Prankner Industriebedarf GmbH,AT,EUR,30,,,DAP,2021-05-01,MRO and tools,spend only,false,,,C
+sup:71223,Mettfeld Drehteile GmbH,DE,EUR,30,,,DAP,2022-05-01,machined parts,spend only,false,,,C
+sup:71224,Prankwang Industriebedarf GmbH,DE,EUR,30,,,DAP,2018-08-01,MRO and tools,spend only,false,,,C
+sup:71225,Volkeder Werkzeughandel GmbH,DE,EUR,30,,,DAP,2021-12-01,MRO and tools,spend only,false,,,C
+sup:71226,Abeltal Befestigungen GmbH,DE,EUR,30,,,DAP,2019-01-01,C-parts,spend only,false,,,C
+sup:71227,Uskler Dichtungen GmbH,DE,EUR,30,,,DAP,2020-01-01,seals,spend only,false,,,C
+sup:71228,Volking Blechbearbeitung Sp. z o.o.,PL,EUR,30,,,DAP,2016-11-01,sheet metal,spend only,false,,,C
+sup:71229,Nieseder Elektrotechnik GmbH,DE,EUR,30,,,DAP,2015-10-01,electrical,spend only,false,,,C
+sup:71230,Metteder Verpackung GmbH,DE,EUR,30,,,DAP,2006-10-01,packaging,spend only,false,,,C
+sup:71231,Uskner Industriebedarf GmbH,DE,EUR,30,,,DAP,2014-12-01,MRO and tools,spend only,false,,,C
+sup:71232,Kellfeld Drehteile GmbH,DE,EUR,30,,,DAP,2010-06-01,machined parts,spend only,false,,,C
+sup:71233,Tremlwang Industriebedarf GmbH,DE,EUR,30,,,DAP,2014-01-01,MRO and tools,spend only,false,,,C
+sup:71234,Eltzler Drehteile GmbH,DE,EUR,30,,,DAP,2004-11-01,machined parts,spend only,false,,,C
+sup:71235,Gravner Gummitechnik GmbH,AT,EUR,30,,,DAP,2024-04-01,seals,spend only,false,,,C
+sup:71236,Eltzfeld Normteile GmbH,DE,EUR,30,,,DAP,2015-11-01,C-parts,spend only,false,,,C
+sup:71237,Fennmann Werkzeughandel GmbH,DE,EUR,30,,,DAP,2009-09-01,MRO and tools,spend only,false,,,C
+sup:71238,Eltzler Transporte GmbH,DE,EUR,30,,,DAP,2023-05-01,logistics and freight,spend only,false,,,C
+sup:71239,Zeilmann Spedition GmbH,AT,EUR,30,,,DAP,2000-07-01,logistics and freight,spend only,false,,,C
+sup:71240,Sappwang Kartonagen GmbH,DE,EUR,30,,,DAP,2020-05-01,packaging,spend only,false,,,C
+sup:71241,Hulmreuth Transporte GmbH,DE,EUR,30,,,DAP,2015-03-01,logistics and freight,spend only,false,,,B
+sup:71242,Immberg Industriebedarf s.r.o.,CZ,EUR,30,,,DAP,2005-05-01,MRO and tools,spend only,false,,,C
+sup:71243,Eltzwang Werkzeughandel GmbH,DE,EUR,30,,,DAP,2024-10-01,MRO and tools,spend only,false,,,C
+sup:71244,Abelner Modellbau GmbH,DE,EUR,30,,,DAP,2013-04-01,castings,spend only,false,,,C
+sup:71245,Dolmtal Lasertechnik GmbH,DE,EUR,30,,,DAP,2025-08-01,sheet metal,spend only,false,,,C
+sup:71246,Quellberg Gummitechnik GmbH,DE,EUR,30,,,DAP,2007-08-01,seals,spend only,false,,,B
+sup:71247,Usktal Befestigungen GmbH,DE,EUR,30,,,DAP,2015-05-01,C-parts,spend only,false,,,C
+sup:71248,Zeileder Transporte GmbH,DE,EUR,30,,,DAP,2015-02-01,logistics and freight,spend only,false,,,C
+sup:71249,Metthof Elektrotechnik GmbH,DE,EUR,30,,,DAP,2005-08-01,electrical,spend only,false,,,C
+sup:71250,Immeder Verpackung GmbH,DE,EUR,30,,,DAP,2007-10-01,packaging,spend only,false,,,C
+sup:71251,Jostler Modellbau GmbH,DE,EUR,30,,,DAP,2005-12-01,castings,spend only,false,,,C
+sup:71252,Mettreuth Dichtungen s.r.o.,CZ,EUR,30,,,DAP,2022-06-01,seals,spend only,false,,,C
+sup:71253,Immreuth Kabelkonfektion GmbH,AT,EUR,30,,,DAP,2023-09-01,electrical,spend only,false,,,C
+sup:71254,Wieslwang Industriebedarf GmbH,DE,EUR,30,,,DAP,1998-06-01,MRO and tools,spend only,false,,,C
+sup:71255,Nieseder Normteile GmbH,DE,EUR,30,,,DAP,1998-05-01,C-parts,spend only,false,,,C
+sup:71256,Gravmann Befestigungen GmbH,AT,EUR,30,,,DAP,2003-02-01,C-parts,spend only,false,,,B
+sup:71257,Ottlbach Anlagenwartung GmbH,DE,EUR,30,,,DAP,2004-09-01,services and maintenance,spend only,false,,,C
+sup:71258,Quelltal Anlagenwartung GmbH,DE,EUR,30,,,DAP,2017-03-01,services and maintenance,spend only,false,,,B
+sup:71259,Kelltal Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2022-09-01,electrical,spend only,false,,,C
+sup:71260,Rulling Befestigungen GmbH,DE,EUR,30,,,DAP,2016-06-01,C-parts,spend only,false,,,C
+sup:71261,Immhof Kartonagen GmbH,DE,EUR,30,,,DAP,2001-07-01,packaging,spend only,false,,,C
+sup:71262,Immwang Werkzeughandel GmbH,AT,EUR,30,,,DAP,1998-12-01,MRO and tools,spend only,false,,,C
+sup:71263,Immau Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2018-12-01,electrical,spend only,false,,,C
+sup:71264,Niesreuth Spedition GmbH,DE,EUR,30,,,DAP,2004-10-01,logistics and freight,spend only,false,,,C
+sup:71265,Gravner Gusstechnik s.r.o.,CZ,EUR,30,,,DAP,2017-04-01,castings,spend only,false,,,C
+sup:71266,Jostreuth Kabelkonfektion s.r.o.,CZ,EUR,30,,,DAP,2005-03-01,electrical,spend only,false,,,B
+sup:71267,Hulmeder Werkzeughandel GmbH,DE,EUR,30,,,DAP,2001-08-01,MRO and tools,spend only,false,,,C
+sup:71268,Gravreuth Werkzeughandel GmbH,DE,EUR,30,,,DAP,2005-03-01,MRO and tools,spend only,false,,,C
+sup:71269,Lormberg Bürobedarf GmbH,AT,EUR,30,,,DAP,2014-09-01,IT and office,spend only,false,,,C
+sup:71270,Prankwang Elektrotechnik GmbH,DE,EUR,30,,,DAP,2000-04-01,electrical,spend only,false,,,C
+sup:71271,Abelner Elektrotechnik GmbH,DE,EUR,30,,,DAP,2023-09-01,electrical,spend only,false,,,C
+sup:71272,Fennwang Befestigungen GmbH,DE,EUR,30,,,DAP,2006-08-01,C-parts,spend only,false,,,C
+sup:71273,Immner Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2018-10-01,electrical,spend only,false,,,C
+sup:71274,Fennmann Industriebedarf s.r.o.,CZ,EUR,30,,,DAP,2002-08-01,MRO and tools,spend only,false,,,C
+sup:71275,Kellstein Transporte GmbH,DE,EUR,30,,,DAP,2023-12-01,logistics and freight,spend only,false,,,C
+sup:71276,Wiesling Lasertechnik GmbH,DE,EUR,30,,,DAP,2021-12-01,sheet metal,spend only,false,,,B
+sup:71277,Eltzeder Gusstechnik GmbH,AT,EUR,30,,,DAP,2001-03-01,castings,spend only,false,,,C
+sup:71278,Tremlbach Verpackung GmbH,DE,EUR,30,,,DAP,2001-10-01,packaging,spend only,false,,,C
+sup:71279,Brixberg Normteile GmbH,DE,EUR,30,,,DAP,2010-10-01,C-parts,spend only,false,,,C
+sup:71280,Jostberg Modellbau GmbH,DE,EUR,30,,,DAP,2013-11-01,castings,spend only,false,,,C
+sup:71281,Rulltal Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2000-10-01,sheet metal,spend only,false,,,C
+sup:71282,Uskau Industriebedarf GmbH,DE,EUR,30,,,DAP,2000-09-01,MRO and tools,spend only,false,,,C
+sup:71283,Prankbach Normteile GmbH,DE,EUR,30,,,DAP,2013-08-01,C-parts,spend only,false,,,C
+sup:71284,Mettfeld Gummitechnik GmbH,DE,EUR,30,,,DAP,1999-07-01,seals,spend only,false,,,C
+sup:71285,Wiesltal Elektrotechnik GmbH,DE,EUR,30,,,DAP,2025-08-01,electrical,spend only,false,,,C
+sup:71286,Gravtal Anlagenwartung GmbH,DE,EUR,30,,,DAP,2007-12-01,services and maintenance,spend only,false,,,C
+sup:71287,Eltzmann Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2009-05-01,electrical,spend only,false,,,C
+sup:71288,Daxau Lasertechnik GmbH,DE,EUR,30,,,DAP,2024-09-01,sheet metal,spend only,false,,,C
+sup:71289,Rulleder Industriebedarf GmbH,AT,EUR,30,,,DAP,2000-10-01,MRO and tools,spend only,false,,,C
+sup:71290,Abelreuth Gusstechnik GmbH,AT,EUR,30,,,DAP,2016-08-01,castings,spend only,false,,,B
+sup:71291,Rulltal Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2013-04-01,electrical,spend only,false,,,C
+sup:71292,Prankau Anlagenwartung GmbH,DE,EUR,30,,,DAP,2015-11-01,services and maintenance,spend only,false,,,C
+sup:71293,Nieswang Anlagenwartung GmbH,DE,EUR,30,,,DAP,2002-06-01,services and maintenance,spend only,false,,,C
+sup:71294,Quellfeld Industriebedarf GmbH,DE,EUR,30,,,DAP,2005-10-01,MRO and tools,spend only,false,,,C
+sup:71295,Jostner Spedition GmbH,DE,EUR,30,,,DAP,2000-02-01,logistics and freight,spend only,false,,,C
+sup:71296,Abelner Lasertechnik GmbH,DE,EUR,30,,,DAP,2011-10-01,sheet metal,spend only,false,,,C
+sup:71297,Gravberg Elektrotechnik GmbH,DE,EUR,30,,,DAP,2019-11-01,electrical,spend only,false,,,C
+sup:71298,Ottlhof Drehteile GmbH,DE,EUR,30,,,DAP,2011-11-01,machined parts,spend only,false,,,C
+sup:71299,Gravmann Transporte GmbH,DE,EUR,30,,,DAP,2012-07-01,logistics and freight,spend only,false,,,C
+sup:71300,Zeilmann CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2007-04-01,machined parts,spend only,false,,,C
+sup:71301,Abelbach Industriebedarf GmbH,DE,EUR,30,,,DAP,2017-01-01,MRO and tools,spend only,false,,,C
+sup:71302,Rulling Transporte GmbH,DE,EUR,30,,,DAP,2025-02-01,logistics and freight,spend only,false,,,C
+sup:71303,Jostner Industriebedarf GmbH,DE,EUR,30,,,DAP,2012-06-01,MRO and tools,spend only,false,,,B
+sup:71304,Gravler Lasertechnik GmbH,DE,EUR,30,,,DAP,2021-08-01,sheet metal,spend only,false,,,C
+sup:71305,Ottlfeld CNC-Fertigung GmbH,DE,EUR,30,,,DAP,2020-10-01,machined parts,spend only,false,,,B
+sup:71306,Gravreuth Transporte GmbH,DE,EUR,30,,,DAP,2022-12-01,logistics and freight,spend only,false,,,C
+sup:71307,Lormeder Industrieservice GmbH,DE,EUR,30,,,DAP,2014-11-01,services and maintenance,spend only,false,,,C
+sup:71308,Arntal Normteile GmbH,DE,EUR,30,,,DAP,2012-05-01,C-parts,spend only,false,,,C
+sup:71309,Wiesleder Elektrotechnik GmbH,DE,EUR,30,,,DAP,2008-12-01,electrical,spend only,false,,,C
+sup:71310,Uskbach Industriebedarf s.r.o.,CZ,EUR,30,,,DAP,2003-02-01,MRO and tools,spend only,false,,,C
+sup:71311,Lormberg Modellbau GmbH,AT,EUR,30,,,DAP,2018-02-01,castings,spend only,false,,,C
+sup:71312,Abelbach Spedition GmbH,AT,EUR,30,,,DAP,2013-06-01,logistics and freight,spend only,false,,,C
+sup:71313,Daxreuth Kartonagen GmbH,DE,EUR,30,,,DAP,2024-09-01,packaging,spend only,false,,,C
+sup:71314,Josthof Kartonagen GmbH,DE,EUR,30,,,DAP,2004-01-01,packaging,spend only,false,,,C
+sup:71315,Uskau Dichtungen Sp. z o.o.,PL,EUR,30,,,DAP,2021-03-01,seals,spend only,false,,,C
+sup:71316,Prankreuth Werkzeughandel GmbH,DE,EUR,30,,,DAP,2018-11-01,MRO and tools,spend only,false,,,C
+sup:71317,Zeilau Dichtungen s.r.o.,CZ,EUR,30,,,DAP,2011-07-01,seals,spend only,false,,,C
+sup:71318,Mettbach Spedition GmbH,DE,EUR,30,,,DAP,2023-01-01,logistics and freight,spend only,false,,,C
+sup:71319,Dolmtal Befestigungen GmbH,DE,EUR,30,,,DAP,2001-02-01,C-parts,spend only,false,,,C
+sup:71320,Fennreuth Befestigungen GmbH,DE,EUR,30,,,DAP,2001-01-01,C-parts,spend only,false,,,C
+sup:71321,Uskau Transporte GmbH,DE,EUR,30,,,DAP,2008-10-01,logistics and freight,spend only,false,,,C
+sup:71322,Ottlreuth Spedition GmbH,DE,EUR,30,,,DAP,2000-12-01,logistics and freight,spend only,false,,,C
+sup:71323,Brixhof Elektrotechnik GmbH,AT,EUR,30,,,DAP,2003-09-01,electrical,spend only,false,,,B
+sup:71324,Fennbach Gusstechnik GmbH,DE,EUR,30,,,DAP,2019-12-01,castings,spend only,false,,,C
+sup:71325,Kellreuth Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2012-01-01,sheet metal,spend only,false,,,C
+sup:71326,Rulltal Normteile GmbH,DE,EUR,30,,,DAP,2010-03-01,C-parts,spend only,false,,,C
+sup:71327,Volkhof Befestigungen GmbH,DE,EUR,30,,,DAP,2014-03-01,C-parts,spend only,false,,,B
+sup:71328,Uskbach Elektrotechnik GmbH,AT,EUR,30,,,DAP,1999-09-01,electrical,spend only,false,,,C
+sup:71329,Quellau Werkzeughandel GmbH,DE,EUR,30,,,DAP,2006-07-01,MRO and tools,spend only,false,,,C
+sup:71330,Tremltal Transporte GmbH,DE,EUR,30,,,DAP,2024-12-01,logistics and freight,spend only,false,,,B
+sup:71331,Joststein Drehteile GmbH,DE,EUR,30,,,DAP,2024-11-01,machined parts,spend only,false,,,C
+sup:71332,Eltzfeld Gusstechnik GmbH,DE,EUR,30,,,DAP,2006-03-01,castings,spend only,false,,,C
+sup:71333,Sappstein Industrieservice GmbH,DE,EUR,30,,,DAP,2013-08-01,services and maintenance,spend only,false,,,C
+sup:71334,Immtal Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2025-08-01,sheet metal,spend only,false,,,B
+sup:71335,Prankmann Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2006-06-01,electrical,spend only,false,,,C
+sup:71336,Uskmann Befestigungen GmbH,DE,EUR,30,,,DAP,2025-09-01,C-parts,spend only,false,,,B
+sup:71337,Gravtal Werkzeughandel GmbH,DE,EUR,30,,,DAP,2025-12-01,MRO and tools,spend only,false,,,C
+sup:71338,Brixberg Kabelkonfektion GmbH,AT,EUR,30,,,DAP,2014-06-01,electrical,spend only,false,,,C
+sup:71339,Sappreuth Industriebedarf GmbH,DE,EUR,30,,,DAP,2004-12-01,MRO and tools,spend only,false,,,B
+sup:71340,Ottlbach Industriebedarf GmbH,DE,EUR,30,,,DAP,2011-09-01,MRO and tools,spend only,false,,,B
+sup:71341,Eltzeder Drehteile GmbH,DE,EUR,30,,,DAP,2011-11-01,machined parts,spend only,false,,,C
+sup:71342,Sappreuth Normteile GmbH,DE,EUR,30,,,DAP,2022-12-01,C-parts,spend only,false,,,B
+sup:71343,Nieshof Dichtungen GmbH,DE,EUR,30,,,DAP,2023-05-01,seals,spend only,false,,,C
+sup:71344,Graving Industriebedarf GmbH,AT,EUR,30,,,DAP,2009-07-01,MRO and tools,spend only,false,,,C
+sup:71345,Brixstein Kartonagen GmbH,DE,EUR,30,,,DAP,2024-04-01,packaging,spend only,false,,,C
+sup:71346,Ottlner Dichtungen GmbH,DE,EUR,30,,,DAP,2021-04-01,seals,spend only,false,,,C
+sup:71347,Niesau Anlagenwartung GmbH,AT,EUR,30,,,DAP,2020-09-01,services and maintenance,spend only,false,,,C
+sup:71348,Hulmau Anlagenwartung GmbH,DE,EUR,30,,,DAP,2005-07-01,services and maintenance,spend only,false,,,C
+sup:71349,Wiesling Elektrotechnik GmbH,AT,EUR,30,,,DAP,2019-01-01,electrical,spend only,false,,,A
+sup:71350,Prankmann Lasertechnik GmbH,DE,EUR,30,,,DAP,2001-03-01,sheet metal,spend only,false,,,C
+sup:71351,Quellfeld Industrieservice GmbH,DE,EUR,30,,,DAP,2011-08-01,services and maintenance,spend only,false,,,C
+sup:71352,Zeilwang Kabelkonfektion GmbH,AT,EUR,30,,,DAP,2009-10-01,electrical,spend only,false,,,C
+sup:71353,Kellwang Industrieservice GmbH,DE,EUR,30,,,DAP,2002-07-01,services and maintenance,spend only,false,,,C
+sup:71354,Metteder Gusstechnik GmbH,DE,EUR,30,,,DAP,1998-10-01,castings,spend only,false,,,B
+sup:71355,Dolmhof Industriebedarf GmbH,DE,EUR,30,,,DAP,2022-07-01,MRO and tools,spend only,false,,,C
+sup:71356,Kellwang Werkzeughandel GmbH,DE,EUR,30,,,DAP,2025-12-01,MRO and tools,spend only,false,,,C
+sup:71357,Abelau Anlagenwartung GmbH,DE,EUR,30,,,DAP,2013-02-01,services and maintenance,spend only,false,,,C
+sup:71358,Immfeld Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2022-02-01,sheet metal,spend only,false,,,C
+sup:71359,Hulmeder Gusstechnik GmbH,DE,EUR,30,,,DAP,2015-05-01,castings,spend only,false,,,C
+sup:71360,Gravner Befestigungen GmbH,DE,EUR,30,,,DAP,2020-10-01,C-parts,spend only,false,,,C
+sup:71361,Lorming Kartonagen GmbH,DE,EUR,30,,,DAP,2008-04-01,packaging,spend only,false,,,C
+sup:71362,Zeilmann Kartonagen GmbH,DE,EUR,30,,,DAP,2011-10-01,packaging,spend only,false,,,C
+sup:71363,Sappfeld Industriebedarf GmbH,DE,EUR,30,,,DAP,2010-03-01,MRO and tools,spend only,false,,,C
+sup:71364,Mettreuth Gummitechnik GmbH,DE,EUR,30,,,DAP,2005-08-01,seals,spend only,false,,,C
+sup:71365,Jostberg Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2010-09-01,sheet metal,spend only,false,,,C
+sup:71366,Brixhof Verpackung GmbH,DE,EUR,30,,,DAP,2001-03-01,packaging,spend only,false,,,C
+sup:71367,Dolming Modellbau GmbH,DE,EUR,30,,,DAP,2018-04-01,castings,spend only,false,,,C
+sup:71368,Rulling Industriebedarf GmbH,DE,EUR,30,,,DAP,2008-03-01,MRO and tools,spend only,false,,,C
+sup:71369,Abelreuth Drehteile GmbH,DE,EUR,30,,,DAP,2024-02-01,machined parts,spend only,false,,,C
+sup:71370,Jostau Modellbau GmbH,DE,EUR,30,,,DAP,2012-11-01,castings,spend only,false,,,C
+sup:71371,Hulmmann Drehteile GmbH,AT,EUR,30,,,DAP,2009-04-01,machined parts,spend only,false,,,C
+sup:71372,Gravberg Industriebedarf GmbH,DE,EUR,30,,,DAP,1999-07-01,MRO and tools,spend only,false,,,B
+sup:71373,Immau Befestigungen GmbH,DE,EUR,30,,,DAP,2015-04-01,C-parts,spend only,false,,,C
+sup:71374,Prankstein Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2007-06-01,electrical,spend only,false,,,C
+sup:71375,Sappfeld Werkzeughandel GmbH,DE,EUR,30,,,DAP,2010-12-01,MRO and tools,spend only,false,,,C
+sup:71376,Zeilbach Blechbearbeitung GmbH,DE,EUR,30,,,DAP,2022-06-01,sheet metal,spend only,false,,,C
+sup:71377,Tremlfeld Befestigungen GmbH,DE,EUR,30,,,DAP,2008-11-01,C-parts,spend only,false,,,C
+sup:71378,Rullwang Normteile GmbH,DE,EUR,30,,,DAP,2000-10-01,C-parts,spend only,false,,,B
+sup:71379,Wieslfeld Industriebedarf GmbH,DE,EUR,30,,,DAP,2025-02-01,MRO and tools,spend only,false,,,C
+sup:71380,Lormhof Transporte GmbH,DE,EUR,30,,,DAP,2016-10-01,logistics and freight,spend only,false,,,C
+sup:71381,Quelleder Dichtungen Sp. z o.o.,PL,EUR,30,,,DAP,2025-08-01,seals,spend only,false,,,C
+sup:71382,Niesau Transporte GmbH,DE,EUR,30,,,DAP,2003-03-01,logistics and freight,spend only,false,,,C
+sup:71383,Dolmreuth Elektrotechnik GmbH,DE,EUR,30,,,DAP,2014-01-01,electrical,spend only,false,,,C
+sup:71384,Metteder Werkzeughandel GmbH,DE,EUR,30,,,DAP,2025-04-01,MRO and tools,spend only,false,,,C
+sup:71385,Gravau Lasertechnik GmbH,DE,EUR,30,,,DAP,2014-06-01,sheet metal,spend only,false,,,C
+sup:71386,Rullner Transporte GmbH,DE,EUR,30,,,DAP,2017-10-01,logistics and freight,spend only,false,,,C
+sup:71387,Wieslau Industrieservice GmbH,DE,EUR,30,,,DAP,2018-09-01,services and maintenance,spend only,false,,,C
+sup:71388,Abelstein Gusstechnik GmbH,DE,EUR,30,,,DAP,1999-12-01,castings,spend only,false,,,C
+sup:71389,Eltztal Industrieservice GmbH,DE,EUR,30,,,DAP,2002-01-01,services and maintenance,spend only,false,,,C
+sup:71390,Fennau Kabelkonfektion GmbH,DE,EUR,30,,,DAP,2003-08-01,electrical,spend only,false,,,C
+sup:71391,Niesfeld Drehteile GmbH,DE,EUR,30,,,DAP,2021-07-01,machined parts,spend only,false,,,C
+sup:71392,Lormreuth Transporte GmbH,DE,EUR,30,,,DAP,2019-11-01,logistics and freight,spend only,false,,,B
+sup:71393,Jostwang Normteile GmbH,DE,EUR,30,,,DAP,2017-12-01,C-parts,spend only,false,,,C
+sup:71394,Lormhof Elektrotechnik GmbH,DE,EUR,30,,,DAP,2022-01-01,electrical,spend only,false,,,C
+sup:71395,Arnwang Elektrotechnik GmbH,DE,EUR,30,,,DAP,2000-03-01,electrical,spend only,false,,,C
+sup:71396,Uskbach Bürobedarf s.r.o.,CZ,EUR,30,,,DAP,2000-02-01,IT and office,spend only,false,,,C
+sup:71397,Volkreuth Industrieservice GmbH,DE,EUR,30,,,DAP,2012-12-01,services and maintenance,spend only,false,,,C
+sup:71398,Tremlreuth Normteile GmbH,DE,EUR,30,,,DAP,2005-12-01,C-parts,spend only,false,,,C
+sup:71399,Kellreuth Transporte GmbH,DE,EUR,30,,,DAP,2001-04-01,logistics and freight,spend only,false,,,C
+sup:71400,Wieslberg Industriebedarf GmbH,DE,EUR,30,,,DAP,2000-10-01,MRO and tools,spend only,false,,,C
+sup:71999,Zerspanung Dralveck e.K.,DE,EUR,30,,,EXW,1991-04-01,machined parts,spend only,true,,,C

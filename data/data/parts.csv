@@ -1,0 +1,61 @@
+id,description,category,material_group,grade,net_weight_kg,uom,price_unit,planned_lead_time_days,pump_series,standard_price,status,abc_class
+part:310010,Volute casing HN 50-200,castings,cast_iron,EN-GJL-250,38,pc,1,42,HN,128.27,series,A
+part:310011,Volute casing HN 65-250,castings,cast_iron,EN-GJL-250,56,pc,1,45,HN,183.0,series,A
+part:310012,Volute casing HN 100-315,castings,cast_iron,EN-GJL-250,112,pc,1,45,HN,376.21,series,A
+part:310020,Bearing bracket HN,castings,cast_iron,EN-GJL-250,14,pc,1,56,HN,46.33,series,A
+part:310030,Impeller HN 200,castings,cast_iron,EN-GJS-400-15,6.5,pc,1,49,HN,32.44,series,B
+part:310031,Impeller HN 250,castings,cast_iron,EN-GJS-400-15,9.8,pc,1,49,HN,54.42,series,B
+part:310040,Casing cover HB,castings,cast_iron,EN-GJL-250,9,pc,1,42,HB,34.82,series,A
+part:310050,Volute casing HI 80-250,castings,cast_steel,1.4408,48,pc,1,49,HI,618.86,series,A
+part:310051,Impeller HI 250,castings,cast_steel,1.4408,7.2,pc,1,49,HI,101.9,series,C
+part:310060,Pump housing HB 40,castings,cast_iron,EN-GJL-250,11,pc,1,70,HB,38.13,series,A
+part:310070,Volute casing HX 80-200,castings,cast_iron,EN-GJS-500-7,44,pc,1,56,HX,,new (start of production 2027-03),
+part:310071,Impeller HX 200,castings,cast_steel,1.4408,6,pc,1,63,HX,,new (start of production 2027-03),
+part:320010,Pump shaft HN 24 mm,machined parts,mach_inox,1.4404,2.1,pc,1,35,HN,25.4,series,B
+part:320011,Pump shaft HN 32 mm,machined parts,mach_inox,1.4404,3.4,pc,1,28,HN,33.06,series,C
+part:320012,Pump shaft HI duplex,machined parts,mach_inox,1.4462,4.2,pc,1,35,HI,106.98,series,C
+part:320020,Shaft sleeve,machined parts,mach_inox,1.4404,0.4,pc,1,28,ALL,11.86,series,C
+part:320030,"Flange DN 65 PN 16, machined",machined parts,mach_steel,S235JR,3.2,pc,1,35,HN,16.02,series,C
+part:320031,"Flange DN 100 PN 16, machined",machined parts,mach_steel,S235JR,5.8,pc,1,42,HN,22.94,series,C
+part:320040,Wear ring set,machined parts,mach_bronze,CuSn10,0.6,pc,1,28,ALL,13.18,series,B
+part:320050,Adapter piece HI,machined parts,mach_steel,C45,2.6,pc,1,42,HI,15.88,series,C
+part:320060,Coupling hub,machined parts,mach_steel,C45,1.8,pc,1,28,ALL,16.29,series,B
+part:320070,Pump shaft HX,machined parts,mach_inox,1.4404,3.0,pc,1,35,HX,,new (start of production 2027-03),
+part:320080,Lantern (motor stool) HN,machined parts,mach_steel,S355J2,7.5,pc,1,28,HN,41.63,series,C
+part:320090,Spacer sleeve,machined parts,mach_inox,1.4301,0.3,pc,1,21,ALL,4.67,series,C
+part:320095,Adapter flange HX,machined parts,mach_steel,S355J2,4.4,pc,1,35,HX,,new (start of production 2027-03),
+part:330010,"Base frame HN 50/65, welded, painted",sheet metal,sheet,S235JR,28,pc,1,21,HN,100.14,series,A
+part:330011,"Base frame HN 100, welded, painted",sheet metal,sheet,S235JR,52,pc,1,28,HN,184.72,series,B
+part:330020,"Coupling guard, galvanised",sheet metal,sheet,DX51D,2.4,pc,1,21,HN,18.39,series,B
+part:330030,Motor bracket HB,sheet metal,sheet,S235JR,4,pc,1,21,HB,15.87,series,B
+part:330040,Control cabinet housing HI,sheet metal,sheet_inox,1.4301,11,pc,1,35,HI,122.14,series,B
+part:330050,"Base frame HX, welded, painted",sheet metal,sheet,S235JR,34,pc,1,28,HX,,new (start of production 2027-03),
+part:330060,"Cover plate set, powder coated",sheet metal,coating,S235JR,1.8,pc,1,14,HB,9.99,series,C
+part:340010,"Mechanical seal 24 mm, SiC/carbon, EPDM",seals,seal,EN 12756,0.25,pc,1,42,ALL,29.89,series,B
+part:340011,"Mechanical seal 32 mm, SiC/carbon, EPDM",seals,seal,EN 12756,0.32,pc,1,35,ALL,37.53,series,B
+part:340012,"Cartridge seal HI 45 mm, ATEX, drinking-water approved",seals,seal,cartridge,1.1,pc,1,56,HI,319.11,series,B
+part:340020,"O-ring set EPDM, drinking-water approved",seals,seal_soft,EPDM,0.05,pc,100,7,ALL,63.87,series,C
+part:340030,"Casing gasket, aramid fibre",seals,seal_soft,aramid,0.1,pc,1,14,ALL,2.23,series,C
+part:340040,Lip seal 35x52x7,seals,seal_soft,NBR,0.02,pc,100,7,ALL,105.05,series,C
+part:350010,"Motor IE3 4 kW, 4-pole",electrical,motor,IE3,32,pc,1,35,ALL,229.58,series,A
+part:350011,"Motor IE3 7.5 kW, 4-pole",electrical,motor,IE3,52,pc,1,35,ALL,344.08,series,A
+part:350012,"Motor IE3 15 kW, 4-pole",electrical,motor,IE3,98,pc,1,42,ALL,593.95,series,A
+part:350013,"Motor IE4 30 kW, 4-pole",electrical,motor,IE4,190,pc,1,42,HI,1581.52,series,A
+part:350020,"Frequency converter 7.5 kW, IP55",electrical,drive,IP55,6,pc,1,49,ALL,400.19,series,A
+part:350021,"Frequency converter 15 kW, IP55",electrical,drive,IP55,9,pc,1,56,ALL,684.92,series,A
+part:350030,Control board HB smart pump (PCBA),electrical,pcba,PCBA,0.2,pc,1,56,HB,34.21,series,A
+part:350040,Motor cable H07RN-F 4G2.5,electrical,cable,H07RN-F,0.14,m,100,14,ALL,267.98,series,A
+part:350050,Pressure sensor 0-16 bar,electrical,sensor,4-20 mA,0.1,pc,1,28,HB,22.43,series,B
+part:360010,"Hex bolt ISO 4017 M12x40 8.8, zinc",C-parts,fastener,8.8,0.016,pc,100,5,ALL,13.49,series,C
+part:360011,"Hex bolt ISO 4017 M16x60 8.8, zinc",C-parts,fastener,8.8,0.11,pc,100,5,ALL,38.39,series,C
+part:360012,"Hex nut ISO 4032 M12 8, zinc",C-parts,fastener,8,0.011,pc,100,5,ALL,5.35,series,C
+part:360013,Stud bolt M10 A2-70,C-parts,fastener_inox,A2-70,0.05,pc,100,7,ALL,30.38,series,C
+part:360020,Deep groove ball bearing 6306-2Z C3,C-parts,bearing,6306-2Z,0.35,pc,1,7,ALL,4.25,series,C
+part:360021,Deep groove ball bearing 6308-2Z C3,C-parts,bearing,6308-2Z,0.6,pc,1,7,ALL,7.08,series,C
+part:360022,Angular contact ball bearing 7309 BEP,C-parts,bearing,7309 BEP,1.0,pc,1,10,HI,22.8,series,C
+part:360030,"Washer ISO 7089 M12, zinc",C-parts,fastener,200 HV,0.006,pc,1000,5,ALL,12.71,series,C
+part:370010,"Round bar 1.4404 dia 30 mm, peeled",raw material,bar_inox,1.4404,1,kg,1,10,ALL,5.31,series,A
+part:370011,"Round bar 1.4021 dia 40 mm, peeled",raw material,bar_steel,1.4021,1,kg,1,14,ALL,2.86,series,C
+part:370012,"Round bar C45 dia 50 mm, cold drawn",raw material,bar_steel,C45,1,kg,100,14,ALL,129.23,series,C
+part:370020,"Sheet S235JR 3 mm, hot rolled, cut to size",raw material,sheet_steel,S235JR,1,kg,100,10,ALL,86.35,series,B
+part:370021,"Sheet 1.4301 2 mm, 2B, cut to size",raw material,sheet_inox_sc,1.4301,1,kg,1,14,ALL,4.05,series,B

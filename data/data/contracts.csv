@@ -1,0 +1,47 @@
+id,supplier_id,type,valid_from,valid_to,payment_days,incoterm,notice_days,price_basis,file
+ctr:4600070110,sup:70110,framework agreement,2024-01-01,2026-12-31,30,FCA,90,fixed per year,contracts/4600070110.md
+ctr:4600070120,sup:70120,framework agreement,2024-01-01,2026-12-31,45,FCA,90,fixed per year,contracts/4600070120.md
+ctr:4600070130,sup:70130,framework agreement,2024-01-01,2026-12-31,30,FCA,90,fixed per year,contracts/4600070130.md
+ctr:4600070140,sup:70140,framework agreement,2025-07-01,2027-06-30,60,FCA,90,fixed per year,contracts/4600070140.md
+ctr:4600070150,sup:70150,framework agreement,2025-07-01,2027-06-30,60,FCA,90,fixed per year,contracts/4600070150.md
+ctr:4600070160,sup:70160,framework agreement,2025-07-01,2027-06-30,90,FCA,90,fixed per year,contracts/4600070160.md
+ctr:4600070170,sup:70170,framework agreement,2025-07-01,2027-06-30,45,FCA,90,fixed per year,contracts/4600070170.md
+ctr:4600070180,sup:70180,framework agreement,2025-07-01,2027-06-30,30,FCA,90,fixed per year,contracts/4600070180.md
+ctr:4600070190,sup:70190,framework agreement,2025-07-01,2027-06-30,30,FCA,90,fixed per year,contracts/4600070190.md
+ctr:4600070210,sup:70210,framework agreement,2025-07-01,2027-06-30,30,EXW,90,fixed per year,contracts/4600070210.md
+ctr:4600070220,sup:70220,framework agreement,2025-07-01,2027-06-30,30,EXW,90,fixed per year,contracts/4600070220.md
+ctr:4600070230,sup:70230,framework agreement,2025-07-01,2027-06-30,30,EXW,90,fixed per year,contracts/4600070230.md
+ctr:4600070240,sup:70240,framework agreement,2025-07-01,2027-06-30,45,FCA,90,fixed per year,contracts/4600070240.md
+ctr:4600070250,sup:70250,framework agreement,2025-07-01,2027-06-30,30,EXW,90,fixed per year,contracts/4600070250.md
+ctr:4600070260,sup:70260,framework agreement,2025-07-01,2027-06-30,30,FCA,90,fixed per year,contracts/4600070260.md
+ctr:4600070270,sup:70270,framework agreement,2025-07-01,2027-06-30,45,EXW,90,fixed per year,contracts/4600070270.md
+ctr:4600070280,sup:70280,framework agreement,2024-01-01,2026-12-31,30,EXW,90,fixed per year,contracts/4600070280.md
+ctr:4600070290,sup:70290,framework agreement,2025-07-01,2027-06-30,30,EXW,90,fixed per year,contracts/4600070290.md
+ctr:4600070295,sup:70295,framework agreement,2025-07-01,2027-06-30,30,EXW,90,fixed per year,contracts/4600070295.md
+ctr:4600070310,sup:70310,framework agreement,2025-07-01,2027-06-30,45,DAP,90,fixed per year,contracts/4600070310.md
+ctr:4600070320,sup:70320,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070320.md
+ctr:4600070330,sup:70330,framework agreement,2025-07-01,2027-06-30,60,FCA,90,fixed per year,contracts/4600070330.md
+ctr:4600070340,sup:70340,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070340.md
+ctr:4600070350,sup:70350,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070350.md
+ctr:4600070360,sup:70360,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070360.md
+ctr:4600070410,sup:70410,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070410.md
+ctr:4600070420,sup:70420,framework agreement,2024-01-01,2026-12-31,30,DAP,180,fixed per year,contracts/4600070420.md
+ctr:4600070430,sup:70430,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070430.md
+ctr:4600070440,sup:70440,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070440.md
+ctr:4600070510,sup:70510,framework agreement,2024-01-01,2026-12-31,30,DAP,90,fixed per year,contracts/4600070510.md
+ctr:4600070520,sup:70520,framework agreement,2024-01-01,2026-12-31,45,FCA,90,fixed per year,contracts/4600070520.md
+ctr:4600070530,sup:70530,framework agreement,2024-01-01,2026-12-31,30,DAP,90,fixed per year,contracts/4600070530.md
+ctr:4600070540,sup:70540,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070540.md
+ctr:4600070550,sup:70550,framework agreement,2025-07-01,2027-06-30,45,DAP,90,fixed per year,contracts/4600070550.md
+ctr:4600070560,sup:70560,framework agreement,2024-01-01,2026-12-31,30,DAP,60,index clause,contracts/4600070560.md
+ctr:4600070570,sup:70570,framework agreement,2024-01-01,2026-12-31,30,DAP,90,fixed per year,contracts/4600070570.md
+ctr:4600070580,sup:70580,framework agreement,2024-01-01,2026-12-31,30,DAP,90,fixed per year,contracts/4600070580.md
+ctr:4600070610,sup:70610,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070610.md
+ctr:4600070620,sup:70620,framework agreement,2024-01-01,2026-12-31,30,DAP,60,fixed per year,contracts/4600070620.md
+ctr:4600070630,sup:70630,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070630.md
+ctr:4600070640,sup:70640,framework agreement,2025-07-01,2027-06-30,30,DAP,90,fixed per year,contracts/4600070640.md
+ctr:4600070650,sup:70650,framework agreement,2024-01-01,2026-12-31,30,DAP,60,fixed per year,contracts/4600070650.md
+ctr:4600070710,sup:70710,framework agreement,2024-01-01,2026-12-31,30,DAP,60,index clause,contracts/4600070710.md
+ctr:4600070720,sup:70720,framework agreement,2024-01-01,2026-12-31,30,DAP,60,fixed per year,contracts/4600070720.md
+ctr:4600070730,sup:70730,framework agreement,2024-01-01,2026-12-31,30,DAP,60,index clause,contracts/4600070730.md
+ctr:4600070740,sup:70740,framework agreement,2024-01-01,2026-12-31,30,DAP,60,index clause,contracts/4600070740.md

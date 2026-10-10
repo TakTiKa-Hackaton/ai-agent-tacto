@@ -1,0 +1,281 @@
+id,contract_id,clause,type,text,series,material_share,deadband_pct,days
+ctr:4600070110#2.1,ctr:4600070110,2.1,scope,"Subject: supply of Volute casing HN 50-200, Volute casing HN 100-315.",,,,
+ctr:4600070110#3.1,ctr:4600070110,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070110#4.1,ctr:4600070110,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070110#5.1,ctr:4600070110,5.1,delivery,Delivery FCA; standard lead time 42 days from order.,,,,42
+ctr:4600070110#6.1,ctr:4600070110,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070110#8.1,ctr:4600070110,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070120#2.1,ctr:4600070120,2.1,scope,"Subject: supply of Impeller HN 200, Impeller HN 250.",,,,
+ctr:4600070120#3.1,ctr:4600070120,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070120#4.1,ctr:4600070120,4.1,payment,Payment: 45 days net.,,,,45
+ctr:4600070120#5.1,ctr:4600070120,5.1,delivery,Delivery FCA; standard lead time 49 days from order.,,,,49
+ctr:4600070120#6.1,ctr:4600070120,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070120#8.1,ctr:4600070120,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070130#2.1,ctr:4600070130,2.1,scope,"Subject: supply of Volute casing HN 65-250, Volute casing HN 100-315.",,,,
+ctr:4600070130#3.1,ctr:4600070130,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070130#4.1,ctr:4600070130,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070130#5.1,ctr:4600070130,5.1,delivery,Delivery FCA; standard lead time 45 days from order.,,,,45
+ctr:4600070130#6.1,ctr:4600070130,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070130#8.1,ctr:4600070130,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070140#2.1,ctr:4600070140,2.1,scope,"Subject: supply of Bearing bracket HN, Impeller HN 200.",,,,
+ctr:4600070140#3.1,ctr:4600070140,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070140#4.1,ctr:4600070140,4.1,payment,Payment: 60 days net.,,,,60
+ctr:4600070140#5.1,ctr:4600070140,5.1,delivery,Delivery FCA; standard lead time 56 days from order.,,,,56
+ctr:4600070140#6.1,ctr:4600070140,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070140#8.1,ctr:4600070140,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070150#2.1,ctr:4600070150,2.1,scope,Subject: supply of Pump housing HB 40.,,,,
+ctr:4600070150#3.1,ctr:4600070150,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070150#4.1,ctr:4600070150,4.1,payment,Payment: 60 days net.,,,,60
+ctr:4600070150#5.1,ctr:4600070150,5.1,delivery,Delivery FCA; standard lead time 70 days from order.,,,,70
+ctr:4600070150#6.1,ctr:4600070150,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070150#8.1,ctr:4600070150,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070160#2.1,ctr:4600070160,2.1,scope,Subject: supply of Impeller HI 250.,,,,
+ctr:4600070160#3.1,ctr:4600070160,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070160#4.1,ctr:4600070160,4.1,payment,Payment: 90 days net.,,,,90
+ctr:4600070160#5.1,ctr:4600070160,5.1,delivery,Delivery FCA; standard lead time 105 days from order.,,,,105
+ctr:4600070160#6.1,ctr:4600070160,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070160#8.1,ctr:4600070160,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070170#2.1,ctr:4600070170,2.1,scope,Subject: supply of Volute casing HI 80-250.,,,,
+ctr:4600070170#3.1,ctr:4600070170,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070170#4.1,ctr:4600070170,4.1,payment,Payment: 45 days net.,,,,45
+ctr:4600070170#5.1,ctr:4600070170,5.1,delivery,Delivery FCA; standard lead time 56 days from order.,,,,56
+ctr:4600070170#6.1,ctr:4600070170,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070170#8.1,ctr:4600070170,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070180#2.1,ctr:4600070180,2.1,scope,"Subject: supply of Volute casing HI 80-250, Impeller HI 250.",,,,
+ctr:4600070180#3.1,ctr:4600070180,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070180#4.1,ctr:4600070180,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070180#5.1,ctr:4600070180,5.1,delivery,Delivery FCA; standard lead time 49 days from order.,,,,49
+ctr:4600070180#6.1,ctr:4600070180,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070180#8.1,ctr:4600070180,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070190#2.1,ctr:4600070190,2.1,scope,"Subject: supply of Casing cover HB, Pump housing HB 40.",,,,
+ctr:4600070190#3.1,ctr:4600070190,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070190#4.1,ctr:4600070190,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070190#5.1,ctr:4600070190,5.1,delivery,Delivery FCA; standard lead time 42 days from order.,,,,42
+ctr:4600070190#6.1,ctr:4600070190,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070190#8.1,ctr:4600070190,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070210#2.1,ctr:4600070210,2.1,scope,"Subject: supply of Pump shaft HN 24 mm, Lantern (motor stool) HN.",,,,
+ctr:4600070210#3.1,ctr:4600070210,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070210#4.1,ctr:4600070210,4.1,payment,"Payment: 30 days net, 2 % discount within 10 days.",,,,30
+ctr:4600070210#5.1,ctr:4600070210,5.1,delivery,Delivery EXW; standard lead time 28 days from order.,,,,28
+ctr:4600070210#6.1,ctr:4600070210,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070210#8.1,ctr:4600070210,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070220#2.1,ctr:4600070220,2.1,scope,"Subject: supply of Flange DN 65 PN 16, machined.",,,,
+ctr:4600070220#3.1,ctr:4600070220,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070220#4.1,ctr:4600070220,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070220#5.1,ctr:4600070220,5.1,delivery,Delivery EXW; standard lead time 35 days from order.,,,,35
+ctr:4600070220#6.1,ctr:4600070220,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070220#8.1,ctr:4600070220,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070230#2.1,ctr:4600070230,2.1,scope,"Subject: supply of Shaft sleeve, Flange DN 100 PN 16, machined, Coupling hub.",,,,
+ctr:4600070230#3.1,ctr:4600070230,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070230#4.1,ctr:4600070230,4.1,payment,"Payment: 30 days net, 2 % discount within 14 days.",,,,30
+ctr:4600070230#5.1,ctr:4600070230,5.1,delivery,Delivery EXW; standard lead time 28 days from order.,,,,28
+ctr:4600070230#6.1,ctr:4600070230,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070230#8.1,ctr:4600070230,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070240#2.1,ctr:4600070240,2.1,scope,"Subject: supply of Flange DN 100 PN 16, machined.",,,,
+ctr:4600070240#3.1,ctr:4600070240,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070240#4.1,ctr:4600070240,4.1,payment,Payment: 45 days net.,,,,45
+ctr:4600070240#5.1,ctr:4600070240,5.1,delivery,Delivery FCA; standard lead time 42 days from order.,,,,42
+ctr:4600070240#6.1,ctr:4600070240,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070240#8.1,ctr:4600070240,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070250#2.1,ctr:4600070250,2.1,scope,Subject: supply of Spacer sleeve.,,,,
+ctr:4600070250#3.1,ctr:4600070250,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070250#4.1,ctr:4600070250,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070250#5.1,ctr:4600070250,5.1,delivery,Delivery EXW; standard lead time 28 days from order.,,,,28
+ctr:4600070250#6.1,ctr:4600070250,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070250#8.1,ctr:4600070250,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070260#2.1,ctr:4600070260,2.1,scope,Subject: supply of Pump shaft HI duplex.,,,,
+ctr:4600070260#3.1,ctr:4600070260,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070260#4.1,ctr:4600070260,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070260#5.1,ctr:4600070260,5.1,delivery,Delivery FCA; standard lead time 35 days from order.,,,,35
+ctr:4600070260#6.1,ctr:4600070260,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070260#8.1,ctr:4600070260,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070270#2.1,ctr:4600070270,2.1,scope,Subject: supply of Adapter piece HI.,,,,
+ctr:4600070270#3.1,ctr:4600070270,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070270#4.1,ctr:4600070270,4.1,payment,Payment: 45 days net.,,,,45
+ctr:4600070270#5.1,ctr:4600070270,5.1,delivery,Delivery EXW; standard lead time 42 days from order.,,,,42
+ctr:4600070270#6.1,ctr:4600070270,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070270#8.1,ctr:4600070270,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070280#2.1,ctr:4600070280,2.1,scope,Subject: supply of Pump shaft HN 32 mm.,,,,
+ctr:4600070280#3.1,ctr:4600070280,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070280#4.1,ctr:4600070280,4.1,payment,"Payment: 30 days net, 3 % discount within 10 days.",,,,30
+ctr:4600070280#5.1,ctr:4600070280,5.1,delivery,Delivery EXW; standard lead time 28 days from order.,,,,28
+ctr:4600070280#6.1,ctr:4600070280,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070280#8.1,ctr:4600070280,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070290#2.1,ctr:4600070290,2.1,scope,Subject: supply of Pump shaft HN 24 mm.,,,,
+ctr:4600070290#3.1,ctr:4600070290,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070290#4.1,ctr:4600070290,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070290#5.1,ctr:4600070290,5.1,delivery,Delivery EXW; standard lead time 35 days from order.,,,,35
+ctr:4600070290#6.1,ctr:4600070290,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070290#8.1,ctr:4600070290,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070295#2.1,ctr:4600070295,2.1,scope,"Subject: supply of Shaft sleeve, Wear ring set, Spacer sleeve.",,,,
+ctr:4600070295#3.1,ctr:4600070295,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070295#4.1,ctr:4600070295,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070295#5.1,ctr:4600070295,5.1,delivery,Delivery EXW; standard lead time 28 days from order.,,,,28
+ctr:4600070295#6.1,ctr:4600070295,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070295#8.1,ctr:4600070295,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070310#2.1,ctr:4600070310,2.1,scope,"Subject: supply of Base frame HN 50/65, welded, painted.",,,,
+ctr:4600070310#3.1,ctr:4600070310,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070310#4.1,ctr:4600070310,4.1,payment,Payment: 45 days net.,,,,45
+ctr:4600070310#5.1,ctr:4600070310,5.1,delivery,Delivery DAP; standard lead time 21 days from order.,,,,21
+ctr:4600070310#6.1,ctr:4600070310,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070310#8.1,ctr:4600070310,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070320#2.1,ctr:4600070320,2.1,scope,"Subject: supply of Base frame HN 100, welded, painted.",,,,
+ctr:4600070320#3.1,ctr:4600070320,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070320#4.1,ctr:4600070320,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070320#5.1,ctr:4600070320,5.1,delivery,Delivery DAP; standard lead time 28 days from order.,,,,28
+ctr:4600070320#6.1,ctr:4600070320,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070320#8.1,ctr:4600070320,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070330#2.1,ctr:4600070330,2.1,scope,Subject: supply of Control cabinet housing HI.,,,,
+ctr:4600070330#3.1,ctr:4600070330,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070330#4.1,ctr:4600070330,4.1,payment,Payment: 60 days net.,,,,60
+ctr:4600070330#5.1,ctr:4600070330,5.1,delivery,Delivery FCA; standard lead time 35 days from order.,,,,35
+ctr:4600070330#6.1,ctr:4600070330,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070330#8.1,ctr:4600070330,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070340#2.1,ctr:4600070340,2.1,scope,"Subject: supply of Coupling guard, galvanised, Motor bracket HB.",,,,
+ctr:4600070340#3.1,ctr:4600070340,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070340#4.1,ctr:4600070340,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070340#5.1,ctr:4600070340,5.1,delivery,Delivery DAP; standard lead time 21 days from order.,,,,21
+ctr:4600070340#6.1,ctr:4600070340,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070340#8.1,ctr:4600070340,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070350#2.1,ctr:4600070350,2.1,scope,"Subject: supply of Cover plate set, powder coated.",,,,
+ctr:4600070350#3.1,ctr:4600070350,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070350#4.1,ctr:4600070350,4.1,payment,"Payment: 30 days net, 2 % discount within 10 days.",,,,30
+ctr:4600070350#5.1,ctr:4600070350,5.1,delivery,Delivery DAP; standard lead time 14 days from order.,,,,14
+ctr:4600070350#6.1,ctr:4600070350,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070350#8.1,ctr:4600070350,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070360#2.1,ctr:4600070360,2.1,scope,Subject: supply of Motor bracket HB.,,,,
+ctr:4600070360#3.1,ctr:4600070360,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070360#4.1,ctr:4600070360,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070360#5.1,ctr:4600070360,5.1,delivery,Delivery DAP; standard lead time 28 days from order.,,,,28
+ctr:4600070360#6.1,ctr:4600070360,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070360#8.1,ctr:4600070360,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070410#2.1,ctr:4600070410,2.1,scope,"Subject: supply of Mechanical seal 24 mm, SiC/carbon, EPDM, Mechanical seal 32 mm, SiC/carbon, EPDM, Casing gasket, aramid fibre.",,,,
+ctr:4600070410#3.1,ctr:4600070410,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070410#4.1,ctr:4600070410,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070410#5.1,ctr:4600070410,5.1,delivery,Delivery DAP; standard lead time 42 days from order.,,,,42
+ctr:4600070410#6.1,ctr:4600070410,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070410#8.1,ctr:4600070410,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070420#2.1,ctr:4600070420,2.1,scope,"Subject: supply of Cartridge seal HI 45 mm, ATEX, drinking-water approved.",,,,
+ctr:4600070420#3.1,ctr:4600070420,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 180 days before the end of the calendar year.",,,,180
+ctr:4600070420#4.1,ctr:4600070420,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070420#5.1,ctr:4600070420,5.1,delivery,Delivery DAP; standard lead time 56 days from order.,,,,56
+ctr:4600070420#6.1,ctr:4600070420,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070420#8.1,ctr:4600070420,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 180 days' notice.,,,,180
+ctr:4600070430#2.1,ctr:4600070430,2.1,scope,"Subject: supply of O-ring set EPDM, drinking-water approved, Lip seal 35x52x7.",,,,
+ctr:4600070430#3.1,ctr:4600070430,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070430#4.1,ctr:4600070430,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070430#5.1,ctr:4600070430,5.1,delivery,Delivery DAP; standard lead time 7 days from order.,,,,7
+ctr:4600070430#6.1,ctr:4600070430,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070430#8.1,ctr:4600070430,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070440#2.1,ctr:4600070440,2.1,scope,"Subject: supply of Mechanical seal 32 mm, SiC/carbon, EPDM, Lip seal 35x52x7.",,,,
+ctr:4600070440#3.1,ctr:4600070440,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070440#4.1,ctr:4600070440,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070440#5.1,ctr:4600070440,5.1,delivery,Delivery DAP; standard lead time 35 days from order.,,,,35
+ctr:4600070440#6.1,ctr:4600070440,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070440#8.1,ctr:4600070440,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070510#2.1,ctr:4600070510,2.1,scope,"Subject: supply of Motor IE3 4 kW, 4-pole, Motor IE3 7.5 kW, 4-pole.",,,,
+ctr:4600070510#3.1,ctr:4600070510,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070510#4.1,ctr:4600070510,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070510#5.1,ctr:4600070510,5.1,delivery,Delivery DAP; standard lead time 35 days from order.,,,,35
+ctr:4600070510#6.1,ctr:4600070510,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070510#8.1,ctr:4600070510,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070520#2.1,ctr:4600070520,2.1,scope,"Subject: supply of Motor IE3 4 kW, 4-pole, Motor IE3 15 kW, 4-pole.",,,,
+ctr:4600070520#3.1,ctr:4600070520,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070520#4.1,ctr:4600070520,4.1,payment,Payment: 45 days net.,,,,45
+ctr:4600070520#5.1,ctr:4600070520,5.1,delivery,Delivery FCA; standard lead time 42 days from order.,,,,42
+ctr:4600070520#6.1,ctr:4600070520,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070520#8.1,ctr:4600070520,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070530#2.1,ctr:4600070530,2.1,scope,"Subject: supply of Frequency converter 7.5 kW, IP55.",,,,
+ctr:4600070530#3.1,ctr:4600070530,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070530#4.1,ctr:4600070530,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070530#5.1,ctr:4600070530,5.1,delivery,Delivery DAP; standard lead time 49 days from order.,,,,49
+ctr:4600070530#6.1,ctr:4600070530,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070530#8.1,ctr:4600070530,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070540#2.1,ctr:4600070540,2.1,scope,"Subject: supply of Frequency converter 15 kW, IP55.",,,,
+ctr:4600070540#3.1,ctr:4600070540,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070540#4.1,ctr:4600070540,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070540#5.1,ctr:4600070540,5.1,delivery,Delivery DAP; standard lead time 84 days from order.,,,,84
+ctr:4600070540#6.1,ctr:4600070540,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070540#8.1,ctr:4600070540,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070550#2.1,ctr:4600070550,2.1,scope,Subject: supply of Control board HB smart pump (PCBA).,,,,
+ctr:4600070550#3.1,ctr:4600070550,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070550#4.1,ctr:4600070550,4.1,payment,Payment: 45 days net.,,,,45
+ctr:4600070550#5.1,ctr:4600070550,5.1,delivery,Delivery DAP; standard lead time 56 days from order.,,,,56
+ctr:4600070550#6.1,ctr:4600070550,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070550#8.1,ctr:4600070550,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070560#2.1,ctr:4600070560,2.1,scope,Subject: supply of Motor cable H07RN-F 4G2.5.,,,,
+ctr:4600070560#3.1,ctr:4600070560,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 60 days before the end of the calendar year.",,,,60
+ctr:4600070560#3.2,ctr:4600070560,3.2,index,"The price follows index CU-NOTATION: P = P0 x (1 - 0.55 + 0.55 x I(m-2) / I(base)), base = the index two months before the price year starts, adjusted quarterly on the 1st of January, April, July and October if the change exceeds 0 %.",CU-NOTATION,0.55,0,
+ctr:4600070560#4.1,ctr:4600070560,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070560#5.1,ctr:4600070560,5.1,delivery,Delivery DAP; standard lead time 14 days from order.,,,,14
+ctr:4600070560#6.1,ctr:4600070560,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070560#8.1,ctr:4600070560,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 60 days' notice.,,,,60
+ctr:4600070570#2.1,ctr:4600070570,2.1,scope,Subject: supply of Pressure sensor 0-16 bar.,,,,
+ctr:4600070570#3.1,ctr:4600070570,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070570#4.1,ctr:4600070570,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070570#5.1,ctr:4600070570,5.1,delivery,Delivery DAP; standard lead time 28 days from order.,,,,28
+ctr:4600070570#6.1,ctr:4600070570,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070570#8.1,ctr:4600070570,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070580#2.1,ctr:4600070580,2.1,scope,"Subject: supply of Motor IE4 30 kW, 4-pole.",,,,
+ctr:4600070580#3.1,ctr:4600070580,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070580#4.1,ctr:4600070580,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070580#5.1,ctr:4600070580,5.1,delivery,Delivery DAP; standard lead time 42 days from order.,,,,42
+ctr:4600070580#6.1,ctr:4600070580,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070580#8.1,ctr:4600070580,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070610#2.1,ctr:4600070610,2.1,scope,"Subject: supply of Hex bolt ISO 4017 M12x40 8.8, zinc, Hex nut ISO 4032 M12 8, zinc, Washer ISO 7089 M12, zinc.",,,,
+ctr:4600070610#3.1,ctr:4600070610,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070610#4.1,ctr:4600070610,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070610#5.1,ctr:4600070610,5.1,delivery,Delivery DAP; standard lead time 5 days from order.,,,,5
+ctr:4600070610#6.1,ctr:4600070610,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070610#8.1,ctr:4600070610,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070620#2.1,ctr:4600070620,2.1,scope,"Subject: supply of Deep groove ball bearing 6306-2Z C3, Deep groove ball bearing 6308-2Z C3, Angular contact ball bearing 7309 BEP.",,,,
+ctr:4600070620#3.1,ctr:4600070620,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 60 days before the end of the calendar year.",,,,60
+ctr:4600070620#4.1,ctr:4600070620,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070620#5.1,ctr:4600070620,5.1,delivery,Delivery DAP; standard lead time 7 days from order.,,,,7
+ctr:4600070620#6.1,ctr:4600070620,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070620#8.1,ctr:4600070620,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 60 days' notice.,,,,60
+ctr:4600070630#2.1,ctr:4600070630,2.1,scope,"Subject: supply of Stud bolt M10 A2-70, Washer ISO 7089 M12, zinc.",,,,
+ctr:4600070630#3.1,ctr:4600070630,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070630#4.1,ctr:4600070630,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070630#5.1,ctr:4600070630,5.1,delivery,Delivery DAP; standard lead time 7 days from order.,,,,7
+ctr:4600070630#6.1,ctr:4600070630,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070630#8.1,ctr:4600070630,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070640#2.1,ctr:4600070640,2.1,scope,"Subject: supply of Deep groove ball bearing 6306-2Z C3, Deep groove ball bearing 6308-2Z C3.",,,,
+ctr:4600070640#3.1,ctr:4600070640,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 90 days before the end of the calendar year.",,,,90
+ctr:4600070640#4.1,ctr:4600070640,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070640#5.1,ctr:4600070640,5.1,delivery,Delivery DAP; standard lead time 10 days from order.,,,,10
+ctr:4600070640#6.1,ctr:4600070640,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070640#8.1,ctr:4600070640,8.1,term,Valid from 2025-07-01 to 2027-06-30; extends by 12 months unless terminated with 90 days' notice.,,,,90
+ctr:4600070650#2.1,ctr:4600070650,2.1,scope,"Subject: supply of Hex bolt ISO 4017 M12x40 8.8, zinc, Hex bolt ISO 4017 M16x60 8.8, zinc, Hex nut ISO 4032 M12 8, zinc.",,,,
+ctr:4600070650#3.1,ctr:4600070650,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 60 days before the end of the calendar year.",,,,60
+ctr:4600070650#4.1,ctr:4600070650,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070650#5.1,ctr:4600070650,5.1,delivery,Delivery DAP; standard lead time 7 days from order.,,,,7
+ctr:4600070650#6.1,ctr:4600070650,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070650#8.1,ctr:4600070650,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 60 days' notice.,,,,60
+ctr:4600070710#2.1,ctr:4600070710,2.1,scope,"Subject: supply of Round bar 1.4404 dia 30 mm, peeled.",,,,
+ctr:4600070710#3.1,ctr:4600070710,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 60 days before the end of the calendar year.",,,,60
+ctr:4600070710#3.2,ctr:4600070710,3.2,index,"The price follows index AS-14404: P = P0 x (1 - 0.45 + 0.45 x I(m-2) / I(base)), base = the index two months before the price year starts, adjusted quarterly on the 1st of January, April, July and October if the change exceeds 0 %.",AS-14404,0.45,0,
+ctr:4600070710#4.1,ctr:4600070710,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070710#5.1,ctr:4600070710,5.1,delivery,Delivery DAP; standard lead time 10 days from order.,,,,10
+ctr:4600070710#6.1,ctr:4600070710,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070710#8.1,ctr:4600070710,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 60 days' notice.,,,,60
+ctr:4600070720#2.1,ctr:4600070720,2.1,scope,"Subject: supply of Round bar C45 dia 50 mm, cold drawn, Sheet S235JR 3 mm, hot rolled, cut to size.",,,,
+ctr:4600070720#3.1,ctr:4600070720,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 60 days before the end of the calendar year.",,,,60
+ctr:4600070720#4.1,ctr:4600070720,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070720#5.1,ctr:4600070720,5.1,delivery,Delivery DAP; standard lead time 10 days from order.,,,,10
+ctr:4600070720#6.1,ctr:4600070720,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070720#8.1,ctr:4600070720,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 60 days' notice.,,,,60
+ctr:4600070730#2.1,ctr:4600070730,2.1,scope,"Subject: supply of Sheet 1.4301 2 mm, 2B, cut to size.",,,,
+ctr:4600070730#3.1,ctr:4600070730,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 60 days before the end of the calendar year.",,,,60
+ctr:4600070730#3.2,ctr:4600070730,3.2,index,"The price follows index AS-14301: P = P0 x (1 - 0.45 + 0.45 x I(m-2) / I(base)), base = the index two months before the price year starts, adjusted quarterly on the 1st of January, April, July and October if the change exceeds 0 %.",AS-14301,0.45,0,
+ctr:4600070730#4.1,ctr:4600070730,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070730#5.1,ctr:4600070730,5.1,delivery,Delivery DAP; standard lead time 14 days from order.,,,,14
+ctr:4600070730#6.1,ctr:4600070730,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070730#8.1,ctr:4600070730,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 60 days' notice.,,,,60
+ctr:4600070740#2.1,ctr:4600070740,2.1,scope,"Subject: supply of Round bar 1.4404 dia 30 mm, peeled, Round bar 1.4021 dia 40 mm, peeled, Round bar C45 dia 50 mm, cold drawn.",,,,
+ctr:4600070740#3.1,ctr:4600070740,3.1,price,"Prices as per the price annex, fixed for each calendar year. Changes require written notice of at least 60 days before the end of the calendar year.",,,,60
+ctr:4600070740#3.2,ctr:4600070740,3.2,index,"The price follows index PPI-C2431: P = P0 x (1 - 0.8 + 0.8 x I(m-2) / I(base)), base = the index two months before the price year starts, adjusted quarterly on the 1st of January, April, July and October if the change exceeds 3 %.",PPI-C2431,0.8,3,
+ctr:4600070740#4.1,ctr:4600070740,4.1,payment,Payment: 30 days net.,,,,30
+ctr:4600070740#5.1,ctr:4600070740,5.1,delivery,Delivery DAP; standard lead time 14 days from order.,,,,14
+ctr:4600070740#6.1,ctr:4600070740,6.1,quality,"The quality agreement applies: on-time delivery target 95 %, flat fee of EUR 150 per supplier-caused complaint.",,,,
+ctr:4600070740#8.1,ctr:4600070740,8.1,term,Valid from 2024-01-01 to 2026-12-31; extends by 12 months unless terminated with 60 days' notice.,,,,60
