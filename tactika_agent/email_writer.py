@@ -12,7 +12,12 @@ UNSAFE = re.compile(r"\d|(?:€|\bEUR\b|\bUSD\b|\b(?:BATNA|walk[- ]away|budget|t
 
 class EmailWriter:
     def __init__(self):
+        provider = os.getenv("LLM_PROVIDER", "openai-compatible").strip().lower()
         self.model = os.getenv("LLM_MODEL", "").strip()
+        self.api_key = os.getenv("LLM_API_KEY", "").strip()
+        self.base = os.getenv("LLM_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+        if provider not in {"openai", "openai-compatible"} or not self.api_key:
+            self.model = ""
 
     @staticmethod
     def fallback(case, reply, has_packages):
@@ -39,9 +44,7 @@ class EmailWriter:
 
     def draft(self, case, reply, evidence, has_packages):
         if not self.model:
-            return self.fallback(case, reply, offers)
-        api_key = os.getenv("LLM_API_KEY", "")
-        base = os.getenv("LLM_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+            return self.fallback(case, reply, has_packages)
         prompt = (
             "Write a concise procurement email reply (under 90 words) for Hollerau Pumpenwerke. "
             "Acknowledge the supplier's latest message, then ask one useful question or explain a "
@@ -53,8 +56,8 @@ class EmailWriter:
         )
         try:
             response = httpx.post(
-                f"{base}/chat/completions",
-                headers={"Authorization": f"Bearer {api_key}"} if api_key else {},
+                f"{self.base}/chat/completions",
+                headers={"Authorization": f"Bearer {self.api_key}"},
                 json={
                     "model": self.model,
                     "messages": [
@@ -68,7 +71,7 @@ class EmailWriter:
             response.raise_for_status()
             text = response.json()["choices"][0]["message"]["content"].strip()
             if not text or UNSAFE.search(text) or len(text.split()) > 120:
-                return self.fallback(case, reply, offers)
+                return self.fallback(case, reply, has_packages)
             return text
         except (httpx.HTTPError, KeyError, TypeError, ValueError):
-            return self.fallback(case, reply, offers)
+            return self.fallback(case, reply, has_packages)
