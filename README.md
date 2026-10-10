@@ -61,6 +61,35 @@ practice quota.
 For optional model drafting, set `LLM_MODEL`, `LLM_API_KEY`, and optionally `LLM_BASE_URL` in `.env`.
 The model does not choose terms or accept offers.
 
+## MCP email tools
+
+Taktika also exposes the Arena's supplier-email workflow as an MCP server over stdio. Start it from
+the project directory after configuring `.env`:
+
+```bash
+uv run taktika-mcp
+```
+
+Register it with an MCP client using its project folder as the working directory. For clients that
+use a JSON server configuration, the entry is:
+
+```json
+{
+  "mcpServers": {
+    "taktika-arena": {
+      "command": "uv",
+      "args": ["--directory", "/absolute/path/to/ai-agent-tacto", "run", "taktika-mcp"]
+    }
+  }
+}
+```
+
+The server provides tools to list cases, start a negotiation, read supplier emails, ask Taktika to
+draft its next email, send an email with up to three term sheets, and accept or walk away. Drafting
+does not send anything; `send_negotiation_email` and `close_negotiation` submit actions to the Arena
+when called. Starting a practice negotiation uses one case from the team's practice quota. These are
+Arena negotiation emails, not a personal Gmail or Outlook inbox.
+
 ## Data and attribution
 
 The research files are provided by Tacto Technology GmbH under CC BY 4.0. Their attribution and
