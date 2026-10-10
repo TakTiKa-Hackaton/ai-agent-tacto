@@ -1,0 +1,65 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KM3Z82BY1BWYGAFT1R3858",
+  "session_id": "01a1268c-d0f9-7033-ada5-384b7d4af7af",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T19:20:00.898269Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "starter-kit/tactika-buyer-agent/tactika_agent/cost_model.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/email_writer.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/research.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/strategy.py"
+  ],
+  "agent": "Codex",
+  "model": "gpt-6-luna",
+  "turn_id": "0a853fca06c5",
+  "checkpoint_transcript_start": 3174,
+  "transcript_lines_at_start": 3174,
+  "compact_transcript_start": 365,
+  "token_usage": {
+    "input_tokens": 100929,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 1995278,
+    "output_tokens": 29783,
+    "api_call_count": 28,
+    "subagent_tokens_complete": false
+  },
+  "session_metrics": {
+    "turn_count": 15
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T19:20:00.62091Z",
+    "agent_lines": 0,
+    "agent_removed": 12,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 35,
+    "total_committed": 20,
+    "total_lines_changed": 47,
+    "agent_percentage": 25.53191489361702,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 749,
+      "user_lines_removed": 35,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/tactika-buyer-agent/tactika_agent/cost_model.py": 1,
+        "starter-kit/tactika-buyer-agent/tactika_agent/research.py": 1,
+        "starter-kit/tactika-buyer-agent/tactika_agent/strategy.py": 107,
+        "starter-kit/tactika-buyer-agent/uv.lock": 552
+      },
+      "user_removed_per_file": {
+        "starter-kit/tactika-buyer-agent/tactika_agent/cost_model.py": 1,
+        "starter-kit/tactika-buyer-agent/tactika_agent/research.py": 1,
+        "starter-kit/tactika-buyer-agent/tactika_agent/strategy.py": 33
+      }
+    }
+  ]
+}
