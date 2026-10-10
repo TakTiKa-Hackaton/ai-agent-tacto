@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import logging
 import os
 import threading
@@ -132,25 +131,22 @@ def send_negotiation_email(
     supplier_id: str,
     subject: str,
     body: str,
-    term_sheets_json: str = "[]",
-    refs_json: str = "[]",
+    term_sheets: list[dict[str, Any]] | None = None,
+    refs: list[str] | None = None,
 ) -> dict[str, Any]:
     """Send an email and up to three term sheets to a supplier in the Arena session."""
     negotiation = tools().get(session_id)
     if supplier_id not in negotiation.threads:
         raise ValueError("Supplier is not part of this case")
-    try:
-        term_sheets = json.loads(term_sheets_json)
-        refs = json.loads(refs_json)
-    except json.JSONDecodeError as error:
-        raise ValueError("term_sheets_json and refs_json must be valid JSON") from error
-    if not isinstance(term_sheets, list) or len(term_sheets) > 3:
-        raise ValueError("term_sheets_json must be a JSON array with at most three term sheets")
+    term_sheets = term_sheets or []
+    refs = refs or []
+    if len(term_sheets) > 3:
+        raise ValueError("term_sheets must contain at most three term sheets")
     if any(not isinstance(sheet, dict) or not isinstance(sheet.get("terms"), dict)
            for sheet in term_sheets):
         raise ValueError("Each term sheet must be an object with a terms object")
-    if not isinstance(refs, list) or len(refs) > 20 or not all(isinstance(ref, str) for ref in refs):
-        raise ValueError("refs_json must be a JSON array of at most 20 reference IDs")
+    if len(refs) > 20:
+        raise ValueError("refs must contain at most 20 reference IDs")
     if len(subject) > 300 or len(body) > 8000:
         raise ValueError("subject is limited to 300 characters and body to 8000 characters")
     message = {
