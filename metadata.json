@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KH1A0B05DF4M2C03SE3HJD",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "starter-kit/tactika-buyer-agent/tactika_agent/mcp_server.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 3856,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 254938,
+    "output_tokens": 3217,
+    "api_call_count": 7
+  }
+}

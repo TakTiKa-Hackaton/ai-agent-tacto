@@ -1,0 +1,40 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KH1A0B05DF4M2C03SE3HJD",
+  "session_id": "01a1268c-d0f9-7033-ada5-384b7d4af7af",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T18:26:06.620956Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "starter-kit/tactika-buyer-agent/tactika_agent/mcp_server.py"
+  ],
+  "agent": "Codex",
+  "model": "gpt-6-luna",
+  "turn_id": "e08ee2835945",
+  "checkpoint_transcript_start": 1814,
+  "transcript_lines_at_start": 1814,
+  "compact_transcript_start": 199,
+  "token_usage": {
+    "input_tokens": 3856,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 254938,
+    "output_tokens": 3217,
+    "api_call_count": 7
+  },
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T18:26:06.472553Z",
+    "agent_lines": 8,
+    "agent_removed": 12,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 8,
+    "total_lines_changed": 20,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
