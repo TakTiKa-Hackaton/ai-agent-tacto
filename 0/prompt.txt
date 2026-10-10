@@ -1,0 +1,29 @@
+I am building an AI Buyer Agent for the Tacto Negotiation Arena hackathon.
+Our goal is to act as the procurement team for Hollerau Pumpenwerke (a German pump manufacturer) and negotiate via email with supplier bots to close the best total deal or walk away when necessary.
+
+Please analyze my current agent code and codebase in `starter-kit/` and help me rewrite/upgrade the agent to maximize our evaluation score based on the following key strategies:
+
+1. DATA GROUNDING & FACT-CHECKING:
+   - Read supplier emails and cross-reference claimed cost increases (e.g., +9.5% price hikes) against our local market indices, SQLite contract history, and `facts.json` in the `data/` package.
+   - If a supplier overstates inflation or material costs, dynamically generate hard-data counterarguments referencing actual index deltas (e.g., raw material indices only rose 2.1%).
+
+2. DETERMINISTIC NEGOTIATION STATE MACHINE:
+   - Do not let the LLM guess prices or concede too quickly. Wrap the LLM inside Python logic with a strict concession curve.
+   - Implement BATNA (Best Alternative to Negotiated Agreement) logic: hardcode walk-away thresholds (max target price) and step-down concessions per round (e.g., lower counter-offer step-by-step).
+   - If the supplier stays above our walk-away threshold by the final rounds, explicitly walk away or pivot to alternative suppliers.
+
+3. MULTI-SUPPLIER LEVERAGE (RFQs):
+   - For cases requiring multiple quotes or expiring framework contracts, leverage competitive bids against each other (e.g., "Supplier B offered €42/unit—can you beat €40/unit?").
+
+4. STRUCTURED OUTPUT & PROMPT DESIGN:
+   - Force the agent to produce structured JSON internal reasoning before generating the final email draft:
+     {
+       "analysis": "...",
+       "data_rebuttal": "...",
+       "target_price": 0.0,
+       "walk_away_price": 0.0,
+       "email_body": "..."
+     }
+   - Use Chris Voss negotiation tactics in the email body (calibrated open-ended questions like "How are we supposed to absorb this without shifting volume?").
+
+Please inspect `starter-kit/` (specifically the LLM agent file, client, and prompt definitions) and provide the updated code with clear step-by-step explanations on where to make edits.
