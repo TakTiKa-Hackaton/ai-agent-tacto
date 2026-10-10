@@ -28,7 +28,7 @@ be supplied with `ARENA_RELEASE`.
 ```bash
 uv run taktika me
 uv run taktika cases --set practice
-uv run taktika play case:P01 --verbose
+uv run taktika --verbose play case:P01
 uv run taktika run --set practice --parallel 8
 ```
 
