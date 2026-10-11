@@ -13,14 +13,14 @@ UNSAFE = re.compile(r"\d|(?:€|\bEUR\b|\bUSD\b|\b(?:BATNA|walk[- ]away|budget|t
 class EmailWriter:
     def __init__(self):
         provider = os.getenv("LLM_PROVIDER", "openai-compatible").strip().lower()
-        self.model = os.getenv("LLM_MODEL", "").strip()
+        self.model = os.getenv("LLM_MODEL", "gpt-6-luna").strip()
         self.api_key = os.getenv("LLM_API_KEY", "").strip()
         self.base = os.getenv("LLM_BASE_URL", "https://api.openai.com/v1").rstrip("/")
         if provider not in {"openai", "openai-compatible"} or not self.api_key:
             self.model = ""
 
     @staticmethod
-    def fallback(case, reply, has_packages):
+    def fallback(case, reply, package_context):
         body = (reply or {}).get("body", "")
         lower = body.lower()
         if any(word in lower for word in ("capacity", "volume", "forecast", "allocation")):
@@ -33,26 +33,27 @@ class EmailWriter:
             question = "Could you share the main cost drivers and the portion that applies to this part?"
         else:
             question = "Please review the attached commercial options and let us know which is workable on your side."
-        if has_packages:
+        if package_context:
+            trade = " and ".join(package_context)
             opening = (
-                "Thank you for your response. We have reviewed the proposal and prepared "
-                "alternative commercial terms for your consideration. "
+                "Thank you for your response. We have included alternatives built around "
+                f"{trade}. "
             )
         else:
             opening = "Thank you for your response. We need one point clarified before confirming terms. "
         return "Dear Supplier,\n\n" + opening + question + "\n\nKind regards,\nTaktika Procurement"
 
-    def draft(self, case, reply, evidence, has_packages):
+    def draft(self, case, reply, evidence, package_context):
         if not self.model:
-            return self.fallback(case, reply, has_packages)
+            return self.fallback(case, reply, package_context)
         prompt = (
             "Write a concise procurement email reply (under 90 words) for Hollerau Pumpenwerke. "
-            "Acknowledge the supplier's latest message, then ask one useful question or explain a "
-            "reciprocal trade. Offer terms have already been selected by code. Do not mention any "
+            "Acknowledge the supplier's latest message, explain the attached trade options if provided, "
+            "then ask one useful question. Offer terms have already been selected by code. Do not mention any "
             "number, price, percentage, date, citation, budget, target, or internal calculation. "
             "Return only the email text.\n\n"
             f"Case: {case.get('title', '')}\nSupplier reply: {(reply or {}).get('body', '')[:1600]}\n"
-            f"Verified evidence context: {evidence}\nCommercial options attached: {bool(has_packages)}"
+            f"Verified evidence context: {evidence}\nAttached trade descriptions: {package_context}"
         )
         try:
             response = httpx.post(
@@ -71,7 +72,7 @@ class EmailWriter:
             response.raise_for_status()
             text = response.json()["choices"][0]["message"]["content"].strip()
             if not text or UNSAFE.search(text) or len(text.split()) > 120:
-                return self.fallback(case, reply, has_packages)
+                return self.fallback(case, reply, package_context)
             return text
         except (httpx.HTTPError, KeyError, TypeError, ValueError):
-            return self.fallback(case, reply, has_packages)
+            return self.fallback(case, reply, package_context)

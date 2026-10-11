@@ -19,10 +19,10 @@ class ArenaError(RuntimeError):
 
 class ArenaClient:
     def __init__(self, base_url=None, api_key=None, retries=3, timeout=180.0, rate=9):
-        host = (base_url or os.getenv("ARENA_URL", "")).rstrip("/")
+        host = (base_url or os.getenv("ARENA_URL", "")).strip().rstrip("/")
         if not host:
-            raise ValueError("Set ARENA_URL or pass base_url")
-        token = api_key or os.getenv("ARENA_API_KEY")
+            raise ValueError("Arena URL is missing. Set ARENA_URL in .env before using Arena commands.")
+        token = (api_key or os.getenv("ARENA_API_KEY") or "").strip()
         headers = {"X-API-Key": token} if token else {}
         self.http = httpx.Client(base_url=f"{host}/v1", headers=headers, timeout=timeout)
         self.retries = retries
@@ -42,8 +42,8 @@ class ArenaClient:
         if pause > 0:
             time.sleep(pause)
 
-    def _request(self, method, path, body=None, params=None, raw=False):
-        move_id = uuid.uuid4().hex if method == "POST" else None
+    def _request(self, method, path, body=None, params=None, raw=False, move_id=None):
+        move_id = (move_id or uuid.uuid4().hex) if method == "POST" else None
         headers = {"X-Move-Id": move_id} if move_id else {}
         for attempt in range(self.retries + 1):
             self._pace()
@@ -70,6 +70,8 @@ class ArenaClient:
                     detail = payload.get("detail", payload)
                 except (ValueError, AttributeError):
                     detail = response.text
+                if response.status_code == 401:
+                    detail = "Arena rejected the API key. Check ARENA_API_KEY in the loaded .env file."
                 raise ArenaError(response.status_code, detail)
             return response.content if raw else response.json()
         raise RuntimeError("request retry loop ended without a response")
@@ -80,8 +82,8 @@ class ArenaClient:
     def cases(self, set_name="practice"):
         return self._request("GET", "/cases", params={"set": set_name})
 
-    def open_session(self, case_id):
-        return self._request("POST", "/sessions", {"case_id": case_id})
+    def open_session(self, case_id, move_id=None):
+        return self._request("POST", "/sessions", {"case_id": case_id}, move_id=move_id)
 
     def session(self, session_id):
         return self._request("GET", f"/sessions/{session_id}")
@@ -89,9 +91,9 @@ class ArenaClient:
     def thread(self, session_id, supplier_id):
         return self._request("GET", f"/sessions/{session_id}/threads/{supplier_id}")
 
-    def send_message(self, session_id, supplier_id, message):
+    def send_message(self, session_id, supplier_id, message, move_id=None):
         route = f"/sessions/{session_id}/threads/{supplier_id}/messages"
-        return self._request("POST", route, {"message": message})
+        return self._request("POST", route, {"message": message}, move_id=move_id)
 
     def attachment(self, session_id, attachment_id):
         return self._request("GET", f"/sessions/{session_id}/attachments/{attachment_id}", raw=True)

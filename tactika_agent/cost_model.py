@@ -19,7 +19,7 @@ def closing_terms(case, offer, supplier_standard=None):
         "contract_months": round(12 * buyer["horizon_years"]),
         "payment_days": buyer["reference_payment_days"],
         "lead_time_days": buyer["need_lead_time_days"],
-        "incoterm": max(freight, key=freight.get),
+        "incoterm": min(freight, key=freight.get),
     }
     for layer in (supplier_standard or {}, case.get("fixed_terms", {}), offer or {}):
         for field, value in layer.items():

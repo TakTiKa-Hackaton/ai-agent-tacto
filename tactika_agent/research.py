@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import json
 import sqlite3
+from datetime import date
 from functools import cached_property
 from pathlib import Path
 
@@ -151,13 +152,14 @@ class ProcurementResearch:
                 ]
                 part_quotes = self._query(
                     "quotes",
-                    f"SELECT id, part_id, supplier_id, quote_date AS date, unit_price AS price, price_unit, "
-                    f"currency, lead_time_days, incoterm, payment_days, awarded FROM quotes "
+                    f"SELECT * FROM quotes "
                     f"WHERE part_id = ? ORDER BY quote_date DESC LIMIT 40",
                     [part], 40,
                 )
                 quotes += [
-                    row for row in part_quotes
+                    {**row, "date": row.get("date") or row.get("quote_date"),
+                     "price": row.get("price") if row.get("price") is not None else row.get("unit_price")}
+                    for row in part_quotes
                     if row.get("supplier_id") in suppliers and (unit is None or row.get("price_unit") == unit)
                     and row.get("currency", "EUR") == "EUR"
                 ]
@@ -191,6 +193,7 @@ class ProcurementResearch:
     def _market_moves(self, parts):
         if not self.package or not parts:
             return []
+        current_month = self._month_index(date.today().strftime("%Y-%m"))
         marks = ",".join("?" for _ in parts)
         drivers = self._query(
             "cost_drivers",
@@ -206,7 +209,8 @@ class ProcurementResearch:
                 month = fact.get("month") or ref.rsplit("@", 1)[-1]
                 value = fact.get("value")
                 ix = self._month_index(month)
-                if ix is not None and value is not None:
+                if (ix is not None and value is not None and current_month is not None
+                        and 0 <= current_month - ix <= 18):
                     points.append((ix, month, float(value), ref))
             points.sort()
             if len(points) < 2:
@@ -217,6 +221,7 @@ class ProcurementResearch:
                 continue
             start = earlier[0]
             moves.append({
+                "part_id": driver.get("part_id"),
                 "series": series,
                 "weight": float(driver.get("weight") or 0),
                 "change_pct": (end[2] / start[2] - 1) * 100,
@@ -225,11 +230,20 @@ class ProcurementResearch:
                 "start_ref": start[3],
                 "end_ref": end[3],
             })
-        # One representative series per code; data can list a driver for more than one part.
+        # Driver weights are defined per part. Average duplicate-series weights
+        # across the basket instead of letting the largest part dominate.
         unique = {}
         for move in moves:
-            unique[move["series"]] = max(unique.get(move["series"], move), move, key=lambda item: item["weight"])
-        return sorted(unique.values(), key=lambda item: item["weight"], reverse=True)
+            aggregate = unique.setdefault(move["series"], {**move, "weight": 0.0, "parts": set()})
+            if move["part_id"] not in aggregate["parts"]:
+                aggregate["weight"] += move["weight"]
+                aggregate["parts"].add(move["part_id"])
+        result = []
+        for move in unique.values():
+            move["weight"] /= max(1, len(parts))
+            move.pop("parts")
+            result.append(move)
+        return sorted(result, key=lambda item: item["weight"], reverse=True)
 
     def collect(self, case):
         units, po_rows, quotes, other = self._rows_for_case(case)
@@ -287,7 +301,8 @@ class ProcurementResearch:
         by_part = {}
         for row in research["purchase_history"]:
             ref = row.get("id")
-            if row.get("part_id") and row.get("price") is not None and self.valid_ref(case, ref):
+            if (row.get("part_id") and row.get("price") is not None and self.valid_ref(case, ref)
+                    and self._fresh_evidence(row.get("date"), 1095)):
                 by_part.setdefault(row["part_id"], []).append(row)
         for part, rows in by_part.items():
             if len(rows) >= 2:
@@ -298,3 +313,11 @@ class ProcurementResearch:
                 )
                 return sentence, [first["id"], second["id"]]
         return "Thank you for your offer. We have reviewed it against the case requirements.", []
+
+    @staticmethod
+    def _fresh_evidence(value, max_age_days):
+        try:
+            age = (date.today() - date.fromisoformat(value)).days
+        except (TypeError, ValueError):
+            return False
+        return 0 <= age <= max_age_days
