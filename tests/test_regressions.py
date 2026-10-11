@@ -11,7 +11,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from tactika_agent.analysis import summarize
-from tactika_agent.agent import _research_root
+from tactika_agent.agent import TaktikaAgent, _research_root
 from tactika_agent.operation_journal import OperationJournal
 from tactika_agent.play import live_threads, play
 from tactika_agent.recording import RunRecorder, save_results
@@ -202,6 +202,189 @@ class PersistenceRegressionTests(unittest.TestCase):
             self.assertEqual(risk["outcomes"], {"counter": 1})
             self.assertEqual(risk["multiclass_brier_score"], 1.14)
 
+
+    def test_open_safe_quote_gets_one_untried_materially_cheaper_counter(self):
+        class Researcher:
+            @staticmethod
+            def opening_evidence(_case, _research):
+                return "", []
+
+        class Writer:
+            @staticmethod
+            def draft(*_args, **_kwargs):
+                return ""
+
+        planner = OfferPlanner(Researcher())
+        current = {"sheet_id": "offer-1", "terms": {"unit_price": 100},
+                   "valid": True, "cost": 100, "standard": {},
+                   "target": 90, "target_cost": 90, "status": "open", "turn": 0}
+        case = {"round_limit": 5, "title": "Test"}
+        threads = {"supplier-1": [{"from": "supplier", "status": "open",
+                                  "term_sheets": [{"term_sheet_id": "offer-1",
+                                                   "terms": {"unit_price": 100}}]}]}
+        package = {"unit_price": 98}
+        with patch.object(OfferPlanner, "_state", return_value=current), \
+             patch.object(OfferPlanner, "batna", return_value=(200, "alternative")), \
+             patch.object(OfferPlanner, "acceptance_threshold", return_value=150), \
+             patch.object(OfferPlanner, "offer_packages", return_value=[package]), \
+             patch.object(OfferPlanner, "cost", side_effect=lambda _c, terms, *_a: terms["unit_price"]):
+            decision = planner.decide(case, threads, {}, Writer())
+        self.assertEqual(decision["message"]["term_sheets"], [{"terms": package}])
+
+    def test_open_safe_quote_is_accepted_when_no_untried_improvement_exists(self):
+        planner = OfferPlanner(object())
+        current = {"sheet_id": "offer-1", "terms": {"unit_price": 100},
+                   "valid": True, "cost": 100, "standard": {},
+                   "target": 90, "target_cost": 90, "status": "open", "turn": 0}
+        case = {"round_limit": 5, "title": "Test"}
+        threads = {"supplier-1": [{"from": "supplier", "status": "open",
+                                  "term_sheets": [{"term_sheet_id": "offer-1",
+                                                   "terms": {"unit_price": 100}}]}]}
+        with patch.object(OfferPlanner, "_state", return_value=current), \
+             patch.object(OfferPlanner, "batna", return_value=(200, "alternative")), \
+             patch.object(OfferPlanner, "acceptance_threshold", return_value=150), \
+             patch.object(OfferPlanner, "offer_packages", return_value=[]):
+            decision = planner.decide(case, threads, {}, object())
+        self.assertEqual(decision["message"]["action"]["type"], "accept")
+
+    def test_rejection_summary_does_not_score_ambiguous_multi_package_forecasts(self):
+        with tempfile.TemporaryDirectory() as directory, patch(
+            "tactika_agent.recording.git_revision", return_value="offline-revision"
+        ):
+            recorder = RunRecorder(directory, "case:P01", "session-bundle",
+                                   {"title": "Bundle case"}, {})
+            council = {
+                "selected_candidate_ids": ["0", "1"],
+                "rejection_risk": {
+                    "0": {"accept": 0.7, "counter": 0.2, "supplier_walkaway": 0.1},
+                    "1": {"accept": 0.6, "counter": 0.3, "supplier_walkaway": 0.1},
+                },
+            }
+            recorder.decision({}, {}, {"supplier_id": "supplier-1",
+                                       "message": {"term_sheets": [{"terms": {"unit_price": 10}},
+                                                                    {"terms": {"unit_price": 9}}]}},
+                              "normal", council)
+            recorder.response({"from": "supplier", "status": "open",
+                               "term_sheets": [{"term_sheet_id": "offer-1",
+                                                "terms": {"unit_price": 9}}]})
+            recorder.finish({"deal": True, "score": 90})
+
+            risk = summarize(directory)["rejection_risk"]
+
+            self.assertEqual(risk["scored_count"], 0)
+            self.assertEqual(risk["ambiguous_bundle_count"], 1)
+
+    def test_does_not_repeat_a_previously_sent_package(self):
+        class Researcher:
+            @staticmethod
+            def opening_evidence(_case, _research):
+                return "", []
+
+        class Writer:
+            @staticmethod
+            def draft(*_args, **_kwargs):
+                return ""
+
+        planner = OfferPlanner(Researcher())
+        previous = {"unit_price": 90}
+        current = {"sheet_id": "offer-2", "terms": {"unit_price": 95},
+                   "valid": True, "cost": 95, "standard": {},
+                   "target": 80, "target_cost": 80, "status": "open", "turn": 1}
+        case = {"round_limit": 5, "title": "Test"}
+        threads = {"supplier-1": [
+            {"from": "buyer", "term_sheets": [{"terms": previous}]},
+            {"from": "supplier", "status": "open",
+             "term_sheets": [{"term_sheet_id": "offer-2", "terms": {"unit_price": 95}}]},
+        ]}
+        with patch.object(OfferPlanner, "_state", return_value=current), \
+             patch.object(OfferPlanner, "batna", return_value=(200, "alternative")), \
+             patch.object(OfferPlanner, "acceptance_threshold", return_value=90), \
+             patch.object(OfferPlanner, "offer_packages", return_value=[previous]):
+            decision = planner.decide(case, threads, {}, Writer())
+        self.assertEqual(decision["message"]["term_sheets"], [])
+        self.assertIn("subject", decision["message"])
+
+    def test_walks_after_an_unanswered_no_offer_inquiry(self):
+        class Researcher:
+            @staticmethod
+            def opening_evidence(_case, _research):
+                return "", []
+
+        class Writer:
+            @staticmethod
+            def draft(*_args, **_kwargs):
+                return "Could you clarify what workable schedule you can support?"
+
+        planner = OfferPlanner(Researcher())
+        previous = {"unit_price": 90}
+        current = {"sheet_id": "offer-2", "terms": {"unit_price": 95},
+                   "valid": True, "cost": 95, "standard": {},
+                   "target": 80, "target_cost": 80, "status": "open", "turn": 2}
+        case = {"round_limit": 5, "title": "Test"}
+        threads = {"supplier-1": [
+            {"from": "buyer", "term_sheets": [{"terms": previous}]},
+            {"from": "supplier", "status": "open", "body": "We cannot improve.",
+             "term_sheets": [{"term_sheet_id": "offer-2", "terms": {"unit_price": 95}}]},
+            {"from": "buyer", "body": "Could you clarify?", "term_sheets": []},
+            {"from": "supplier", "status": "open", "body": "No change.",
+             "term_sheets": [{"term_sheet_id": "offer-2", "terms": {"unit_price": 95}}]},
+        ]}
+        with patch.object(OfferPlanner, "_state", return_value=current), \
+             patch.object(OfferPlanner, "batna", return_value=(200, "alternative")), \
+             patch.object(OfferPlanner, "acceptance_threshold", return_value=90), \
+             patch.object(OfferPlanner, "offer_packages", return_value=[previous]):
+            decision = planner.decide(case, threads, {}, Writer())
+        self.assertEqual(decision["message"]["action"]["type"], "walk_away")
+
+    def test_trace_api_cost_uses_own_calls_when_process_budget_is_shared(self):
+        class Researcher:
+            @staticmethod
+            def collect(_case):
+                return {}
+
+        class Budget:
+            spent_usd = 1.0
+
+        class Council:
+            enabled = True
+            budget = Budget()
+            last_audit = None
+
+            def decide(self, *_args):
+                self.last_audit = {"status": "council_offer", "requests": [
+                    {"api_cost_usd": 0.000017}, {"api_cost_usd": 0.000008},
+                ]}
+                self.budget.spent_usd = 3.0
+                return {"supplier_id": "supplier-1", "message": {}}
+
+        agent = object.__new__(TaktikaAgent)
+        agent.researcher, agent.planner = Researcher(), object()
+        agent.council = Council()
+        agent.last_research = agent.last_council = None
+
+        agent.decide({}, {})
+
+        self.assertEqual(agent.last_council["api_cost_usd"], 0.000025)
+
+    def test_analysis_reports_scores_by_category_and_council_failure_causes(self):
+        with tempfile.TemporaryDirectory() as directory, patch(
+            "tactika_agent.recording.git_revision", return_value="offline-revision"
+        ):
+            recorder = RunRecorder(directory, "case:strategic", "session-goal",
+                                   {"title": "Strategic", "buyer": {"category_goal": "stabilise"}}, {})
+            recorder.decision({}, {}, {"supplier_id": "supplier-1", "message": {"term_sheets": []}},
+                              "normal", {"status": "specialist_fallback",
+                                         "errors": {"money": "timeout"},
+                                         "supplier_health_cost": "unknown",
+                                         "reputation_metric": "not_provided"})
+            recorder.finish({"deal": True, "score": 0.6})
+
+            summary = summarize(directory)
+
+            self.assertEqual(summary["by_category_goal"]["stabilise"]["case_count"], 1)
+            self.assertEqual(summary["council"]["role_failures"], {"money:timeout": 1})
+            self.assertEqual(summary["council"]["supplier_health_cost"],
+                             {"unknown": 1})
 
 if __name__ == "__main__":
     unittest.main()

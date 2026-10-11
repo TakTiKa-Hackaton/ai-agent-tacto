@@ -455,8 +455,24 @@ class OfferPlanner:
     def _valid_advisory_terms(terms):
         for field, value in terms.items():
             if field == "index_clause":
-                return False  # Keep structured index clauses on the deterministic planner path.
-            if field in {"unit_price", "tooling_eur", "chargeback_eur_per_complaint"}:
+                if (not isinstance(value, dict)
+                        or set(value) != {"series", "material_share", "deadband_pct", "base"}
+                        or not isinstance(value["series"], str) or not value["series"]
+                        or not isinstance(value["base"], str)
+                        or isinstance(value["material_share"], bool)
+                        or not isinstance(value["material_share"], (int, float))
+                        or not math.isfinite(value["material_share"])
+                        or not 0 <= value["material_share"] <= 1
+                        or isinstance(value["deadband_pct"], bool)
+                        or not isinstance(value["deadband_pct"], (int, float))
+                        or not math.isfinite(value["deadband_pct"])
+                        or not 0 <= value["deadband_pct"] <= 100):
+                    return False
+                try:
+                    date.fromisoformat(value["base"] + "-01")
+                except ValueError:
+                    return False
+            elif field in {"unit_price", "tooling_eur", "chargeback_eur_per_complaint"}:
                 if (isinstance(value, bool) or not isinstance(value, (int, float))
                         or not math.isfinite(value) or value < 0
                         or (field == "unit_price" and value == 0)):
@@ -569,6 +585,29 @@ class OfferPlanner:
         )
         return self._packages(case, primary, standard, sid, offer_cap, research)
 
+    def _untried_packages(self, packages, events):
+        sent = {
+            json.dumps(sheet.get("terms", {}), sort_keys=True, separators=(",", ":"), default=str)
+            for message in events if message.get("from") == "buyer"
+            for sheet in message.get("term_sheets", [])
+        }
+        return [
+            package for package in packages
+            if json.dumps(package, sort_keys=True, separators=(",", ":"), default=str) not in sent
+        ]
+
+    def _improving_untried_package(self, case, threads, supplier_id, research, state):
+        events = threads[supplier_id]
+        if (state["status"] in {"final_offer", "agreed"}
+                or moves_left(case, events) <= 0 or not state["valid"]):
+            return None
+        minimum_gain = max(0.01, abs(state["cost"]) * 0.005)
+        for package in self._untried_packages(
+                self.offer_packages(case, threads, supplier_id, research), events):
+            if self.cost(case, package, state["standard"], supplier_id, research) < state["cost"] - minimum_gain:
+                return package
+        return None
+
     def decide(self, case, threads, research, writer):
         live = live_threads(threads)
         if not live:
@@ -603,9 +642,17 @@ class OfferPlanner:
                 )
             if opportunities:
                 _, other_sid = opportunities[0]
-                candidate_packages = self.offer_packages(case, threads, other_sid, research)
+                candidate_packages = self._untried_packages(
+                    self.offer_packages(case, threads, other_sid, research), threads[other_sid]
+                )
                 if candidate_packages:
                     deferred = (other_sid, candidate_packages)
+            if deferred is None:
+                improvement = self._improving_untried_package(
+                    case, threads, best_sid, research, states[best_sid]
+                )
+                if improvement is not None:
+                    deferred = (best_sid, [improvement])
             if deferred is None:
                 return {"supplier_id": best_sid,
                         "message": {"action": {"type": "accept", "term_sheet_id": offer_id}}}
@@ -626,11 +673,32 @@ class OfferPlanner:
         sid, packages = deferred if deferred is not None else (None, [])
         if deferred is None:
             for candidate_sid in offer_order:
-                candidate_packages = self.offer_packages(case, threads, candidate_sid, research)
+                candidate_packages = self._untried_packages(
+                    self.offer_packages(case, threads, candidate_sid, research), threads[candidate_sid]
+                )
                 if candidate_packages:
                     sid, packages = candidate_sid, candidate_packages
                     break
         if not packages:
+            inquiry_supplier = next((
+                candidate_sid for candidate_sid in offer_order
+                if states[candidate_sid]["valid"]
+                and not any(message.get("from") == "buyer" and not message.get("term_sheets")
+                            and not message.get("action") for message in threads[candidate_sid])
+            ), None)
+            if inquiry_supplier is not None:
+                evidence_line, refs = self.researcher.opening_evidence(case, research)
+                draft = writer.draft(case, latest(threads[inquiry_supplier]), evidence_line, [],
+                                     history=threads[inquiry_supplier][-6:])
+                return {
+                    "supplier_id": inquiry_supplier,
+                    "message": {
+                        "subject": f"Re: {case['title']}"[:300],
+                        "body": (evidence_line + "\n\n" + draft)[:8000],
+                        "term_sheets": [],
+                        "refs": refs[:20],
+                    },
+                }
             return {"supplier_id": live[0], "message": {"action": {"type": "walk_away"}}}
         evidence_line, refs = self.researcher.opening_evidence(case, research)
         labels = {
@@ -646,7 +714,8 @@ class OfferPlanner:
             for field, label in labels.items():
                 if package.get(field) != packages[0].get(field) and label not in trade_descriptions:
                     trade_descriptions.append(label)
-        draft = writer.draft(case, latest(threads[sid]), evidence_line, trade_descriptions)
+        draft = writer.draft(case, latest(threads[sid]), evidence_line, trade_descriptions,
+                             history=threads[sid][-6:])
         # Verified evidence is inserted by code; the language model is not allowed to alter it.
         body = evidence_line + "\n\n" + draft
         return {

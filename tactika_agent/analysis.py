@@ -53,13 +53,16 @@ def _observed_outcome(turn):
 def _rejection_summary(traces):
     outcomes = Counter()
     scores = []
-    prediction_count = 0
+    prediction_count = ambiguous_bundle_count = 0
     for _, trace in traces:
         for turn in trace.get("decisions", []):
             council = turn.get("council") or {}
             selected = council.get("selected_candidate_ids") or []
             forecasts = council.get("rejection_risk") or {}
-            if not selected or str(selected[0]) not in forecasts:
+            if len(selected) > 1:
+                ambiguous_bundle_count += 1
+                continue
+            if len(selected) != 1 or str(selected[0]) not in forecasts:
                 continue
             prediction_count += 1
             observed = _observed_outcome(turn)
@@ -77,6 +80,7 @@ def _rejection_summary(traces):
     return {
         "prediction_count": prediction_count,
         "scored_count": len(scores),
+        "ambiguous_bundle_count": ambiguous_bundle_count,
         "outcomes": dict(outcomes),
         "multiclass_brier_score": round(sum(scores) / len(scores), 8) if scores else None,
         "note": "Descriptive only; small samples do not establish probability calibration.",
@@ -85,7 +89,7 @@ def _rejection_summary(traces):
 
 class _ReplayWriter:
     @staticmethod
-    def draft(*_args):
+    def draft(*_args, **_kwargs):
         return ""
 
 
@@ -94,6 +98,9 @@ def summarize(location, replay=False):
     score_values, rounds, failures = [], [], Counter()
     deals = completed = 0
     cases, divergences = [], []
+    goal_results = {}
+    council_statuses, council_failures = Counter(), Counter()
+    supplier_health_cost, reputation_metric = Counter(), Counter()
     planner = OfferPlanner(ProcurementResearch(None)) if replay else None
 
     for path, trace in traces:
@@ -104,6 +111,18 @@ def summarize(location, replay=False):
         score = result.get("score")
         if isinstance(score, (int, float)) and not isinstance(score, bool):
             score_values.append(float(score))
+        goal = (trace.get("case") or {}).get("buyer", {}).get("category_goal")
+        if goal:
+            aggregate = goal_results.setdefault(goal, {
+                "case_count": 0, "completed_count": 0, "deal_count": 0,
+                "score_sum": 0.0, "scored_count": 0,
+            })
+            aggregate["case_count"] += 1
+            aggregate["completed_count"] += complete
+            aggregate["deal_count"] += bool(result.get("deal"))
+            if isinstance(score, (int, float)) and not isinstance(score, bool):
+                aggregate["score_sum"] += float(score)
+                aggregate["scored_count"] += 1
         rounds.append(len(trace.get("decisions", [])))
         if trace.get("error"):
             failures[trace["error"].get("type", "unknown")] += 1
@@ -117,6 +136,15 @@ def summarize(location, replay=False):
         })
 
         for index, turn in enumerate(trace.get("decisions", [])):
+            council = turn.get("council") or {}
+            if council:
+                council_statuses[council.get("status", "unknown")] += 1
+                if council.get("supplier_health_cost"):
+                    supplier_health_cost[council["supplier_health_cost"]] += 1
+                if council.get("reputation_metric"):
+                    reputation_metric[council["reputation_metric"]] += 1
+                for role, reason in (council.get("errors") or {}).items():
+                    council_failures[f"{role}:{reason}"] += 1
             if planner is None:
                 continue
             case, threads = trace.get("case"), turn.get("threads")
@@ -133,6 +161,18 @@ def summarize(location, replay=False):
                     "recorded": _choice(proposal), "current": _choice(new),
                 })
 
+    by_category_goal = {
+        goal: {
+            "case_count": values["case_count"],
+            "completed_count": values["completed_count"],
+            "deal_rate": values["deal_count"] / values["completed_count"]
+                        if values["completed_count"] else None,
+            "mean_score": values["score_sum"] / values["scored_count"]
+                          if values["scored_count"] else None,
+            "scored_count": values["scored_count"],
+        }
+        for goal, values in goal_results.items()
+    }
     summary = {
         "trace_count": len(traces), "completed_count": completed,
         "deal_rate": deals / completed if completed else None,
@@ -141,6 +181,12 @@ def summarize(location, replay=False):
         "mean_decisions": sum(rounds) / len(rounds) if rounds else None,
         "failure_counts": dict(failures), "cases": cases,
         "rejection_risk": _rejection_summary(traces),
+        "by_category_goal": by_category_goal,
+        "council": {"decision_count": sum(council_statuses.values()),
+                    "statuses": dict(council_statuses),
+                    "role_failures": dict(council_failures),
+                    "supplier_health_cost": dict(supplier_health_cost),
+                    "reputation_metric": dict(reputation_metric)},
     }
     if replay:
         summary["decision_divergences"] = divergences

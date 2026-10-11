@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import json as jsonlib
+import math
 import unittest
+import time
 
 from tactika_agent.council import (
     FIELD_OWNERS, ModelUsageBudget, SpecialistCouncil, expected_cost, validate_risk,
@@ -315,6 +317,108 @@ class CouncilPolicyTests(unittest.TestCase):
         self.assertEqual(decision["message"]["action"]["type"], "walk_away")
         self.assertEqual(council.last_audit["status"], "council_walkaway")
 
+
+    def test_unlimited_budget_accepts_explicit_setting_without_changing_finite_cap(self):
+        budget = ModelUsageBudget("unlimited")
+        self.assertTrue(math.isinf(budget.limit_usd))
+        self.assertIsNotNone(budget.reserve("gpt-6-luna", 1000, 4096))
+        self.assertEqual(ModelUsageBudget(100).limit_usd, 5.0)
+
+    def test_council_records_failure_cause(self):
+        class Response:
+            def raise_for_status(self):
+                return None
+
+            @staticmethod
+            def json():
+                return {"choices": []}
+
+        council = SpecialistCouncil(api_key="test-key", enabled=True, budget_usd=0.1,
+                                    post=lambda *_args, **_kwargs: Response())
+        council.last_audit = {"calls": 0}
+
+        self.assertIsNone(council._request("money", "review", {}))
+        self.assertEqual(council.last_audit["errors"]["money"], "missing_choice")
+
+    def test_council_retries_once_after_truncated_output_and_scales_tokens_by_role(self):
+        responses = [
+            {"choices": [{"finish_reason": "length", "message": {"content": "{\"incomplete\":"}}]},
+            {"choices": [{"finish_reason": "stop", "message": {"content": "{\"ok\": true}"}}]},
+        ]
+        requests = []
+
+        def post(_url, **kwargs):
+            requests.append(kwargs["json"])
+
+            class Response:
+                def raise_for_status(self):
+                    return None
+
+                def json(self):
+                    return responses.pop(0)
+
+            return Response()
+
+        council = SpecialistCouncil(api_key="test-key", enabled=True, budget_usd=0.1, post=post)
+        council.last_audit = {"calls": 0}
+        self.assertEqual(council._request("rejection_risk", "review", {}), {"ok": True})
+        self.assertEqual([item["max_completion_tokens"] for item in requests], [4096, 8192])
+        self.assertNotIn("rejection_risk", council.last_audit.get("errors", {}))
+        self.assertEqual([row["status"] for row in council.last_audit["requests"]],
+                         ["truncated", "ok"])
+
+    def test_council_audit_includes_role_failures(self):
+        council = SpecialistCouncil(api_key="test-key", enabled=True, budget_usd=0.1)
+        council.last_audit = {"calls": 0}
+        council._record_error("relationship", "invalid_terms")
+        self.assertEqual(council.last_audit["errors"], {"relationship": "invalid_terms"})
+
+    def test_relationship_specialist_is_consulted_for_every_category(self):
+        for goal in ("routine", "leverage", "quality_first", "stabilise", "secure_supply"):
+            roles = SpecialistCouncil._applicable_roles({"buyer": {"category_goal": goal},
+                                                          "negotiable": ["unit_price"]})
+            self.assertIn("relationship", roles)
+
+    def test_index_clause_advice_accepts_well_formed_and_rejects_malformed_values(self):
+        clause = {"series": "AS-14404", "material_share": 0.45,
+                  "deadband_pct": 0, "base": "2026-08"}
+        self.assertTrue(OfferPlanner._valid_advisory_terms({"index_clause": clause}))
+        self.assertFalse(OfferPlanner._valid_advisory_terms(
+            {"index_clause": {**clause, "material_share": 1.5}}))
+        self.assertFalse(OfferPlanner._valid_advisory_terms(
+            {"index_clause": {key: value for key, value in clause.items() if key != "base"}}))
+
+    def test_request_does_not_call_provider_after_decision_deadline(self):
+        def post(*_args, **_kwargs):
+            self.fail("provider should not be called after deadline")
+
+        council = SpecialistCouncil(api_key="test-key", enabled=True, budget_usd=0.1, post=post)
+        council.last_audit = {"calls": 0}
+        self.assertIsNone(council._request("money", "review", {}, deadline=time.monotonic() - 1))
+        self.assertEqual(council.last_audit["errors"]["money"], "deadline_exceeded")
+
+    def test_request_audit_cost_uses_that_call_usage_not_process_delta(self):
+        class Response:
+            def raise_for_status(self):
+                return None
+
+            @staticmethod
+            def json():
+                return {"choices": [{"finish_reason": "stop", "message": {"content": "{\"ok\":true}"}}],
+                        "usage": {"prompt_tokens": 20, "completion_tokens": 30}}
+
+        council = SpecialistCouncil(api_key="test-key", enabled=True, budget_usd=0.1,
+                                    post=lambda *_args, **_kwargs: Response())
+        council.last_audit = {"calls": 0}
+        council._request("money", "review", {})
+        self.assertAlmostEqual(council.last_audit["requests"][0]["api_cost_usd"], 0.000017)
+
+    def test_relationship_status_labels_missing_supplier_economics_as_unknown(self):
+        result = SpecialistCouncil._relationship_status(
+            {"buyer": {"category_goal": "stabilise"}}, None
+        )
+        self.assertEqual(result["supplier_health_cost"], "unknown")
+        self.assertEqual(result["reputation_metric"], "not_provided")
 
 if __name__ == "__main__":
     unittest.main()

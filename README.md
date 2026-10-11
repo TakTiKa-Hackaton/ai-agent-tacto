@@ -40,8 +40,10 @@ uv run taktika analyze ./runs --replay
 summary under `./runs`. The console prints one consolidated score line. Pass `--record DIR` to use a
 different directory. Traces include case data, supplier messages, planner research inputs, decisions,
 and Arena results; keep them local. `analyze` reads these files without connecting to the Arena.
-It reports recorded rejection forecasts against observed supplier replies; `--replay` compares
-decisions with the current planner but does not simulate supplier responses or estimate a new score.
+It reports recorded rejection forecasts only when one selected package maps to the response, shows
+ambiguous bundles separately, breaks out score and deal rate by category goal, and summarizes council
+failure causes. `--replay` compares decisions with the current planner; it does not simulate supplier
+responses or estimate a new score.
 
 For the live final, start the runner before the first wave and leave it running:
 
@@ -96,10 +98,17 @@ the boss's reason, and council API cost. The council uses the existing safe emai
 `LLM_API_BUDGET_USD` caps council API calls for one running process (default `$2`, hard maximum `$5`,
 using the bundled published-rate estimates).
 The process-wide ledger reserves the maximum request cost before each call and charges the full
-reservation if usage is not returned. It covers council calls; keep one runner process active for
-one negotiation batch.
+reservation if usage is not returned. Use `LLM_API_BUDGET_USD=unlimited` only for explicit model
+evaluation runs. Normal runs retain the finite default. Per-request usage, latency, finish reason and
+failure causes are saved to private traces.
 Only GPT-6 Luna and GPT-4o have built-in budget rates. The council falls back if another model is
 configured.
+
+Relationship review runs for every category goal. It can flag evidenced concerns, previous commitments,
+and mitigations; it does not invent a reputation score or override the case's commercial constraints.
+The Arena may evaluate behavior on undisclosed cases and criteria. The offline 60-case test matrix checks
+planner behavior across category goals, market moves, and comparable quote profiles; it is synthetic
+coverage, not a supplier simulation or proof of hidden-score performance.
 
 For optional model drafting, set `LLM_PROVIDER=openai-compatible`, `LLM_MODEL=gpt-6-luna`, and
 `LLM_API_KEY` in `.env`; optionally set `LLM_BASE_URL` for another OpenAI-compatible endpoint.

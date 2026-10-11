@@ -54,12 +54,12 @@ class TaktikaAgent:
         self.last_research = evidence
         self.last_council = None
         if self.council.enabled:
-            spent = self.council.budget.spent_usd
             decision = self.council.decide(case, threads, evidence, self.planner)
             self.last_council = self.council.last_audit
             if self.last_council is not None:
                 self.last_council["api_cost_usd"] = round(
-                    self.council.budget.spent_usd - spent, 8
+                    sum(call.get("api_cost_usd", 0)
+                        for call in self.last_council.get("requests", [])), 8
                 )
             return decision
         return self.planner.decide(case, threads, evidence, self.writer)
