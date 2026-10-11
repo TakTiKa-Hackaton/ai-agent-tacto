@@ -1,0 +1,216 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MM9JNF9RQX6RV943EV7KDH",
+  "session_id": "01a127a7-17d2-7941-8b14-2e8d3b963259",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-11T04:42:23.071417Z",
+  "branch": "main",
+  "checkpoints_count": 7,
+  "save_step_count": 7,
+  "files_touched": [
+    "starter-kit/tactika-buyer-agent/.env.example",
+    "starter-kit/tactika-buyer-agent/.gitignore",
+    "starter-kit/tactika-buyer-agent/README.md",
+    "starter-kit/tactika-buyer-agent/tactika_agent/agent.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/analysis.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/client.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/council.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/email_writer.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/mcp_server.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/play.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/recording.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/research.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/runner.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/strategy.py",
+    "starter-kit/tactika-buyer-agent/tests/test_council.py",
+    "starter-kit/tactika-buyer-agent/tests/test_regressions.py"
+  ],
+  "agent": "Codex",
+  "model": "gpt-6-luna",
+  "turn_id": "5a0b343f4a28",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 640115,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 18667018,
+    "output_tokens": 142089,
+    "api_call_count": 196,
+    "subagent_tokens_complete": true
+  },
+  "session_metrics": {
+    "turn_count": 7
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-11T04:42:22.92597Z",
+    "agent_lines": 803,
+    "agent_removed": 4,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 205,
+    "total_committed": 803,
+    "total_lines_changed": 1012,
+    "agent_percentage": 79.74308300395256,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 2162,
+      "user_lines_removed": 205,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/tactika-buyer-agent/.gitignore": 1,
+        "starter-kit/tactika-buyer-agent/README.md": 19,
+        "starter-kit/tactika-buyer-agent/tactika_agent/agent.py": 38,
+        "starter-kit/tactika-buyer-agent/tactika_agent/analysis.py": 98,
+        "starter-kit/tactika-buyer-agent/tactika_agent/client.py": 11,
+        "starter-kit/tactika-buyer-agent/tactika_agent/email_writer.py": 1,
+        "starter-kit/tactika-buyer-agent/tactika_agent/mcp_server.py": 339,
+        "starter-kit/tactika-buyer-agent/tactika_agent/operation_journal.py": 107,
+        "starter-kit/tactika-buyer-agent/tactika_agent/play.py": 188,
+        "starter-kit/tactika-buyer-agent/tactika_agent/recording.py": 177,
+        "starter-kit/tactika-buyer-agent/tactika_agent/research.py": 31,
+        "starter-kit/tactika-buyer-agent/tactika_agent/runner.py": 85,
+        "starter-kit/tactika-buyer-agent/tactika_agent/strategy.py": 266,
+        "starter-kit/tactika-buyer-agent/tests/test_regressions.py": 161,
+        "starter-kit/tactika-buyer-agent/uv.lock": 552
+      },
+      "user_removed_per_file": {
+        "starter-kit/tactika-buyer-agent/README.md": 6,
+        "starter-kit/tactika-buyer-agent/tactika_agent/agent.py": 2,
+        "starter-kit/tactika-buyer-agent/tactika_agent/client.py": 9,
+        "starter-kit/tactika-buyer-agent/tactika_agent/email_writer.py": 1,
+        "starter-kit/tactika-buyer-agent/tactika_agent/mcp_server.py": 41,
+        "starter-kit/tactika-buyer-agent/tactika_agent/play.py": 54,
+        "starter-kit/tactika-buyer-agent/tactika_agent/research.py": 8,
+        "starter-kit/tactika-buyer-agent/tactika_agent/runner.py": 10,
+        "starter-kit/tactika-buyer-agent/tactika_agent/strategy.py": 74
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 139,
+      "user_lines_removed": 2,
+      "agent_lines_added": 2162,
+      "agent_lines_removed": 205,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/.claude-flow/policy/ledger-anchors.json": 9,
+        "starter-kit/.claude-flow/policy/state.json": 42
+      },
+      "user_removed_per_file": {
+        "starter-kit/.claude-flow/policy/state.json": 2
+      }
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 3622,
+      "user_lines_removed": 5,
+      "agent_lines_added": 3143,
+      "agent_lines_removed": 209,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/.claude-flow/memory/store.json": 540,
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/ledger-anchors.json": 549,
+        "starter-kit/.claude-flow/policy/state.json": 2442
+      },
+      "user_removed_per_file": {
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/state.json": 2
+      }
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 3854,
+      "user_lines_removed": 5,
+      "agent_lines_added": 3143,
+      "agent_lines_removed": 209,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/.claude-flow/memory/store.json": 576,
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/ledger-anchors.json": 585,
+        "starter-kit/.claude-flow/policy/state.json": 2602
+      },
+      "user_removed_per_file": {
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/state.json": 2
+      }
+    },
+    {
+      "checkpoint_number": 5,
+      "user_lines_added": 3854,
+      "user_lines_removed": 5,
+      "agent_lines_added": 3143,
+      "agent_lines_removed": 209,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/.claude-flow/memory/store.json": 576,
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/ledger-anchors.json": 585,
+        "starter-kit/.claude-flow/policy/state.json": 2602
+      },
+      "user_removed_per_file": {
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/state.json": 2
+      }
+    },
+    {
+      "checkpoint_number": 6,
+      "user_lines_added": 4474,
+      "user_lines_removed": 5,
+      "agent_lines_added": 3143,
+      "agent_lines_removed": 209,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/.claude-flow/memory/store.json": 657,
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/ledger-anchors.json": 684,
+        "starter-kit/.claude-flow/policy/state.json": 3042
+      },
+      "user_removed_per_file": {
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/state.json": 2
+      }
+    },
+    {
+      "checkpoint_number": 7,
+      "user_lines_added": 4590,
+      "user_lines_removed": 5,
+      "agent_lines_added": 3143,
+      "agent_lines_removed": 209,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/.claude-flow/memory/store.json": 675,
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/ledger-anchors.json": 702,
+        "starter-kit/.claude-flow/policy/state.json": 3122
+      },
+      "user_removed_per_file": {
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/state.json": 2
+      }
+    },
+    {
+      "checkpoint_number": 8,
+      "user_lines_added": 4938,
+      "user_lines_removed": 5,
+      "agent_lines_added": 3170,
+      "agent_lines_removed": 209,
+      "user_added_per_file": {
+        ".codex/hooks.json": 88,
+        "starter-kit/.claude-flow/memory/store.json": 729,
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/ledger-anchors.json": 756,
+        "starter-kit/.claude-flow/policy/state.json": 3362
+      },
+      "user_removed_per_file": {
+        "starter-kit/.claude-flow/neural/stats.json": 3,
+        "starter-kit/.claude-flow/policy/state.json": 2
+      }
+    }
+  ]
+}

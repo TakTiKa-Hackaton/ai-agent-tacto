@@ -1,0 +1,37 @@
+you have to create a plan for 6 luna which will make my programm better the key point i want to make several agents for each category like money relationship etc so every parameter has his own agent for anylyzing it and one boss agent which will make a decision i want you also to make an agent which will predict the probability of beeing declined and if its worth it to risk the reputation and the deal. Plan this at the best way you can analyze prevoius results and plan for luna to make a very deep research in this about 1.5h should luna spend on researching for the best solution in internet and 1.5h for coding debugging analyzing the results you are only allowed to usse 5 usd in api for this plan
+
+---
+
+and you should also make the luna to research which model to use for the agent luna or gpt 4o
+
+---
+
+yes implement the plan
+
+---
+
+alright now tell me how do i run it
+
+---
+
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+error: Failed to spawn: taktika
+  cause: No such file or directory (os error 2)
+juri@M6 starter-kit %
+
+---
+
+so how do i run the program
+
+---
+
+now youre allowed to run test runs run it analyze results make research and do all you need bacause we need at least 0.75 as average
+
+---
+
+and run also entire enable
+
+---
+
+so do what you need to beeing able to aachieve my goal
