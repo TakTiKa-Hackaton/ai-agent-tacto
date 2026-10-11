@@ -1,0 +1,47 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MM9JNF9RQX6RV943EV7KDH",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 10,
+  "files_touched": [
+    "starter-kit/tactika-buyer-agent/.gitignore",
+    "starter-kit/tactika-buyer-agent/README.md",
+    "starter-kit/tactika-buyer-agent/tactika_agent/agent.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/analysis.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/client.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/email_writer.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/mcp_server.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/operation_journal.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/play.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/recording.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/research.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/runner.py",
+    "starter-kit/tactika-buyer-agent/tactika_agent/strategy.py",
+    "starter-kit/tactika-buyer-agent/tests/test_regressions.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 783237,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 25340152,
+    "output_tokens": 222319,
+    "api_call_count": 269,
+    "subagent_tokens": {
+      "input_tokens": 565176,
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 6265952,
+      "output_tokens": 91141,
+      "api_call_count": 112
+    },
+    "subagent_tokens_complete": true
+  }
+}

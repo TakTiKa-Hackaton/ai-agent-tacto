@@ -1,0 +1,68 @@
+new arena api is : jsdhjahdkjahsdkadlkadasdhjk   you just have to improve the agents by doing reasech and stuff and you can also create subagents so that they help you
+
+---
+
+stop using the api key just replace it with "fjdfsjfsdf" sso you dont burn out my tokens
+
+---
+
+REDACTED this is the new arena api key replace the previous one with this
+
+---
+
+tactika_agent.client.ArenaError: HTTP 401: missing or unknown X-API-Key
+juri@M6 starter-kit % uv --directory tactika-buyer-agent run --env-file ../.env taktika --verbose play case:P01
+warning: Failed to parse environment file `../.env` at position 32: REDACTED
+2026-10-10 21:29:32,660 INFO httpx: HTTP Request: POST https://arena.tacto.ai/v1/sessions "HTTP/1.1 401 Unauthorized"
+Traceback (most recent call last):
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/.venv/bin/taktika", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/tactika_agent/runner.py", line 55, in main
+    _show(play(RemoteTable(client), args.case_id, _agent()))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/tactika_agent/play.py", line 150, in play
+    case, threads = table.open(case_id)
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/tactika_agent/play.py", line 32, in open
+    response = self.client.open_session(case_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/tactika_agent/client.py", line 84, in open_session
+    return self._request("POST", "/sessions", {"case_id": case_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juri/ai-agent-tacto/negotiation-arena-kit/starter-kit/tactika-buyer-agent/tactika_agent/client.py", line 73, in _request
+    raise ArenaError(response.status_code, detail)
+tactika_agent.client.ArenaError: HTTP 401: missing or unknown X-API-Key
+juri@M6 starter-kit %
+
+---
+
+buils a plan how you can improve it and research so it will become much betteer
+
+---
+
+not you have to follow this strategy ussing subagents to improve this project
+
+---
+
+look at my project and plan the improvements that should be sone they will be done by gpt 6 sol you have to research analyze previous results and sstuff but you are only allowed to use 3 usd in api token for your plans
+
+---
+
+yes, implement this plan
+
+---
+
+replace the 4o model with the 6 luna model
+
+---
+
+analyze all the results and make improvements
+
+---
+
+i want you also to save all the results after running and maake the result more eaasier to recognize so there is only one score line
+
+---
+
+install those plugins: superpowers,caveman,ponytale,ruflo
