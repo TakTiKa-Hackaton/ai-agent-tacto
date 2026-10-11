@@ -4,13 +4,22 @@ The `taktichek.html` interface can connect to the repository's `TaktikaAgent` th
 
 ## Start it
 
-From the repository root:
+Use a fresh checkout of the current `main` branch if your existing local folder predates the dashboard integration:
 
-1. Copy `.env.example` to `.env` and set `ARENA_API_KEY` to your Arena key. Keep `.env` private; it is ignored by Git.
-2. Install the project environment if needed: `uv sync --all-extras`.
-3. Run `uv run python -m tactika_agent.web`.
-4. Open [http://127.0.0.1:8765](http://127.0.0.1:8765).
-5. Choose **New deal**, select a Sandbox case, and start it. Taktichek then researches the case, sends supplier messages, and closes or walks away according to the existing agent policy. Practice cases use the Arena practice quota.
+```bash
+git clone https://github.com/TakTiKa-Hackaton/ai-agent-tacto.git taktichek-live
+cd taktichek-live
+cp .env.example .env
+```
+
+Set `ARENA_API_KEY` to your Arena key in `.env`. Keep that file private; it is ignored by Git. Then run:
+
+```bash
+uv sync --all-extras
+uv run python -m tactika_agent.web
+```
+
+Open [http://127.0.0.1:8765](http://127.0.0.1:8765), choose **New deal**, select a Sandbox case, and start it. Taktichek researches the case, sends supplier messages, and closes or walks away according to the existing agent policy. Practice cases use the Arena practice quota.
 
 The dashboard binds to `127.0.0.1` by default. `TAKTICHEK_HOST`, `TAKTICHEK_PORT`, and `TAKTICHEK_DB` can override the bind address, port, and local database path.
 
